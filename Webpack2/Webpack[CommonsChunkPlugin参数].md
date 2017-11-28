@@ -25,3 +25,14 @@
 		minSize: number,
 		// Minimum size of all common module before a commons chunk is created.
 	}
+
+## 缓存问题
+
+	new webpack.optimize.CommonsChunkPlugin({
+        names: ['vender','manifest'],
+        filename:'js/[name]-[chunkHash:4].js',
+        chunks: ['index','home'],
+        minChunks: 2,
+    }),
+
+**Tisp:names添加manifest，抽取引导文件，将runtime部分的代码提取到一个单独的文件中，使得vender公共部分固定下来，缓存生效，搭配chunkHash控制vender版本**
