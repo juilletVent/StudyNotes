@@ -1,3 +1,12 @@
+## **调试必备**
+
+webpack 指定CLI参数`--display detailed`,提供尽可能多的编译信息，对于定位错误很有帮助
+
+	webpack --progress --color --display detailed
+
+
+
+
 ## 配置sourceMap
 
 	devtool:'eval-source-map', //一般就用eval模式就行了
