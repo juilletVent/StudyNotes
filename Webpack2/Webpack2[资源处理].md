@@ -83,3 +83,22 @@ css 文件中使用import时：**?importLoaders=1** 只使用一个CSS loader来
 ## CSS文件中的路径问题
 
 如果相对路径生成错误，在Output中指定publicPath即可纠正，但是需要配置本地服务器
+
+## HTML文件中类似img标签的文件引入
+
+安装：
+
+	cnpm i html-webpack-plugin --save-dev
+
+配置：
+
+	{
+        test: /\.html$/,
+        loader: 'html-withimg-loader'
+    },
+
+	new htmlWebpackPlugin({
+        template: 'html-withimg-loader!./src/login.html',//此处加与不加 似乎没啥影响
+        filename: 'index.html',
+        chunks: ['main']
+    }),
