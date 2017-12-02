@@ -11,20 +11,20 @@
 canvas绘制，是先设置绘图状态，然后调用绘制函数执行绘制
 
 ~~~
-//前置
-var canvas = $('#canvas');
-var ctx = canvas[0].getContext('2d');
-
-//状态设置[绘制意图]
-ctx.beginPath()		//开始一段路径设置
-ctx.moveTo(50,50)
-ctx.lineTo(350,350)
-ctx.lineWidth = 5;
-ctx.strokeStyle = 'red';
-ctx.fillStyle = 'blue';
-ctx.closePath()		//结束一段路径设置
-ctx.stroke();		//绘制线条
-ctx.fill();			//绘制填充色
+	//前置
+	var canvas = $('#canvas');
+	var ctx = canvas[0].getContext('2d');
+	
+	//状态设置[绘制意图]
+	ctx.beginPath()		//开始一段路径设置
+	ctx.moveTo(50,50)
+	ctx.lineTo(350,350)
+	ctx.lineWidth = 5;
+	ctx.strokeStyle = 'red';
+	ctx.fillStyle = 'blue';
+	ctx.closePath()		//结束一段路径设置
+	ctx.stroke();		//绘制线条
+	ctx.fill();			//绘制填充色
 ~~~
 
 > 路径
@@ -36,6 +36,7 @@ ctx.fill();			//绘制填充色
 > 直线
 
 moveTo为开始笔画，lineTo为连续绘制方法
+
 - 路径:ctx.moveTo(x,y),ctx.lineTo(x,y)
 - 线宽：ctx.strokeWidth = n
 - 颜色：ctx.strokeStyle = '#ccc'
@@ -144,7 +145,7 @@ function drawFiveStar(ctx,innerR,exterR,x,y,rotate){
 ## 2D变换方法
 
 - 移动绘制坐标系：ctx.translate(x,y);//具备驻留效果，使用时记得移动与恢复成对出现，否则可能导致坐标系混乱
-- 旋转：ctx.ratate(n deg)//旋转[弧度制]
+- 旋转：ctx.rotate(n deg)//旋转[**弧度制**]
 - 缩放：ctx.scale(sx,sy)//缩放方法不仅仅缩放目标宽高，连带线条宽度，坐标位置，等数值属性将会一同进行缩放
 - 矩阵操作：ctx.transform(a,b,c,d,e,f)[x缩放,x倾斜,y倾斜,y缩放,x移动,y移动]
 - 重置矩阵：ctx.setTransform(a,b,c,d,e,f)
