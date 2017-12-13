@@ -102,3 +102,9 @@ css 文件中使用import时：**?importLoaders=1** 只使用一个CSS loader来
         filename: 'index.html',
         chunks: ['main']
     }),
+
+## JS中路径
+
+Webpack注意：
+
+资源路径不能直接书写，需使用require引入
