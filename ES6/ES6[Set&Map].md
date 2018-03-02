@@ -182,12 +182,162 @@ Map构造函数接受数组作为参数，实际上执行的是下面的算法�
 	map.get(k1) // 111
 	map.get(k2) // 222
 
+#### 实例的属性和操作方法
+
+- size属性
+- set get delete clear方法 
+
+所有属性同Java的数据结构HashMap一致，不做赘述
+
+#### 遍历方法
+
+Map 结构原生提供三个遍历器生成函数和一个遍历方法
+
+- keys()：返回键名的遍历器。
+- values()：返回键值的遍历器。
+- entries()：返回所有成员的遍历器。
+- forEach()：遍历 Map 的所有成员。
+
+**需要特别注意的是，Map 的遍历顺序就是插入顺序。**
+
+	const map = new Map([
+	  ['F', 'no'],
+	  ['T',  'yes'],
+	]);
+	
+	for (let key of map.keys()) {
+	  console.log(key);
+	}
+	// "F"
+	// "T"
+	
+	for (let value of map.values()) {
+	  console.log(value);
+	}
+	// "no"
+	// "yes"
+	
+	for (let item of map.entries()) {
+	  console.log(item[0], item[1]);
+	}
+	// "F" "no"
+	// "T" "yes"
+	
+	// 或者
+	for (let [key, value] of map.entries()) {
+	  console.log(key, value);
+	}
+	// "F" "no"
+	// "T" "yes"
+	
+	// 等同于使用map.entries()
+	for (let [key, value] of map) {
+	  console.log(key, value);
+	}
+	// "F" "no"
+	// "T" "yes"
+
+> Map 转 数组
+
+Map 结构转为数组结构，比较快速的方法是使用扩展运算符（...）。
+
+	const map = new Map([
+	  [1, 'one'],
+	  [2, 'two'],
+	  [3, 'three'],
+	]);
+	
+	[...map.keys()]
+	// [1, 2, 3]
+	
+	[...map.values()]
+	// ['one', 'two', 'three']
+	
+	[...map.entries()]
+	// [[1,'one'], [2, 'two'], [3, 'three']]
+	
+	[...map]
+	// [[1,'one'], [2, 'two'], [3, 'three']]
+
+> Map 还有一个forEach方法，与数组的forEach方法类似，也可以实现遍历
+
+	map.forEach(function(value, key, map) {
+	  console.log("Key: %s, Value: %s", key, value);
+	});
+
+forEach方法还可以接受第二个参数，用来绑定this。
+
+	const reporter = {
+	  report: function(key, value) {
+	    console.log("Key: %s, Value: %s", key, value);
+	  }
+	};
+	
+	map.forEach(function(value, key, map) {
+	  this.report(key, value);
+	}, reporter);
+
+#### 与其他数据结构的互相转换
+
+> 转数组
+
+	const myMap = new Map()
+	  .set(true, 7)
+	  .set({foo: 3}, ['abc']);
+	[...myMap]
+	// [ [ true, 7 ], [ { foo: 3 }, [ 'abc' ] ] ]
+
+> 数组转Map
+
+	new Map([
+	  [true, 7],
+	  [{foo: 3}, ['abc']]
+	])
+	// Map {
+	//   true => 7,
+	//   Object {foo: 3} => ['abc']
+	// }
+
+> Map 转对象
+
+	function strMapToObj(strMap) {
+	  let obj = Object.create(null);
+	  for (let [k,v] of strMap) {
+	    obj[k] = v;
+	  }
+	  return obj;
+	}
+	
+	const myMap = new Map()
+	  .set('yes', true)
+	  .set('no', false);
+	strMapToObj(myMap)
+	// { yes: true, no: false }
+
+> 对象 转Map
+
+	function objToStrMap(obj) {
+	  let strMap = new Map();
+	  for (let k of Object.keys(obj)) {
+	    strMap.set(k, obj[k]);
+	  }
+	  return strMap;
+	}
+	
+	objToStrMap({yes: true, no: false})
+	// Map {"yes" => true, "no" => false}
+
+	// 键名非字符串
+
+	function mapToArrayJson(map) {
+	  return JSON.stringify([...map]);
+	}
+	
+	let myMap = new Map().set(true, 7).set({foo: 3}, ['abc']);
+	mapToArrayJson(myMap)
+	// '[[true,7],[{"foo":3},["abc"]]]'
 
 
+#### WeakMap
 
-
-
-
-
-
-
+基本同WeakSet一致，不做阐述
