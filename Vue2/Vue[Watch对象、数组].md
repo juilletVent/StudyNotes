@@ -20,6 +20,8 @@
 
 ## Watch 对象
 
+深度监听使用第二种方式
+
 	data() {
 	　　return {
 	　　　　bet: {
