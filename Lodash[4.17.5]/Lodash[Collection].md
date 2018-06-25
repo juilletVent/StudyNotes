@@ -262,14 +262,138 @@ _.reduce(collection, [iteratee=_.identity], [accumulator])
 	}, {});
 	// => { '1': ['a', 'c'], '2': ['b'] } (iteration order is not guaranteed)
 
+## reduceRight
+
+与 reduce作用类似，区别仅仅是从右边开始
+
+## reject
+
+_.reject(collection, [predicate=_.identity])
+
+与filter相反，返回未通过过滤器的元素集合
+	
+	var users = [
+	  { 'user': 'barney', 'age': 36, 'active': false },
+	  { 'user': 'fred',   'age': 40, 'active': true }
+	];
+	 
+	_.reject(users, function(o) { return !o.active; });
+	// => objects for ['fred']
+	 
+	// The `_.matches` iteratee shorthand.
+	_.reject(users, { 'age': 40, 'active': true });
+	// => objects for ['barney']
+	 
+	// The `_.matchesProperty` iteratee shorthand.
+	_.reject(users, ['active', false]);
+	// => objects for ['fred']
+	 
+	// The `_.property` iteratee shorthand.
+	_.reject(users, 'active');
+	// => objects for ['barney']
+
+## sample
+
+从集合中随机获取一个元素
+
+_.sample(collection)
+
+	_.sample([1, 2, 3, 4]);
+	// => 2
+
+## sampleSize
+
+从集合中随机获取制定大小的子集
+
+_.sampleSize(collection, [n=1])
+
+	_.sampleSize([1, 2, 3], 2);
+	// => [3, 1]
+	 
+	_.sampleSize([1, 2, 3], 4);
+	// => [2, 3, 1]
+
+## shuffle 
+
+不大明白，可能是随机打乱一个数组
+
+_.shuffle(collection)
+
+	_.shuffle([1, 2, 3, 4]);
+	// => [4, 1, 3, 2]
+
+
+## size
+
+通用size调用，求取数组长度、对象属性数量、字符串长度
+
+_.size(collection)
+
+	_.size([1, 2, 3]);
+	// => 3
+	 
+	_.size({ 'a': 1, 'b': 2 });
+	// => 2
+	 
+	_.size('pebbles');
+	// => 7
+
+## some
+
+判断元素集合中是否有元素符合条件，如果有任意一个元素符合条件，则返回true
+
+_.some(collection, [predicate=_.identity])
+
+	_.some([null, 0, 'yes', false], Boolean);
+	// => true
+	 
+	var users = [
+	  { 'user': 'barney', 'active': true },
+	  { 'user': 'fred',   'active': false }
+	];
+	 
+	// The `_.matches` iteratee shorthand.
+	_.some(users, { 'user': 'barney', 'active': false });
+	// => false
+	 
+	// The `_.matchesProperty` iteratee shorthand.
+	_.some(users, ['active', false]);
+	// => true
+	 
+	// The `_.property` iteratee shorthand.
+	_.some(users, 'active');
+	// => true
+
+## sortBy
+
+排序方法，感觉没啥用
+
+_.sortBy(collection, [iteratees=[_.identity]])
+
+	var users = [
+	  { 'user': 'fred',   'age': 48 },
+	  { 'user': 'barney', 'age': 36 },
+	  { 'user': 'fred',   'age': 40 },
+	  { 'user': 'barney', 'age': 34 }
+	];
+	 
+	_.sortBy(users, [function(o) { return o.user; }]);
+	// => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 40]]
+	 
+	_.sortBy(users, ['user', 'age']);
+	// => objects for [['barney', 34], ['barney', 36], ['fred', 40], ['fred', 48]]
+
+主要返回的结构为二维数组
+
+
+
+----------
 
 
 
 
-
-
-
-
+*冉伟宏*
+*2018/6/25 14:29:27*
 
 
 
