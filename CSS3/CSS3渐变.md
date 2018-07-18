@@ -68,3 +68,41 @@ radial-gradient(50% 50% ellipse at 50% 50%,rgba(255,0,0,1) 0%,rgba(255,255,0,1) 
 
 **使用了预定义size后就不能在指定自定义的渐变尺寸了，否则样式无效**
 
+
+
+## 事件
+
+	private whichTransitionEvent(el: any) {
+        let transitions = {
+            'transition': 'transitionend',
+            'OTransition': 'oTransitionEnd',
+            'MozTransition': 'transitionend',
+            'WebkitTransition': 'webkitTransitionEnd',
+
+            'animationstart': 'animationend',
+            'webkitAnimationStart': 'webkitAnimationEnd',
+            'MSAnimationStart': 'MSAnimationEnd',
+        };
+        for (let t in transitions) {
+            if (el.style[t] !== undefined) {
+                return transitions[t];
+            }
+        }
+    }
+
+	msgDom.on(this.whichTransitionEvent(msgDom[0]), function (e) {
+        if (show == 1) {
+            console.log('设置延时');
+            setTimeout(e => {
+                console.log('移除class');
+                msgDom.removeClass('layer-top-active');
+                show = 0;
+            }, 1000);
+        } else {
+            console.log('清除结点');
+            msgDom.remove();
+        }
+    })
+
+
+

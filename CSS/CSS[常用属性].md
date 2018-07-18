@@ -1,5 +1,6 @@
 ## CSS常用属性
 
+- letter-spacing：1px 字间距
 - font-family:"Microsoft Yahei";		字体	
 - font-size:12px;color:#666；		颜色
 - font-weight:bold；					粗体
