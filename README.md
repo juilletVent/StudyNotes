@@ -16,5 +16,6 @@
 - Webpack
 - canvas
 - SVG
+- Lodash
 
 坚持让今天的自己比昨天的自己强那么一点点就好！
