@@ -242,3 +242,113 @@ _.mapValues(object, [iteratee=_.identity])
 	_.mapValues(users, 'age');
 	// => { 'fred': 40, 'pebbles': 1 } (iteration order is not guaranteed)
 
+### merge
+
+_.merge(object, [sources])
+
+与assign作用差不多，合并对象属性,已经存在的进行覆盖处理
+
+	var object = {
+	  'a': [{ 'b': 2 }, { 'd': 4 }]
+	};
+	 
+	var other = {
+	  'a': [{ 'c': 3 }, { 'e': 5 }]
+	};
+	 
+	_.merge(object, other);
+	// => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
+
+### mergeWith
+
+_.mergeWith(object, sources, customizer)
+
+根据定制化的函数，进行对象合并
+
+	function customizer(objValue, srcValue) {
+	  if (_.isArray(objValue)) {
+	    return objValue.concat(srcValue);
+	  }
+	}
+	 
+	var object = { 'a': [1], 'b': [2] };
+	var other = { 'a': [3], 'b': [4] };
+	 
+	_.mergeWith(object, other, customizer);
+	// => { 'a': [1, 3], 'b': [2, 4] }
+
+### omit
+
+_.omit(object, [paths])
+
+返回一个未被排除属性【直接属性/可枚举属性】的对象，例如对象具备a,b,c属性，paths传入['a','b'] ,则生成的对象将会排除a、b属性，留下c属性，并返回一个新对象。
+
+	var object = { 'a': 1, 'b': '2', 'c': 3 };
+	 
+	_.omit(object, ['a', 'c']);
+	// => { 'b': '2' }
+
+### omitBy
+
+_.omitBy(object, [predicate=_.identity])
+
+同omit，不过采用谓词判定，谓词返回true的时候保留相应的属性，属性范围为直接属性/可枚举属性
+
+### pick
+
+与omit作用相反，创建被选择的属性集合的新对象
+
+### pickBy
+
+谓词版pick，作用同omitBy相反，用法与范围均一致
+
+### result
+
+与get类似，不过如果给定的路径是一个函数，那么将会采用父元素作为this绑定，然后调用该函数，并返回函数执行的结果
+
+	var object = { 'a': [{ 'b': { 'c1': 3, 'c2': _.constant(4) } }] };
+	 
+	_.result(object, 'a[0].b.c1');
+	// => 3
+	 
+	_.result(object, 'a[0].b.c2');
+	// => 4
+	 
+	_.result(object, 'a[0].b.c3', 'default');
+	// => 'default'
+	 
+	_.result(object, 'a[0].b.c3', _.constant('default'));
+	// => 'default'
+
+### set
+
+_.set(object, path, value)
+
+在对象上设置对应路径的属性与值，如果属性不存在则创建对应的属性，该方法会修改原始对象，而不是返回一个新的对象。
+
+	var object = { 'a': [{ 'b': { 'c': 3 } }] };
+	 
+	_.set(object, 'a[0].b.c', 4);
+	console.log(object.a[0].b.c);
+	// => 4
+	 
+	_.set(object, ['x', '0', 'y', 'z'], 5);
+	console.log(object.x[0].y.z);
+	// => 5
+
+### setWith
+
+没懂啥意思^_^
+
+_.setWith(object, path, value, [customizer])
+
+	var object = {};
+	 
+	_.setWith(object, '[0][1]', 'a', Object);
+	// => { '0': { '1': 'a' } }
+
+### transform
+
+_.transform(object, [iteratee=_.identity], [accumulator])
+
+
