@@ -351,4 +351,54 @@ _.setWith(object, path, value, [customizer])
 
 _.transform(object, [iteratee=_.identity], [accumulator])
 
+大致意思就是对数组的每一项或对象的各个属性进行迭代，然后通过result进行累加（此处的累加不是表面的累加的意思，result只是作为返回值的一个载体，你可以通过传入初始的数组或传入初始的对象进行赋值，以便返回最终结果，引用传递）操作，对于迭代函数，可以显示的返回false来提前终止迭代，第三个参数为result的初始值，作为迭代函数的第一个参数传入
 
+迭代函数参数表： (result, value, key, object) 
+
+	_.transform([2, 3, 4], function(result, n) {
+	  result.push(n *= n);
+	  return n % 2 == 0;
+	}, []);
+	// => [4, 9]
+	 
+	_.transform({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+	  (result[value] || (result[value] = [])).push(key);
+	}, {});
+	// => { '1': ['a', 'c'], '2': ['b'] }
+
+### unset
+
+unset一个属性
+
+_.unset(object, path)
+	
+	var object = { 'a': [{ 'b': { 'c': 7 } }] };
+	_.unset(object, 'a[0].b.c');
+	console.log(object);
+	// => { 'a': [{ 'b': {} }] };
+
+### update
+
+_.update(object, path, updater)
+
+更新一个属性值
+
+、参数表：目标对象，属性路径字符串，更新器（单参：原始值，返回值作为更新的最终值）
+
+	var object = { 'a': [{ 'b': { 'c': 3 } }] };
+	 
+	_.update(object, 'a[0].b.c', function(n) { return n * n; });
+	console.log(object.a[0].b.c);
+	// => 9
+
+### values
+
+获取对象的直接属性集合
+
+_.values(object)
+
+### baluesIn
+
+_.valuesIn(object)
+
+获取对象的可枚举属性属性，包括原型链上的属性
