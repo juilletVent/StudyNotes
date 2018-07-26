@@ -179,3 +179,167 @@ _.method(path, [args])
 
 _.methodOf(object, [args])
 
+与method相反，创建一个方法，在创建时使用的目标对象上调用传入的方法路径对应的方法，第二个参数用于确定调用时的参数表
+
+具体含义就是：调用methodOf函数，传入目标对象obj，返回一个新的函数fun，调用返回的函数fun时传入方法路径path，将在obj上调用path对应的成员方法
+
+	var array = _.times(3, _.constant),
+	    object = { 'a': array, 'b': array, 'c': array };
+	 
+	_.map(['a[2]', 'c[0]'], _.methodOf(object));
+	// => [2, 0]
+	 
+	_.map([['a', '2'], ['c', '0']], _.methodOf(object));
+	// => [2, 0]
+
+### mixin
+
+_.mixin([object=lodash], source, [options={}])
+
+对Lodash对象进行扩展,只支持方法，不支持属性
+
+	function vowels(string) {
+	  return _.filter(string, function(v) {
+	    return /[aeiou]/i.test(v);
+	  });
+	}
+	 
+	_.mixin({ 'vowels': vowels });
+	_.vowels('fred');
+	// => ['e']
+	 
+	_('fred').vowels().value();
+	// => ['e']
+
+### noConflict
+
+重置Lodash对象，清除所有对Lodash的更改与扩展，返回Lodash对象
+
+### noop
+
+返回undefined
+
+### nthArg
+
+_.nthArg([n=0])
+
+创建一个函数，返回第n个传入的参数,如果n为负数，则从右边计算
+
+	var func = _.nthArg(1);
+	func('a', 'b', 'c', 'd');
+	// => 'b'
+	 
+	var func = _.nthArg(-2);
+	func('a', 'b', 'c', 'd');
+	// => 'c'
+
+### over
+
+_.over([iteratees=[_.identity]])
+
+创建一个函数，传入迭代器组，新创建的函数，会调用传入的所有迭代器，并传入实际调用时的所有参数，将所有迭代器的返回值放入一个数组中作为返回结果
+
+	var func = _.over([Math.max, Math.min]);
+	 
+	func(1, 2, 3, 4);
+	// => [4, 1]
+
+### overEvery
+
+_.overEvery([predicates=[_.identity]])
+
+创建一个新的函数，创建时传入谓词元素组，返回新的检查函数，调用检查函数时传入欲检查的值，如果所有谓词均返回真值，则通过检查
+
+	var func = _.overEvery([Boolean, isFinite]);
+	 
+	func('1');
+	// => true
+	 
+	func(null);
+	// => false
+	 
+	func(NaN);
+	// => false
+
+### overSome
+
+用法同overEvery，只是检查条件变为符合任意一个谓词，即可通过检查
+
+### property
+
+_.property(path)
+
+创建一个函数，该函数返回调用时传入的参数对象的path路径对应的属性值
+
+	var objects = [
+	  { 'a': { 'b': 2 } },
+	  { 'a': { 'b': 1 } }
+	];
+	 
+	_.map(objects, _.property('a.b'));
+	// => [2, 1]
+	 
+	_.map(_.sortBy(objects, _.property(['a', 'b'])), 'a.b');
+	// => [1, 2]
+
+### propertyOf
+
+反向property，创建时传入路径，调用时传入对象，取得对应的属性值
+
+### range
+
+_.range([start=0], end, [step=1])
+
+返回对应区间的数字集合，开区间，可以设定步进值
+
+### rangeRight
+
+用法一致，生成的顺序从end到start
+
+### runInContext
+
+_.runInContext([context=root])
+
+使用目标上下文创建一个新的Lodash对象，与原有Lodash对象隔离，返回新的Lodash对象
+
+### stubArray
+
+返回一个空数组，新建的
+
+### stubString
+
+返回一个空字符串
+
+### stubTrue
+
+返回true
+
+### stubFalse
+
+### stubObject
+
+### times
+
+_.times(n, [iteratee=_.identity])
+
+对于n进行循环，执行迭代器，传入每一轮的n，返回值加入同一个集合，作为整体返回值
+
+### toPath
+
+讲一个字符串路径转换为数组路径
+
+### uniqueId
+
+_.uniqueId([prefix=''])
+
+生成一个唯一值，可以穿入前缀
+	
+	_.uniqueId('contact_');
+	// => 'contact_104'
+	 
+	_.uniqueId();
+	// => '105'
+
+
+
+
