@@ -55,6 +55,17 @@
 }
 ~~~
 
+所有的参数，类似JavaScript函数，arguments参数
+
+	.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {
+	  box-shadow: @arguments;
+	  -moz-box-shadow: @arguments;
+	  -webkit-box-shadow: @arguments;
+	}
+	//调用
+	.box-shadow(2px, 5px);
+	
+
 带默认值的
 
 ~~~
@@ -66,6 +77,16 @@
 	.border();
 }
 ~~~
+
+不带参数的集合，这种定义方法，CSS将不会出现，在需要使用的时候引入即可
+
+	.border(){
+		border:@width solid red;
+	}
+	//引入
+	p{
+		.border;
+	}
 
 ## 匹配模式
 
