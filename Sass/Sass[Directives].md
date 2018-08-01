@@ -268,3 +268,6 @@ build
 
 	Line 1 DEBUG: 22em
 
+### warn
+
+输出警告信息
