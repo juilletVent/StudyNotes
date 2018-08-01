@@ -216,12 +216,55 @@ build
 
 ### extend-only
 
+如果使用普通的 CSS 规则，最后会编译出很多用不到的样式，也容易与其他样式名冲突，所以，Sass 引入了“占位符选择器” (placeholder selectors)，看起来很像普通的 id 或 class 选择器，只是 # 或 . 被替换成了 %。可以像 class 或者 id 选择器那样使用，当它们单独使用时，不会被编译到 CSS 文件中。
 
+	// This ruleset won't be rendered on its own.
+	#context a%extreme {
+	  color: blue;
+	  font-weight: bold;
+	  font-size: 2em;
+	}
 
+	.notice {
+	  @extend %extreme;
+	}
 
+build
 
+	#context a.notice {
+	  color: blue;
+	  font-weight: bold;
+	  font-size: 2em; }
 
+**限制：Sass 不可以将 @media 层外的 CSS 规则延伸给指令层内的 CSS，只能引用media层内部的样式**
 
+### at-root
 
+此指令将会在根级创建对应的样式集
 
+	.parent {
+	  ...
+	  @at-root {
+	    .child1 { ... }
+	    .child2 { ... }
+	  }
+	  .step-child { ... }
+	}
+
+build
+
+	.parent { ... }
+	.child1 { ... }
+	.child2 { ... }
+	.parent .step-child { ... }
+
+### debug
+
+打印具体debug信息
+
+	@debug 10em + 12em;
+
+build
+
+	Line 1 DEBUG: 22em
 
