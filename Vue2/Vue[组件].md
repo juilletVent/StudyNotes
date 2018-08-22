@@ -101,19 +101,18 @@
 
 HTML 特性是不区分大小写的。所以，当使用的不是字符串模版，camelCased (驼峰式) 命名的 prop 需要转换为相对应的 kebab-case (短横线隔开式) 命名：
 
-~~~
-Vue.component('child', {
-  // camelCase in JavaScript
-  props: ['myMessage'],
-  template: '<span>{{ myMessage }}</span>'
-})
+	Vue.component('child', {
+	  // camelCase in JavaScript
+	  props: ['myMessage'],
+	  template: '<span>{{ myMessage }}</span>'
+	})
+	
+	Vue.component('child', {
+	  // camelCase in JavaScript
+	  props: ['myMessage'],
+	  template: '<span>{{ myMessage }}</span>'
+	})
 
-Vue.component('child', {
-  // camelCase in JavaScript
-  props: ['myMessage'],
-  template: '<span>{{ myMessage }}</span>'
-})
-~~~
 如果你使用字符串模版，则没有这些限制。
 
 ### 动态 Prop
@@ -134,17 +133,13 @@ Vue.component('child', {
 
 初学者常犯的一个错误是使用字面量语法传递数值：
 
-~~~
-<!-- 传递了一个字符串 "1" -->
-<comp some-prop="1"></comp>
-~~~
+	<!-- 传递了一个字符串 "1" -->
+	<comp some-prop="1"></comp>
 
 因为它是一个字面 prop，它的值是字符串 "1" 而不是 number。如果想传递一个实际的 number，需要使用 v-bind，从而让它的值被当作 JavaScript 表达式计算：
 
-~~~
-<!-- 传递实际的 number -->
-<comp v-bind:some-prop="1"></comp>
-~~~
+	<!-- 传递实际的 number -->
+	<comp v-bind:some-prop="1"></comp>
 
 ### 单向数据绑定
 
