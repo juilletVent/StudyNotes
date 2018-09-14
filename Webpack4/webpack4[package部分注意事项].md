@@ -37,3 +37,18 @@
 
 如果不想配置请使用14版本
 
+### 单文件组件样式解析
+
+如果在单文件组件中使用了css预处理语言，需要在loader配置中进行配置，例如使用了stylus，在需要在loader配置中进行如下配置
+
+	{
+		test:/\.stylus$/,
+		use:[
+			'style-loader',
+			'css-loader',
+			'stylus-loader'
+		]
+	}
+
+以上配置与匹配.styl文件的配置不共用，如果不写将会报错
+

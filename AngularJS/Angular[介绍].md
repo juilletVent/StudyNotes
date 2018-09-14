@@ -12,9 +12,9 @@
 
 模块定义：
 
-~~~
-var moduleName = angular.module("moduleName",['ngRoute']);//第二个参数传递依赖的模块
-~~~
+
+	var moduleName = angular.module("moduleName",['ngRoute']);//第二个参数传递依赖的模块
+
 
 **如果第二个参数不传，则返回一个已经创建的模块**
 
@@ -27,12 +27,12 @@ var moduleName = angular.module("moduleName",['ngRoute']);//第二个参数传�
 ### 表达式渲染闪烁问题
 
 1. 使用指令ng-cloak，并为ng-cloak编写CSS样式指定display隐藏，因为在angular渲染后会移除该属性，所以页面就会显示出来了
-	~~~
-	[ng-cloak]{
-		display:none;
-	}
-	~~~
-2. 
+
+
+		[ng-cloak]{
+			display:none;
+		}
+
 
 
 ### 控制器
@@ -50,30 +50,29 @@ var moduleName = angular.module("moduleName",['ngRoute']);//第二个参数传�
 使用注入的上下文对象scope预定义的API $watch函数绑定数据监测函数
 
 定义：
-~~~
-module.controller('DemoCtrl',function($scope){
-	//控制器执行时，会执行这个函数
-	//$scope为全局上下文
-})
 
-//标准定义：
-helloModule.controller('ContentCtrl',['$scope',function($scope){
-	$scope.myData = {
-	    user:'chenAn'
-	};
-	$scope.getMyValue = function(){
-	    console.log($scope.myData.user);
-	};
-	$scope.loadData = function(){
-	    console.log('加载数据中...');
-	};
-	//第一个参数传入绑定的检测的参数，第二个参数为变化时的回调函数
-	$scope.$watch('myData.user',function(now,old){
-        console.log('now:'+now+',old:'+old);
-    });
-}]);
+	module.controller('DemoCtrl',function($scope){
+		//控制器执行时，会执行这个函数
+		//$scope为全局上下文
+	})
 
-~~~
+	//标准定义：
+	helloModule.controller('ContentCtrl',['$scope',function($scope){
+		$scope.myData = {
+		    user:'chenAn'
+		};
+		$scope.getMyValue = function(){
+		    console.log($scope.myData.user);
+		};
+		$scope.loadData = function(){
+		    console.log('加载数据中...');
+		};
+		//第一个参数传入绑定的检测的参数，第二个参数为变化时的回调函数
+		$scope.$watch('myData.user',function(now,old){
+	        console.log('now:'+now+',old:'+old);
+	    });
+	}]);
+
 
 注意：定义控制器的时候，第二个参数传入一个数组，数组最后一个元素为函数对象，定义了控制器处理函数，前面的数组成员定义了注入的参数，表示需要注意的变量是哪些，顺序与处理函数的参数一一对应，这样做的原因是避免JS代码混淆对变量注入造成影响，因为注入依赖函数参数的名称
 
@@ -98,19 +97,18 @@ helloModule.controller('ContentCtrl',['$scope',function($scope){
 使用scope的$watch函数来进行监控
 
 栗子：
-~~~
-$scope.data = {
-	a:'1',
-	b:{
-		b1:'b1',
-		b2:56
-	}
-};
 
-$scope.$watch('data',function(now){
-	console.log(now);
-},true);
-~~~
+	$scope.data = {
+		a:'1',
+		b:{
+			b1:'b1',
+			b2:56
+		}
+	};
+	
+	$scope.$watch('data',function(now){
+		console.log(now);
+	},true);
 
 **注意：**监控时，可以传入第三个参数，指定是否进行深层监控，比如一个二维数组，一个自定义数据对象，传入true表示深层监控所有属性的变化，不传/FALSE则表示仅仅监控引用变化，
 

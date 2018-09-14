@@ -8,18 +8,14 @@ H5的自定义属性均使用data-开头，所以，NG的属性指令如果想�
 
 当一个页面存在多个Angular模块时，只有第一个模块会自动启动，而后的模块需要手动启动
 
-~~~
-angular.bootstrap(elem,['module1',...]);
-~~~
+	angular.bootstrap(elem,['module1',...]);
 
 **PS：NG本身不推荐真正的单页多模块设计，多模块设计应使用如下方式进行**
 
 1. 定义多个模块
 2. 定义一个公共模块，依赖前面定义的各个子模块并添加到全局作用域上
-
-~~~
-var module = angular.module('appRoot',['module1','module2'...]);
-~~~
+	
+		var module = angular.module('appRoot',['module1','module2'...]);
 
 ## Directive
 
@@ -41,13 +37,11 @@ var module = angular.module('appRoot',['module1','module2'...]);
 
 绑定时，会转义HTML源字符，预防跨站脚本攻击，如果需要使用不转义的绑定指定，则使用ng-bind-html指令进行绑定
 
-使用时需依赖ngSanitize模块，尽量不要使用这个指令
+**使用时需依赖ngSanitize模块，尽量不要使用这个指令**
 
 > Example
 
-~~~
-<div ng-bind="userinfo.name"></div>
-~~~
+	<div ng-bind="userinfo.name"></div>
 
 ### ng-repeat
 
@@ -55,13 +49,11 @@ var module = angular.module('appRoot',['module1','module2'...]);
 
 > Example
 
-~~~
-<ul ng-controller="DemoCtrl">
-    <li ng-repeat="item in datas track by $index" data-id="{{item.id}}">
-        <span>{{item.name}}</span>
-    </li>
-</ul>
-~~~
+	<ul ng-controller="DemoCtrl">
+	    <li ng-repeat="item in datas track by $index" data-id="{{item.id}}">
+	        <span>{{item.name}}</span>
+	    </li>
+	</ul>
 
 **Tips:表项具备重复值时，必须使用track by $index附加指令，表名跟踪对象是谁，跟踪对象可变，可自定义，一般使用$index索引即可**
 
@@ -86,7 +78,7 @@ var module = angular.module('appRoot',['module1','module2'...]);
 
 ### ng-class
 
-赋予一个map对象给ng-class用于设定样式类，型如:{red:true,green:false}这样的类，实际使用中多配合表项自身的位置或其他附加属性实现样式的个性定制，例如斑马线效果，或者简单的使用效果：ng-class="var"
+赋予一个map对象给ng-class用于设定样式类，型如:{r ed:true,green:false}这样的类，实际使用中多配合表项自身的位置或其他附加属性实现样式的个性定制，例如斑马线效果，或者简单的使用效果：ng-class="var"
 
 ~~~
 <li ng-repeat="item in datas" data-id="{{item.id}}" ng-class="{red:$even,green:$odd}">
@@ -297,7 +289,7 @@ module.directive('childDirective',function(){
 
 > 独立scope作用域
 
-为指令定义独立的scope可以使指令独立开来，否则指令复用的时候会产生连带关系
+为指令定义独立的scope可以使指令独立开来，否则指令复用的时候会产生连带关系,类似于Vue中Data为什么一定要使用函数一样，避免组件复用是多个实例互相影响
 
 ~~~
 return{
@@ -305,6 +297,31 @@ return{
 }
 ~~~
 
+> 属性
+
+使用节点自定义属性进行交互，如进行指令复用的时候，指令内执行数据加载，在不同的控制其中可能加载数据的方法不同，则需要定义自定义属性，传入对应控制器的回调方法，然后使用scope.$apply进行调用
+
+Example：
+
+	//html部分
+
+	div:ctrl a 持有数据初始化方法initA
+	内部使用指令load 指定自定义属性 data-ng-init="initData"
+
+	div:ctrl b 持有数据初始化方法initB
+	内部使用指令load 指定自定义属性 data-ng-init="initData"
+
+	//指令部分
+	link中进行相关事件绑定，回调中使用attrs获取相关的自定义属性
+	let initFun = sttrs.initData;
+	//调用
+	scope.$apply(initFun);
+
+**注意：进行属性绑定时名称遵循以下规则，如果属性以 data- 开头，ng自动清除该前缀，因为该前缀属于H5标准，如果继续使用中线连接则采取如下转换方式：data-ng-init => ngInit**
+
+
+
+	
 
 
 
