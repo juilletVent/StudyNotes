@@ -196,6 +196,8 @@ moduleVar.directive('指令名',['$scope',...,function($scope){
 <button ng-transclude>Hello<button>
 ~~~
 
+**注意：**需要注意的是：替换的内容可以访问外部Scope，且如果指令存在局部Scope，替换的模板也会处于外部Scope作用域，而不是指令局部Scope，尤其注意
+
 > 指令类型
 
 - E:元素[标签名]<my></my>
@@ -273,6 +275,8 @@ moduleVar.directive('指令名',['$scope',...,function($scope){
 }]);
 ~~~
 
+Tips: **^前缀意味着指令将会在它的父元素上面搜索控制器(如果没有^前缀，指令默认只在所属元素上搜索指定的控制器**
+
 > 子指令
 
 ~~~
@@ -319,11 +323,41 @@ Example：
 
 **注意：进行属性绑定时名称遵循以下规则，如果属性以 data- 开头，ng自动清除该前缀，因为该前缀属于H5标准，如果继续使用中线连接则采取如下转换方式：data-ng-init => ngInit**
 
+**属性绑定类型：**
 
+<table>
+<thead>
+<tr>
+  <th>符号</th>
+  <th>说明</th>
+  <th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>@</td>
+  <td>值传递，单向绑定。html页面自定义指令里的val属性的值可传给link的scope使用。第一种写法——str : “@”，这种写法html页面的指令属性名为str</td>
+  <td>str : “@val”,属性名为val</td>
+</tr>
+<tr>
+  <td>=</td>
+  <td>双向绑定数据到指令的属性中，数据值可以是任意类型的。第一种写法：name : “=”，这种写法html页面的自定义指令属性名就是name</td>
+  <td>name : “=username”,属性名是username</td>
+</tr>
+<tr>
+  <td>&amp;</td>
+  <td>使用父作用域中的一个函数,可以在指令中调用。第一种写法：getName:”&amp;”,这种写法html页面的自定义指令属性名就是gegName</td>
+  <td>getName : “&amp;getUserName”,属性名是getUserName</td>
+</tr>
+</tbody></table>
 
 	
 
 
+## 指令的Ctrl 与 Link 的区别
+
+link 和 controller之间的区别， 最基本的区别就是 控制器可以导出一个API， 而子指令的link函数可以通过require来与这个API交互。
+
+当你想暴露一个API给其它的指令调用那就用controller,否则用link。
 
 
 
