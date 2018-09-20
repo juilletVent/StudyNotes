@@ -71,5 +71,3 @@ The response object has these properties:
 
 
 
-
-
