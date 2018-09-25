@@ -106,4 +106,17 @@ componentDidMount Mounted钩子
 
 componentWillUnmount UnMounted钩子
 
+## 属性验证
+
+1. 导入PropTypes
+2. 为组件指定PropTypes
+
+~~~
+import React, { PropTypes } from 'react';
+
+Root.propTypes = {
+  store: PropTypes.object.isRequired,
+};
+~~~
+
 
