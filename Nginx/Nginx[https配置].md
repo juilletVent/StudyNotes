@@ -4,7 +4,7 @@
 
 	openssl genrsa -aes256 -out https.key
 
-2、生成SCR证书请求文件
+2、生成CSR证书请求文件
 
 	openssl req -new -key https.key -out https.csr
 
