@@ -8,12 +8,12 @@
 - mkdir
 - rm
 - mv
-- touch
-- ps
+- touch 新建文件
+- ps -aux 查看进程列表
 - top
 - shutdown
 - reboot
-- alias
+- alias 别名
 - cd
 - vi/vim
 
@@ -23,3 +23,4 @@
 - diff：比较纯文本文件的不同之处，svn有木有
 - systemctl 系统服务相关操作指令
 - firewall-cmd centos7中替换iptable的防火墙指令
+- netstat -tuln 查看网络服务监听的端口
