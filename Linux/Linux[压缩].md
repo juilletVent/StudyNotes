@@ -1,8 +1,8 @@
 # Linux 下常用压缩命令 tar, tar.gz(tgz), tar.bz2,zip
 
 * [tar命令](#tar)
-* [tar.gz与tgz打包压缩](#tar.gz&tgz)
-* [tar.bz 压缩比最高](#tar.bz)
+* [tar.gz tgz](#tar.gz-tgz)
+* [tar.bz](#tar.bz)
 * [gz](#gz)
 * [zip](#zip)
 * [rar](#rar)
@@ -36,7 +36,7 @@
 	tar -xvf file.tar
 	tar -xvf file.tar -C /temp  #解压到temp目录下
 
-## tar.gz&tgz
+## tar.gz tgz
 
 创建：
 
