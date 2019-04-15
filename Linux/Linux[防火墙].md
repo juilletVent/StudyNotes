@@ -11,7 +11,6 @@
 #### 查询
 
 	firewall-cmd --zone=public --query-port=33378/tcp
-
 	firewall-cmd --list-all
 	firewall-cmd --list-all-zones   
 
