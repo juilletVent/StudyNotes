@@ -9,7 +9,7 @@
 |/etc/* |各服务各自的配置文件|
 |/var/lib/* |各服务产生的数据库|
 |/var/run/* |各服务的程序乀 PID 记录处|
-
+|/etc/init.d/syslog/*|日志|
 
 ### service指令
 
@@ -18,3 +18,17 @@
 状态查看：
 
 	service --status-all
+
+**Tips:Centos 7+ 中已经替换为systemctl进行管理用法基本相同**
+
+
+
+
+
+
+
+
+
+
+
+
