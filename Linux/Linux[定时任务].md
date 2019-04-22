@@ -28,7 +28,7 @@ log位置：/var/log/cron
 
 **定期执行指定目录下的全部可执行文件：run-parts可以执行指定目录中的全部可执行命令**
 
-	*/5 * * * * root run-parts /root/runcron
+	*/5 * * * * run-parts /root/runcron
 
 
 ## anacron 补救性任务
