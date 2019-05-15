@@ -16,3 +16,9 @@
 执行：
 
 	/usr/bin/rdate -s time.nist.gov
+
+## 写入硬件信息
+
+不写入的话重启后时间将被还原
+
+	hwclock -w
