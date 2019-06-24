@@ -1,0 +1,48 @@
+## 第三章 字符串
+
+#### 常用api
+
+- find: str.find('subStr' [,startIndex,endIndex]) 返回索引位置，未找到返回-1
+- join: strs.join(',') // 数组元素必须都是字符串，否则将会失败
+- lower
+- replace: str.replace('targetStr','contentStr') // 替换函数
+- split: '1,2'.split(',') // ['1','2'] 字符串分割函数
+- strip 去除字符串两边的空格
+
+
+
+
+
+#### 格式化
+
+使用%做为运算符号
+
+    formatSTr = 'hello %s or %s'
+    vals = ('val1', 'val2') // 应使用元组而不是list，list会被解释为一个值，而不是一组值
+    print formatStr % vals // hello val1 or val2
+
+> 模板替换
+
+预定义模板，进行指定替换即可
+
+    from string import Template
+    s = Template('$x, or $x !')
+    s.substitute(x='slurm')
+    // slurm, or slurm !
+
+键值对形式替换：
+
+    tpl = Template('$key1,$key2')
+    vals = {}
+    vals['key1'] = 'hello'
+    vals['key2'] = 'world'
+    tpl.substitute(vals) // hello,world
+
+ps:对应的拓展函数safe_substitute函数不会因为输入不正确而报错
+
+
+
+
+
+
+
