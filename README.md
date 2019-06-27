@@ -1,6 +1,10 @@
 # StudyNotes
 
-一份学习前端学习记录文档，主要学习方向为Web前端，混杂了一些其他方向的文档笔记
+<link rel="stylesheet" href="./img/readme.css">
+
+<img src="./img/luna.png" class="head-img">
+
+<p class="head-msg">露娜様：好好学习，天天向上</p>
 
 #### 前端方向
 
