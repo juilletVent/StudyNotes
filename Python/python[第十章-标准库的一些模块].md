@@ -19,7 +19,18 @@
     import packageName.longName as shortName # 别名
 
 
+## 包
 
+所有拓展的模块中包含的api在使用的时候都需要带上模块名，举个🌰：
+
+    # 我需要使用regex进行字符串匹配，那么我可能需要这样操作
+    import re
+    regex = re.compile('^[0-9a-zA-Z]{1,50}$')
+    if re.match(regex,'testString'):
+        print 'matched'
+    else:
+        print 'no match'
+    # 其他的模块同理
 
 #### sys模块
 
@@ -88,3 +99,52 @@
 
 #### re 正则表达式
 
+- search 在字符串中查找模式
+- match 在字符串开始处匹配模式
+- split 根据模式来分割字符串
+- findall 寻找所有匹配模式的子串
+- sub 替换所有与模式匹配的子串
+- escape 将字符串中所有正则表达式字符串进行转译
+
+匹配成功后，py会返回匹配对应的组信息，0代表全部匹配信息，从1开始分别代表模式串中的子模式，举个🌰：
+
+    regex = re.compile('(hello)\W+(world)')
+    dtBuffer = re.match(regex,'hello world')
+
+    dtBuffer.group(0) # hello world
+    dtBuffer.group(1) # hello
+    dtBuffer.groups()
+    # ['hello world','hello','world']
+
+创建正则表达式时，添加注释：
+
+    regex = re.compile(r'''
+        (hello) # 匹配hello
+        \W+     # 匹配空白字符
+        (world) # 匹配world
+        ''',re.VERBOSE
+    )
+
+    这种写法会让正则表达式更好理解，推荐复杂的正则表达式都采用这种写法，不至于让维护好无头绪可言
+
+> 使用组号进行替换
+
+    # 沿用上面创建的正则表达式
+    dtBuffer = re.sub(regex,r'\1\2jack','hello world')
+    print dtBuffer # hello jack
+
+
+#### 其他的一些有用的库
+
+- functools 不知道干嘛用的
+- difflib 计算序列相似度
+- hashlib 计算签名 加密，验签时很有用
+- csv 对csv的支持
+- timeit 性能测试模块
+- profile 性能分析
+- trace 总体分析
+- datetime time模块的升级版，time不够用时就用这玩意儿
+- itertools 迭代器相关模块
+- logging 日志模块
+- getopt & optparse 处理命令行参数相关问题，程序启动时的args相关
+- cmd 命令行解释模块
