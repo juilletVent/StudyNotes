@@ -1,5 +1,9 @@
 ## 基础部分
 
+#### 指定源文件编码格式
+
+    # coding=utf-8
+
 #### 运算部分
 
 全局浮点数运算标示：`from __future__ import division`
