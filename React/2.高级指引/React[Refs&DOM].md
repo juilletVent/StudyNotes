@@ -102,4 +102,39 @@ Example:
 	}
 
 
+#### 自定义Form时，Ref转发问题
+
+自定义Form时，getFieldDecorator，会默认要求一个取得一个ref，以帮助你在外层访问getFieldDecorator包装的高阶组件，但是目前多使用func组件，自身是没有ref的，所以需要进行ref转发，具体实现如下：
+
+函数式自定义组件内部：
+
+	# ref来自组件的第二个参数，使用了forwardRef转发之后，组件将会传入第二个参数，就是ref
+	if (ref) {
+		ref.current = () => {};
+	}
+
+	# 导出部分转发ref即可
+	export default React.forwardRef(SelectRegion);
+
+当然如果你内部ref确实有用，这可以绑定到具体的元素或组件上
+
+
+> connect导致的ref问题
+
+connect函数默认不会转发ref，所以在自定义Form组件时如果使用了connect进行包装，name需要手动指定ref转发，不然就使用上面的方法手动转发ref加上hooks->useSelector完成
+
+栗子：
+
+	export default connect<StateProps, DispatchProps, any>(
+	  mapStateToProps,
+	  mapDispatchToProps,
+	  null,
+	  { forwardRef: true }
+	)(ProviderSelect);
+
+
+
+
+	
+
 
