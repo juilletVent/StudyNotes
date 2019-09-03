@@ -1,3 +1,10 @@
+<!--
+ * @Author: WeiHong Ran
+ * @Date: 2019-09-02 23:43:22
+ * @LastEditors: WeiHong Ran
+ * @LastEditTime: 2019-09-03 22:17:44
+ * @Description: Nothing
+ -->
 ## Junit 4 单元测试
 
 #### 前置准备
@@ -27,4 +34,21 @@
   MethodSorters.NAME_ASCENDING：按照方法名称排序执行
 
 PS：然后尝试了之后发现无效，原因不明。Junit4，想要实现顺序执行可能只能使用名称排序的方法，JVM模式可能由于jdk版本问题，无法按照定义顺序进行执行
+```
+
+#### 多场景打包测试
+
+当存在多个测试场景时，打包测试如下
+
+```
+package com.gmsoft.test.unittest;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses(
+        {TestTest.class, TestTest1.class}
+)
+public class AllTest {
+}
 ```
