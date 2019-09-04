@@ -2,7 +2,7 @@
  * @Author: WeiHong Ran
  * @Date: 2019-09-03 23:48:32
  * @LastEditors: WeiHong Ran
- * @LastEditTime: 2019-09-03 23:49:50
+ * @LastEditTime: 2019-09-04 23:07:26
  * @Description: Nothing
  -->
 ## 建立连接
@@ -13,7 +13,9 @@ public class TestMysql {
     @Test
     public void testConnect() {
         try {
-            DriverManager.registerDriver(new Driver());
+            在DriverManager内部的静态代码块内本身就有驱动注册代码，所以只需要加载DriverManage类即可完成驱动注册
+            // DriverManager.registerDriver(new Driver());
+            Class.forName("com.mysql.jdbc.Driver")
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "");
             String sql = "select * from user";
             Statement statement = connection.createStatement();
@@ -33,3 +35,9 @@ public class TestMysql {
 
 }
 ```
+
+
+## statement中的api
+
+- executeQuery 用于查询，返回查询结果集
+- executeUpdate 用于执行更新、插入、删除类型的语句，返回影响的行数
