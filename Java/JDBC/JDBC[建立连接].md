@@ -2,7 +2,7 @@
  * @Author: WeiHong Ran
  * @Date: 2019-09-03 23:48:32
  * @LastEditors: WeiHong Ran
- * @LastEditTime: 2019-09-04 23:07:26
+ * @LastEditTime: 2019-09-05 22:40:19
  * @Description: Nothing
  -->
 ## 建立连接
@@ -41,3 +41,14 @@ public class TestMysql {
 
 - executeQuery 用于查询，返回查询结果集
 - executeUpdate 用于执行更新、插入、删除类型的语句，返回影响的行数
+
+## prepareStatement
+
+一般使用这个api对sql进行预编译谈后参数化执行sql，避免sql注入的问题
+
+~~~
+PrepareStatement st = conn.prepareStatement(sql);
+# 下标从1开始
+st.setString(1,"user");
+st.executeUpdate()
+~~~
