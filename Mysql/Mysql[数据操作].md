@@ -1,8 +1,8 @@
 <!--
  * @Author: Gmsoft - WeiHong Ran
  * @Date: 2019-09-07 15:07:58
- * @LastEditors: Gmsoft - WeiHong Ran
- * @LastEditTime: 2019-09-07 19:11:07
+ * @LastEditors: WeiHong Ran
+ * @LastEditTime: 2019-09-07 23:33:22
  * @Description: Nothing
  -->
 
@@ -124,6 +124,23 @@ GROUP BY addr;
     ... limit 10 // 开始的前10条
     ... limit offset length // 偏移+长度
 
+
+#### 去重
+
+使用distinct即可
+
+        select distinct(username) from user;
+
+
+#### 联合查询
+
+UNION 去重 / UNION ALL 简单合并
+
+使用方法：
+
+        子查询1
+        UNION [ALL]
+        子查询2
 
 
 

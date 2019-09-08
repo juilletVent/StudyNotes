@@ -1,8 +1,8 @@
 <!--
  * @Author: Gmsoft - WeiHong Ran
  * @Date: 2019-09-07 09:34:08
- * @LastEditors: Gmsoft - WeiHong Ran
- * @LastEditTime: 2019-09-07 16:05:14
+ * @LastEditors: WeiHong Ran
+ * @LastEditTime: 2019-09-07 23:26:33
  * @Description: Nothing
  -->
 
@@ -39,3 +39,5 @@
         需要注意的是，truncate相当于保留mysql表的结构，重新创建了这个表，所有的状态都相当于新表，truncate删除后不记录mysql日志，不可以恢复数据
 
 14. 随机数：RAND()  0-1开区间内的随机数
+15. 迁移表数据：在create table后添加select语句即可完成表的创建，以及数据迁移
+16. 歉意表数据：同样的insert + select同样可以完成数据迁移，使用方法同上
