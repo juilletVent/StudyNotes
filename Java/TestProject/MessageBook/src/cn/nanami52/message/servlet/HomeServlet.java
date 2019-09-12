@@ -19,21 +19,15 @@ public class HomeServlet extends javax.servlet.http.HttpServlet {
         messageService = new MessageService();
     }
 
-    protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
-
-    }
-
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
-        int pageNo = Integer.parseInt(request.getParameter("pageNo"));
-        int pageSize = Integer.parseInt(request.getParameter("pageSize"));
+        String pageNo = request.getParameter("pageNo");
+        String pageSize = request.getParameter("pageSize");
         List<Message> messages = messageService.getMessages(pageNo, pageSize);
         int count = messageService.getCount();
-//        int count = 22;
 
         request.setAttribute("messages", messages);
         request.setAttribute("count", count);
-        request.setAttribute("page", pageNo);
-        request.setAttribute("page", pageNo);
+        request.setAttribute("page", null != pageNo ? pageNo : 1);
 
         request.getRequestDispatcher("/WEB-INF/views/biz/message_list.jsp").forward(request, response);
     }
