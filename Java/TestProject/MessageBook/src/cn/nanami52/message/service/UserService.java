@@ -15,4 +15,11 @@ public class UserService {
         return userDao.login(user, pwd);
     }
 
+    public boolean update(User user) {
+        return userDao.update(user);
+    }
+
+    public User getUser(long id) {
+        return userDao.getUser(id);
+    }
 }

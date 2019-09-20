@@ -24,7 +24,7 @@
             <div class="page-header">
                 <h3><small>个人信息</small></h3>
             </div>
-            <form class="form-horizontal" action="/editUser.do" method="post">
+            <form class="form-horizontal" action="/editInfo.do" method="post">
                 <input id="id" name="id" type="hidden" value="${user.id}">
                 <div class="form-group">
                     <label for="name" class="col-sm-2 control-label">用户 ：</label>
