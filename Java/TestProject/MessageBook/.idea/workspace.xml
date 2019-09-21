@@ -7,15 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b32fda90-e8a7-4c30-a6c7-c6b83cdb5c4b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/nanami52/message/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/nanami52/message/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/nanami52/message/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/nanami52/message/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/nanami52/message/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/nanami52/message/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/biz/edit_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/biz/edit_user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/nanami52/message/bean/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/nanami52/message/bean/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/nanami52/message/dao/MessageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/nanami52/message/dao/MessageDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/nanami52/message/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/nanami52/message/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/nanami52/message/servlet/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/nanami52/message/servlet/HomeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/biz/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/biz/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/biz/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/biz/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/biz/message_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/biz/message_list.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +42,7 @@
     <favorites_list name="MessageBook" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,12 +67,7 @@
         <option value="$PROJECT_DIR$/src/c3p0-config.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/cn/nanami52/message/utils/ConnectUtils.java" />
-        <option value="$PROJECT_DIR$/src/cn/nanami52/message/bean/Message.java" />
-        <option value="$PROJECT_DIR$/src/cn/nanami52/message/dao/MessageDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/nanami52/message/service/MessageService.java" />
-        <option value="$PROJECT_DIR$/src/cn/nanami52/message/servlet/HomeServlet.java" />
         <option value="$PROJECT_DIR$/src/cn/nanami52/message/servlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/biz/login.jsp" />
         <option value="$PROJECT_DIR$/src/cn/nanami52/message/servlet/VerificationCodeImageServlet.java" />
         <option value="$PROJECT_DIR$/src/cn/nanami52/message/filter/UserFilter.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/biz/edit_user.jsp" />
@@ -85,6 +77,13 @@
         <option value="$PROJECT_DIR$/src/cn/nanami52/message/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/cn/nanami52/message/servlet/UserServlet.java" />
         <option value="$PROJECT_DIR$/src/cn/nanami52/message/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/nanami52/message/bean/Message.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/biz/message_list.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/biz/login.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/nanami52/message/servlet/MsgServlet.java" />
+        <option value="$PROJECT_DIR$/src/cn/nanami52/message/service/MessageService.java" />
+        <option value="$PROJECT_DIR$/src/cn/nanami52/message/dao/MessageDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/nanami52/message/servlet/HomeServlet.java" />
       </list>
     </option>
   </component>
@@ -109,7 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,6 +125,13 @@
               <item name="MessageBook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MessageBook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
@@ -204,6 +209,32 @@
             <path>
               <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Tomcat 8.5.45" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
@@ -236,60 +267,19 @@
               <item name="catalina" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Tomcat 8.5.45" type="70bed36:NamedLibraryElementNode" />
-              <item name="servlet-api.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Tomcat 8.5.45" type="70bed36:NamedLibraryElementNode" />
-              <item name="servlet-api.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Tomcat 8.5.45" type="70bed36:NamedLibraryElementNode" />
-              <item name="servlet-api.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Tomcat 8.5.45" type="70bed36:NamedLibraryElementNode" />
-              <item name="servlet-api.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Tomcat 8.5.45" type="70bed36:NamedLibraryElementNode" />
-              <item name="servlet-api.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessageBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Tomcat 8.5.45" type="70bed36:NamedLibraryElementNode" />
-              <item name="servlet-api.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568995264978" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569035444271" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -411,27 +401,27 @@
       <workItem from="1568212626003" duration="5592000" />
       <workItem from="1568269722149" duration="4139000" />
       <workItem from="1568985695968" duration="8317000" />
+      <workItem from="1569030264032" duration="5336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20126000" />
+    <option name="totallyTimeSpent" value="25462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7364425" visible="true" weight="0.20682302" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.77657264" visible="true" weight="0.20895523" />
       <window_info id="Structure" order="1" sideWeight="0.5625" side_tool="true" weight="0.26279318" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5621118" side_tool="true" weight="0.26279318" />
-      <window_info id="Web" order="7" sideWeight="0.2635575" side_tool="true" visible="true" weight="0.20682302" />
-      <window_info anchor="bottom" id="Duplicate detector" weight="0.329718" />
+      <window_info id="Web" order="7" sideWeight="0.22342733" side_tool="true" weight="0.20895523" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.33188722" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.3373102" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
@@ -444,6 +434,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.5622318" weight="0.30802602" />
       <window_info anchor="bottom" id="Run" order="14" sideWeight="0.56290674" weight="0.47830802" />
+      <window_info anchor="bottom" id="Duplicate detector" order="15" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -533,39 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/nanami52/message/bean/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-548">
-          <caret line="18" column="92" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="92" />
-          <folding>
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1194#1195#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1300#1301#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -592,29 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/nanami52/message/service/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/nanami52/message/dao/MessageDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#428#437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -653,33 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/biz/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/biz/message_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="83" column="36" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/nanami52/message/servlet/HomeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,6 +662,134 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="27" column="74" lean-forward="true" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/nanami52/message/bean/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1394#1395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/biz/message_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/biz/add_message.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1107">
+          <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/nanami52/message/bean/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="276" column="48" lean-forward="true" selection-start-line="276" selection-start-column="48" selection-end-line="276" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/Time.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="76" column="6" lean-forward="true" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+          <folding>
+            <element signature="e#1827#1828#0" expanded="true" />
+            <element signature="e#1854#1855#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/biz/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="53" column="25" lean-forward="true" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/nanami52/message/servlet/HomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/nanami52/message/servlet/MsgServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/nanami52/message/service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/nanami52/message/dao/MessageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="67" column="40" lean-forward="true" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#1739#1740#0" expanded="true" />
+            <element signature="e#1777#1778#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -16,6 +16,9 @@ public class Message {
 
     private Date createTime;
 
+    public Message() {
+    }
+
     public Message(long id, long userId, String username, String title, String content, Date createTime) {
         this.id = id;
         this.userId = userId;

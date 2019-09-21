@@ -14,10 +14,11 @@
             var verificationCode = document.getElementById('verificationCode').value;
             console.log(getCookie('v_c_v'))
             var flag = (getCookie('v_c_v') == verificationCode);
-            if (!flag) {
-                alert('验证码输入错误');
-            }
-            return flag;
+            return true;
+            // if (!flag) {
+            //     alert('验证码输入错误');
+            // }
+            // return flag;
         }
 
         function getCookie(cookie_name) {
@@ -46,11 +47,12 @@
     </div>
     <form action="/login.do" method="post">
         <div class="name">
-            <input type="text" id="name" name="username" placeholder="请输入登录用户名" value="${username}">
+            <input type="text" id="name" name="username" placeholder="请输入登录用户名"
+                   value="${username ? username : "admin"}">
             <p></p>
         </div>
         <div class="pwd">
-            <input type="password" id="pwd" name="password" placeholder="6-16位密码，区分大小写，不能用空格">
+            <input type="password" id="pwd" name="password" placeholder="6-16位密码，区分大小写，不能用空格" value="000">
             <p></p>
         </div>
         <div class="idcode">
