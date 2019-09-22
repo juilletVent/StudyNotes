@@ -1,0 +1,36 @@
+<!--
+ * @Author: WeiHong Ran
+ * @Date: 2019-09-22 09:43:16
+ * @LastEditors: WeiHong Ran
+ * @LastEditTime: 2019-09-22 11:04:34
+ * @Description: Nothing
+ -->
+
+## 配置maven国内镜像
+
+配置文件路径：
+
+    {maven安装路径}/libexec/conf/settings.xml
+
+搜索mirror即可定位到镜像配置位置，添加如下配置：
+
+    <id>nexus-aliyun</id>
+    <mirrorOf>*</mirrorOf>
+    <name>Nexus aliyun</name>
+    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+
+
+## 配置本地仓库存放位置
+
+配置文件末尾添加如下配置：
+
+    栗子1
+    <localRepository>D:\maven\MyRepository</localRepository>
+    栗子2
+    <localRepository>/opt/maven-lib</localRepository>
+
+
+**注意：让idea创建项目时使用本地仓库：在idea的maven配置中，为vm options 添加启动参数：-DarchetypeCatalog=local**
+
+    搜索maven，点击Runner一栏，在VM Options输入框里写上 “-DarchetypeCatalog=local”，
+
