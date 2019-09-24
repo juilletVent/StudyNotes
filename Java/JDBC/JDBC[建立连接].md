@@ -16,7 +16,7 @@ public class TestMysql {
             在DriverManager内部的静态代码块内本身就有驱动注册代码，所以只需要加载DriverManage类即可完成驱动注册
             // DriverManager.registerDriver(new Driver());
             Class.forName("com.mysql.jdbc.Driver")
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull", "root", "");
             String sql = "select * from user";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
@@ -35,6 +35,8 @@ public class TestMysql {
 
 }
 ```
+
+**敲黑板：**getConnection获取连接的时候一定要指定字符集时区配置，不然会出现问题：`?characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull`加到连接uri后面，mybatis配置是同样有这个问题，因为都是使用的mysql-connector驱动的
 
 
 ## statement中的api
