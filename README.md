@@ -36,6 +36,8 @@
 - Linux
 - ThinkPhp
 - JavaWeb
+- Mybatis
+- maven
 
 #### 其他
 
