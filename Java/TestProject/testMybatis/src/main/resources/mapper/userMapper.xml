@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.nanami52.testmybatis.entity.User">
+    <select id="userList" resultMap="userResultMap">
+        select * from users
+        <where>
+            <if test="null != id">
+                id = #{id} and
+            </if>
+            userStatus != 2
+        </where>
+
+    </select>
+
+    <!-- 简单参数 -->
+    <select id="getUser" resultMap="userResultMap">
+        select * from users where id = #{id}
+    </select>
+
+    <resultMap id="userResultMap" type="cn.nanami52.testmybatis.entity.User">
+        <!-- 表明主键所在位置，在更新的时候使用 -->
+        <id column="id" property="id"></id>
+        <result column="username" property="name"></result>
+    </resultMap>
+
+    <update id="updateUser">
+        update users
+        <set>
+            <if test="name != null">username = #{name},</if>
+            <if test="userpass != null">userpass = #{userpass},</if>
+            <if test="nickname != null">nickname = #{nickname},</if>
+            <if test="age != null">age = #{age},</if>
+            <if test="gender != null">gender = #{gender},</if>
+            <if test="email != null">email = #{email},</if>
+            <if test="phone != null">phone = #{phone},</if>
+            <if test="createTime != null">createTime = #{createTime},</if>
+            <if test="updateTime != null">updateTime = #{updateTime},</if>
+            <if test="lastLogin != null">lastlogin = #{lastLogin},</if>
+            <if test="userStatus != null">userStatus = #{userStatus},</if>
+            <if test="remark != null">remark = #{remark}</if>
+        </set>
+        where id = #{id}
+    </update>
+</mapper>
