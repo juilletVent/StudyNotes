@@ -17,17 +17,20 @@ public class UserDao {
 
     public User getOnce(User user) {
         User _user = (User) getSession().selectOne("userList", user);
+        sqlSession.close();
         return _user;
     }
 
     public List<User> getUsers(User user) {
         List<User> userList = getSession().selectList("userList");
+        sqlSession.close();
         return userList;
     }
 
     public User update(User user) {
         int updateUser = getSession().update("updateUser", user);
         sqlSession.commit();
+        sqlSession.close();
         if (updateUser > 0) {
             return getOnce(user);
         }
