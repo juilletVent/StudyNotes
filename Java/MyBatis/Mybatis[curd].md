@@ -1,0 +1,312 @@
+/*
+ * @Author: WeiHong Ran
+ * @Date: 2019-10-02 17:04:50
+ * @LastEditors: WeiHong Ran
+ * @LastEditTime: 2019-10-02 17:04:50
+ * @Description: Nothing
+ */
+<!--
+ * @Author: WeiHong Ran
+ * @Date: 2019-10-02 17:04:50
+ * @LastEditors: WeiHong Ran
+ * @LastEditTime: 2019-10-02 19:15:29
+ * @Description: Nothing
+ -->
+
+# Mybatis 基本 CURD 操作
+
+## 公共部分，Mybatis 基础配置，取得数据库连接
+
+### 两个基础配置文件
+
+> db.properties 配置抽出文件
+
+resource下建立properties文件夹，新建db.properties文件写入数据库连接相关信息，用于在mybatis配置文件中引入，栗子如下：
+
+    # 数据库驱动
+    driver=com.mysql.jdbc.Driver
+    # 数据去连接描述uri
+    url=jdbc:mysql://localhost:3306/user?characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull
+    # 用户名
+    username=root
+    # 密码
+    password=
+
+> mybatis-conf.xml  主要配置文件
+
+resource 下新建 mybatis-conf.xml 写入配置，名字无所谓，明确意义即可，内容如下：
+
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <!DOCTYPE configuration
+            PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+            "http://mybatis.org/dtd/mybatis-3-config.dtd">
+    <configuration>
+        <!-- 引入之前定义的properties配置文件，里面定义的变量就可以直接使用了 -->
+        <properties resource="properties/db.properties"></properties>
+
+        <!-- 定义环境集合，default表明默认使用的是哪一个环境，上线的时候可以进行控制，想法：可不可以通过打包脚本参数进行动态写入，根据不同的环境打不同的环境配置？？？ -->
+        <environments default="dev">
+            <!-- 具体的环境配置 -->
+            <environment id="dev">
+                <!-- 数据库管理模式 -->
+                <transactionManager type="JDBC"/>
+                <!-- 数据源配置，type="POOLED"表示使用连接池进行管理 -->
+                <dataSource type="POOLED">
+                    <!-- 数据库驱动 -->
+                    <property name="driver" value="${driver}"/>
+                    <!-- 数据库描述uri -->
+                    <property name="url" value="${url}"/>
+                    <!-- 用户名 -->
+                    <property name="username" value="${username}"/>
+                    <!-- 密码 -->
+                    <property name="password" value="${password}"/>
+                    <!-- 最大连接数 -->
+                    <property name="poolMaximumActiveConnections" value="100"/>
+                    <!-- 最大空闲连接数 -->
+                    <property name="poolMaximumIdleConnections" value="20"/>
+                    <!-- 最大连接等待时间，单位：秒 -->
+                    <property name="poolTimeToWait" value="10"/>
+                </dataSource>
+            </environment>
+            <!-- 多个环境依此配置下去即可 -->
+            <environment id="product">
+                <transactionManager type="JDBC"/>
+                <dataSource type="POOLED">
+                    <property name="driver" value="${driver}"/>
+                    <property name="url" value="${url}"/>
+                    <property name="username" value="${username}"/>
+                    <property name="password" value="${password}"/>
+                </dataSource>
+            </environment>
+            <environment id="test">
+                <transactionManager type="JDBC"/>
+                <dataSource type="POOLED">
+                    <property name="driver" value="${driver}"/>
+                    <property name="url" value="${url}"/>
+                    <property name="username" value="${username}"/>
+                    <property name="password" value="${password}"/>
+                </dataSource>
+            </environment>
+        </environments>
+
+        <mappers>
+            <mapper resource="mapper/userMapper.xml"></mapper>
+        </mappers>
+
+    </configuration>
+
+在xml使用`<properties resource="properties/db.properties"></properties>`引入properties配置文件，相关变量可以通过${valName}进行引用
+
+### 取得数据库连接
+
+建立连接获取工具类 SqlSessionFactoryUtils：
+
+    package cn.nanami52.testmybatis.utils;
+
+    import org.apache.ibatis.io.Resources;
+    import org.apache.ibatis.session.SqlSessionFactory;
+    import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+    import java.io.IOException;
+    import java.io.InputStream;
+
+    public class SqlSessionFactoryUtils {
+
+        // mybatis配置文件路径uri
+        private static final String CONF_PATH = "mybatis-config.xml";
+
+        private static SqlSessionFactory sqlSessionFactory = null;
+
+        // 使用ThreadLocal进行多线程并发控制
+        private static ThreadLocal<SqlSessionFactory> threadLocal = new ThreadLocal<>();
+
+        // 初始化Factory
+        public static void initFactory() {
+            try {
+                // 取得输入文件流，用于创建工程对象
+                InputStream inputStream = Resources.getResourceAsStream(CONF_PATH);
+                // 创建factory，调用build方法传入流对象
+                sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        public static SqlSessionFactory getSqlSessionFactory() {
+            if (null == threadLocal.get()) {
+                threadLocal.set(sqlSessionFactory);
+            }
+            return threadLocal.get();
+        }
+    }
+
+tips：tomcat处理一个请求的时候是单线程执行的，如果需要使用多线程的话则需要使用ThreadLocal进行并发控制
+
+### 配置容器启动监听器
+
+监听容器启动相关事件，初始化数据库连接factory，添加如下listener：
+
+    package cn.nanami52.testmybatis.listener;
+
+    import cn.nanami52.testmybatis.utils.SqlSessionFactoryUtils;
+
+    import javax.servlet.ServletContextEvent;
+    import javax.servlet.ServletContextListener;
+    import javax.servlet.annotation.WebListener;
+
+    // 记得一定要添加注解，不添加注解，监听器就不会注册，也就不会被执行
+    @WebListener
+    public class InitListener implements ServletContextListener {
+
+        @Override
+        public void contextInitialized(ServletContextEvent sce) {
+            System.out.println("容器加载中...");
+            // 初始化我们的SqlSesionFactory对象
+            SqlSessionFactoryUtils.initFactory();
+        }
+
+        @Override
+        public void contextDestroyed(ServletContextEvent sce) {
+            System.out.println("容器销毁中...");
+            // 销毁我们的SqlSesionFactory对象
+            // SqlSessionFactoryUtils.close();
+        }
+    }
+
+### 创建实体映射类，以及配置mapper
+
+根据要操作的表定义对应的javaBean，然后创建相关配置文件，并在mybatis-conf.xml文件中进行配置，假设我们已经定义好了user的实体映射类，下面就是mapper映射的配置文件：
+
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <!DOCTYPE mapper
+            PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+            "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+    <!-- 对应使用实体类的去路径即可 -->
+    <mapper namespace="cn.nanami52.testmybatis.entity.User">
+        <!-- 定义一个查询块，id为命名，resultMap指定了返回类型的映射，简单的话可是一使用resultType然后直接填上实体类即可，resultMap一般用于自定义的映射和高级映射 -->
+        <select id="userList" resultMap="userResultMap">
+            select * from users
+            <!-- where 来处理查询条件 -->
+            <where>
+                <!-- if语句，当条件存在时相关语句才会生成 -->
+                <if test="null != id">
+                    <!-- ${valName} 的形式定义查询参数占位，查询时会根据传入的参数进行替换 -->
+                    id = #{id} and
+                </if>
+                userStatus != 2
+            </where>
+
+        </select>
+
+        <!-- 简单参数 -->
+        <select id="getUser" resultMap="userResultMap">
+            select * from users where id = #{id}
+        </select>
+
+        <!-- 定义自定义返回类型映射，type指定实际返回对应的实体类是什么 -->
+        <resultMap id="userResultMap" 
+        type="cn.nanami52.testmybatis.entity.User">
+            <!-- 表明主键所在位置，在更新的时候使用 -->
+            <id column="id" property="id"></id>
+            <!-- 数据库字段名称与实体类字段名不一致时使用，column为数据库字段名，property为实体类对应的字段名 -->
+            <result column="username" property="name"></result>
+            <!-- 定义了一个集合类型，column定义主键名称，ofType定义了集合存储的实体类型，select定义了集合需要执行的查询是什么 -->
+            <collection property="addresses" column="id" ofType="cn.nanami52.testmybatis.entity.Address"
+                        select="selectAddress"></collection>
+        </resultMap>
+
+        <select id="selectAddress" resultType="cn.nanami52.testmybatis.entity.Address">
+            select * from address where userid = #{id}
+        </select>
+
+        <!-- update查询的用法与查询语句基本一致 -->
+        <update id="updateUser">
+            update users
+            <set>
+                <if test="name != null">username = #{name},</if>
+                <if test="userpass != null">userpass = #{userpass},</if>
+                <if test="nickname != null">nickname = #{nickname},</if>
+                <if test="age != null">age = #{age},</if>
+                <if test="gender != null">gender = #{gender},</if>
+                <if test="email != null">email = #{email},</if>
+                <if test="phone != null">phone = #{phone},</if>
+                <if test="createTime != null">createTime = #{createTime},</if>
+                <if test="updateTime != null">updateTime = #{updateTime},</if>
+                <if test="lastLogin != null">lastlogin = #{lastLogin},</if>
+                <if test="userStatus != null">userStatus = #{userStatus},</if>
+                <if test="remark != null">remark = #{remark}</if>
+            </set>
+            where id = #{id}
+        </update>
+
+        <delete id="delete">
+            delete from users where id = #{id}
+        </delete>
+    </mapper>
+
+## 调用前面定义的查询，一个UserDao的实现
+
+需要注意的几个点是：
+
+1. 执行了查询之后一定要关闭SqlSession，翻着会一致占用连接池，导致后续的连接一致处于等待状态，直到超时
+2. 执行了update/inster/delete语句之后一定要commit，否则是不会生效的
+
+    package cn.nanami52.testmybatis.dao;
+
+    import cn.nanami52.testmybatis.entity.User;
+    import cn.nanami52.testmybatis.utils.SqlSessionFactoryUtils;
+    import org.apache.ibatis.session.SqlSession;
+
+    import java.util.List;
+
+    public class UserDao {
+
+        private SqlSession sqlSession = null;
+
+        private SqlSession getSession() {
+            sqlSession = SqlSessionFactoryUtils.getSqlSessionFactory().openSession();
+            return sqlSession;
+        }
+
+        public User getOnce(User user) {
+            User _user = (User) getSession().selectOne("userList", user);
+            sqlSession.close();
+            return _user;
+        }
+
+        public List<User> getUsers(User user) {
+            List<User> userList = getSession().selectList("userList");
+            sqlSession.close();
+            return userList;
+        }
+
+        public User update(User user) {
+
+            try {
+                int updateUser = getSession().update("updateUser", user);
+                sqlSession.commit();
+                if (updateUser > 0) {
+                    return getOnce(user);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                sqlSession.close();
+            }
+            return null;
+        }
+
+        public boolean delete(User user) {
+            try {
+                getSession().delete("delete", user);
+                sqlSession.commit();
+                return true;
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                sqlSession.close();
+            }
+            return false;
+        }
+    }
