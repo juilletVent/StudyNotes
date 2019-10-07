@@ -1,6 +1,7 @@
 package cn.nanami52.testmybatis.dao;
 
 import cn.nanami52.testmybatis.entity.User;
+import cn.nanami52.testmybatis.mapper.UserMapper;
 import cn.nanami52.testmybatis.utils.SqlSessionFactoryUtils;
 import org.apache.ibatis.session.SqlSession;
 
@@ -35,5 +36,19 @@ public class UserDao {
             return getOnce(user);
         }
         return null;
+    }
+
+    public List<User> getListEx(User user) {
+        SqlSession session = null;
+        try {
+            session = getSession();
+            UserMapper mapper = session.getMapper(UserMapper.class);
+            List<User> users = mapper.getUsersEx(user);
+            return users;
+        } finally {
+            if (null != session) {
+                session.close();
+            }
+        }
     }
 }

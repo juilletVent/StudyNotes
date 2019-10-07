@@ -38,6 +38,7 @@
 
     <mappers>
         <mapper resource="mapper/userMapper.xml"></mapper>
+        <package name="cn.nanami52.testmybatis.mapper"/>
     </mappers>
 
 </configuration>

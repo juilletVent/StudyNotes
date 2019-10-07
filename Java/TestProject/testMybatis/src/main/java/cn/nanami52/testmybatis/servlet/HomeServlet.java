@@ -24,6 +24,7 @@ public class HomeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         List<User> users = this.userService.getUsers();
+        System.out.println(this.userService.getUsersEx());
         request.setAttribute("usersList", users);
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }

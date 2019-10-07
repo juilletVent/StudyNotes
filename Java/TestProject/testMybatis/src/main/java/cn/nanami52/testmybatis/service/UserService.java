@@ -33,4 +33,13 @@ public class UserService {
     public User update(User user) {
         return this.userDao.update(user);
     }
+
+    public List<User> getUsersEx() {
+        User user = new User();
+        return this.getUsersEx(user);
+    }
+
+    public List<User> getUsersEx(User user) {
+        return this.userDao.getListEx(user);
+    }
 }
