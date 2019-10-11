@@ -87,3 +87,13 @@
 
 
 说明：css-in-js其实没有太多的东西，就是解决在组件内部实现css引入，并限定作用域。在Vue中则更加清晰，等价于.vue文件中<style scope>...</style>的作用，只是React中对此类实现没有官方支持，比较开放，所以涌现出非常多的第三方库，styled-components就是其中较好的一个库，当然也可以使用其他的库实现css引入组件
+
+## 样式提升
+
+有时候样式存在跨iframe的情况，此时需要如下处理：
+
+	import styled, { StyleSheetManager } from 'styled-components';
+      // eslint-disable-next-line no-restricted-globals
+    <StyleSheetManager target={top.document.head}>blablabla</StyleSheetManager >
+
+target注明了css样式将实际在哪里挂载，如果粗线了嵌套的情况，类似内层iframe弹层中的样式，就需要使用这个东东来处理
