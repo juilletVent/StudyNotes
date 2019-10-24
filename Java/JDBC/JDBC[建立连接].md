@@ -36,7 +36,11 @@ public class TestMysql {
 }
 ```
 
-**敲黑板：**getConnection获取连接的时候一定要指定字符集时区配置，不然会出现问题：`?characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull`加到连接uri后面，mybatis配置是同样有这个问题，因为都是使用的mysql-connector驱动的
+**敲黑板：**getConnection获取连接的时候一定要指定字符集时区配置，不然会出现问题：
+
+	?characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull
+
+加到连接uri后面，mybatis配置是同样有这个问题，因为都是使用的mysql-connector驱动的
 
 
 ## statement中的api
