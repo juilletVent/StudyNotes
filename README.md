@@ -1,10 +1,3 @@
-<!--
- * @Author: WeiHong Ran
- * @Date: 2019-07-05 00:06:49
- * @LastEditors: WeiHong Ran
- * @LastEditTime: 2019-08-25 11:28:47
- * @Description: Nothing
- -->
 # StudyNotes
 
 <link rel="stylesheet" href="./img/readme.css">
@@ -15,20 +8,16 @@
 
 #### 前端方向
 
-- html5
-- css3
+- html/css
 - JavaScript
 - TypeScript
 - ECMA Script 6
-- Bootstrap
-- Jquery
-- Vue
-- Angularjs
+- Bootstrap/Jquery
+- Vue/Angularjs/React
 - Webpack
 - canvas
 - SVG
 - Lodash
-- React
 - sass、less
 
 #### 后端方向
@@ -37,10 +26,16 @@
 - ThinkPhp
 - JavaWeb
 - Mybatis
-- maven
+- Maven
+- Spring MVC/Boot/Cloud
+
+#### 数据库
+
+- Mysql
+- Oracle
+
 
 #### 其他
 
 - python
 - 日本語 始まりましたよ～
-- 女装「ないないなに、絶対にない」
