@@ -16,6 +16,10 @@
 
 如果默认新建的是web项目，在配置tomcat的时候deployment下直接添加一个Artifacts即可，没什么特别的，如果是复合项目，则需要在项目工程配置中，Artifacts板块下吧web子模块手动添加进去，在tomcat配置中deployment下才能看得到，如果项目本身就是web项目则不存在这个问题
 
+## IDEA 控制台乱码
+
+添加jvm启动参数 -Dfile.encoding=UTF-8
+
 ## Maven慢
 
 如果在Maven中配置了镜像，但是IDEA拉取依赖的时候仍然很慢，原因可能是IDEA使用了自带的Maven进行依赖获取，而不是使用你本地的Maven（滑稽~），解决办法是在IDEA设置中找到Maven板块，将Maven切换到本地的Maven即可，也可以设置项目级Maven源配置
