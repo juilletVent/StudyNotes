@@ -5,16 +5,17 @@
  * @LastEditTime: 2019-10-20 16:21:15
  * @Description: Nothing
  -->
-# Spring基础以及相关概念
+
+# Spring 基础以及相关概念
 
 ## Spring 四大核心理念
 
-- 使用jojo实现轻量级和最小侵入式开发
+- 使用 jojo 实现轻量级和最小侵入式开发
 - 通过依赖注入以及面向接口编程实现松耦合
-- 通过AOP和默认习惯进行声明式编程
-- 使用AOP和模板减少模式化代码
+- 通过 AOP 和默认习惯进行声明式编程
+- 使用 AOP 和模板减少模式化代码
 
-## Maven依赖pom栗子
+## Maven 依赖 pom 栗子
 
 主要依赖四个包：
 
@@ -23,10 +24,10 @@
 - spring-core
 - spring-aop
 - spring-expression
-- spring-aspects // AspectJ支持 AOP切面支持
-- aspectjweaver // AspectJ支持 AOP切面支持
-- aopalliance // aop联盟，不知道干嘛用的
-- spring-test // Spring整合单元测试支持
+- spring-aspects // AspectJ 支持 AOP 切面支持
+- aspectjweaver // AspectJ 支持 AOP 切面支持
+- aopalliance // aop 联盟，不知道干嘛用的
+- spring-test // Spring 整合单元测试支持
 
 样例：
 
@@ -140,4 +141,24 @@
         </repositories>
     </project>
 
+## 整合 mybatis 配置文件
 
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="typeAliasesPackage" value="cn.nanami52.sm_service.entity"/>
+        <!-- 在此处引入即可 -->
+        <property name="configLocation" value="classpath:mybatis.xml"></property>
+    </bean>
+
+PageHelper 引入
+
+    <!-- mybatis配置 -->
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+            "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+    <configuration>
+        <plugins>
+            <plugin interceptor="com.github.pagehelper.PageHelper"></plugin>
+        </plugins>
+    </configuration>
