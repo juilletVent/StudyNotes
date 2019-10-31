@@ -11,4 +11,4 @@
 - 文件上传：commons-io + commons-fileupload
 - office处理：Apache POI
 - jsp标签库：jstl
-- 
+- 分页查询插件：PageHelper

@@ -40,6 +40,11 @@ public class TestMysql {
 
 	?characterEncoding=UTF-8&amp;characterSetResults=UTF-8&amp;zeroDateTimeBehavior=convertToNull
 
+    serverTimezone=UTC
+    or
+    zeroDateTimeBehavior=convertToNull
+
+
 加到连接uri后面，mybatis配置是同样有这个问题，因为都是使用的mysql-connector驱动的
 
 
