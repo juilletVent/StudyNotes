@@ -40,6 +40,36 @@ Mysql 支持批处理模式，MyBatis 在获取 SqlSession 的时候可以指定
 
 在批量插入的时候还是推荐使用批处理的模式来进行编写，资源利用效率高不是坏事儿
 
+批量插入的例子：
+
+    @Test
+    public void insertEx() {
+
+        long startUnix = System.currentTimeMillis();
+        // 取得sqlSessionFactory
+        SqlSessionFactory sqlSessionFactory = (SqlSessionFactory) this.ctx.getBean("sqlSessionFactory");
+        // 取得sqlSession
+        SqlSession sqlSession = sqlSessionFactory.openSession(ExecutorType.BATCH);
+        // 取得Dao实现类，通过mapper反射获取，在Mapper xml文件中需要定义
+        CardDao mapper = sqlSession.getMapper(CardDao.class);
+
+        List<Card> cardList = new ArrayList<>();
+        for (int i = 0; i < 100000; i++) {
+            cardList.add(this.getCardInstance());
+            if ((i + 1) % 5000 == 0) {
+                mapper.addItemList(cardList);
+                sqlSession.flushStatements();
+                cardList = new ArrayList<>();
+            }
+        }
+        sqlSession.commit();
+        sqlSession.close();
+
+        long endUnix = System.currentTimeMillis();
+
+        System.out.println("runtime offset:" + (endUnix - startUnix) + "ms");
+    }
+
 ## 最佳实践
 
-100数量级以下的数据，可以使用简单的foreach进行插入，超过这个级别就必须使用批处理进行实现，否则将可能出现性能问题
+100 数量级以下的数据，可以使用简单的 foreach 进行插入，超过这个级别就必须使用批处理进行实现，否则将可能出现性能问题
