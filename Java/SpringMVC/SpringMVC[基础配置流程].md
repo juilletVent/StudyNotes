@@ -51,7 +51,7 @@
         <servlet-name>DispatcherServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-
+    <!-- 如果存在静态资源需要单独配置否则全都会被默认Servl接管，导致静态资源404 -->
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.css</url-pattern>
@@ -89,3 +89,22 @@
 8、开启 Spring 组件自动扫描
 
     <context:component-scan base-package="cn.nanami52.test"/>
+
+9、配置编码集
+
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/html;charset=UTF-8</value>
+                        <value>application/json;charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+10、开启静态资源转发
+
+    <mvc:default-servlet-handler/>
