@@ -8,3 +8,48 @@
 
     @Value("${custom.env}") // 全路径名称
     private String env;
+
+## 多环境配置切换
+
+使用spring.profiles.active选项进行配置
+
+    spring:
+    profiles:
+        # 这里的值为环境的名称，而不是配置文件的全名，下面的配置对应的配置文件名为
+        # application-dev.yml
+        active: dev
+
+
+## 常用配置栗子
+
+    # 入口配置文件:application.yml
+
+    spring:
+        profiles:
+            active: dev
+
+
+    # 单个环境的配置文件:application-dev.yml
+    server:
+    port: 8080
+    servlet:
+        context-path: /
+    logging:
+    file:
+        path: ./runtime.log
+    level:
+        root: debug
+
+    debug: true
+
+    spring:
+    datasource:
+        username: root
+        password: root
+        url: jdbc:mysql://localhost:3306/user?charset=UTF-8
+        driver-class-name: com.mysql.jdbc.Driver
+
+    # Mybatis 实体包扫描别名配置
+    mybatis:
+    type-aliases-package: cn.nanami52.warehouse.entity
+
