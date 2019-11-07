@@ -19,3 +19,8 @@
   - dataType：参数类型描述
   - defaultValue：默认值描述
   - allowableValues：枚举类型参数，逗号分隔
+
+
+## 忽略某个字段
+
+不在文档中生成，使用`@JsonIgnore`这个注解不属于Swagger，而属于jackson
