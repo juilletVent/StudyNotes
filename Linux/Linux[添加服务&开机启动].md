@@ -15,6 +15,8 @@
 	[Service]
 	Type=simple
 	ExecStart=/usr/bin/frps -c /etc/frps/frps.ini
+	# bash 命令 自定义服务，bash使用绝对路径即可，脚本内可以切换工作路径
+	ExecStart=/usr/bin/bash /root/easy-mock/start.sh
 	
 	[Install]
 	WantedBy=multi-user.target
