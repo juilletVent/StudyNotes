@@ -1,0 +1,3 @@
+onload="this.height=procurementDemandIframe.document.body.scrollHeight"
+
+为iframe指定属性procurementDemandIframe为iframe的name值
