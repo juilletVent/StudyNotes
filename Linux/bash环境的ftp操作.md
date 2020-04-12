@@ -22,3 +22,9 @@
     curl –u name:passwd ftp://malu.me/ -X 'DELE mp3/size.mp3'
 
 tips: 上传时，尽量使用cmder、cmd进行，gitbash稍微有点儿问题
+
+tips2:使用bash脚本编写命令时，注意路径分隔符与ftp url协议头中的 “/”,协议中的符号需要使用正斜线，路径分隔符则可能需要转义，尤其是windows系统，举个栗子：
+
+    
+    cd C:\\Users\\97161\\Desktop
+    curl -u july:sweet12369 -T backup.sh ftp://211.149.248.155/
