@@ -2,6 +2,9 @@
 	display:block;
 	margin:10px auto;
 	width:350px;
+	border-radius:3000px;
+    	padding: 10px;
+    	border: 1px solid #d9d9d9;
 }
 .head-msg{
 	margin:10px 0;
