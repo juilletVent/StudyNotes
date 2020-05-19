@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 开发模式
-idDev=true
+idDev=false
 
 # 站点默认存放位置
 declare -i defWebSiteIndex=0
@@ -9,11 +9,11 @@ declare -i defWebSiteIndex=0
 declare -a defWebsiteLocations=("/www/wwwroot" "./websrc")
 declare -a packages=[]
 # host位置
-declare vhostLocation=/home/server/panel/vhost/nginx
+declare vhostLocation=('/www/server/nginx/conf/vhost' '/www/server/panel/vhost/nginx')
 
-if [ $idDev = "true" ];then
+if [ $idDev = "true" ]; then
   defWebSiteIndex=1
-  vhostLocation="./"
+  vhostLocation=('./vhost1' './vhost2')
 fi
 
 # 枚举可用的压缩包
@@ -56,52 +56,59 @@ done
 echo "文件解压完成."
 
 echo "创建站点配置..."
-for domain in ${domains}; do
-  echo "server" >>$vhostLocation/${domain}.conf
-  echo "{" >>$vhostLocation/${domain}.conf
-  echo "listen 80;" >>$vhostLocation/${domain}.conf
-  echo "server_name ${domain};" >>$vhostLocation/${domain}.conf
-  echo "index index.php index.html index.htm default.php default.htm default.html;" >>$vhostLocation/${domain}.conf
-  echo "root ${websiteLocation}/${domain}/;" >>$vhostLocation/${domain}.conf
-  echo "#SSL-START SSL相关配置，请勿删除或修改下一行带注释的404规则" >>$vhostLocation/${domain}.conf
-  echo "#error_page 404/404.html;" >>$vhostLocation/${domain}.conf
-  echo "#SSL-END" >>$vhostLocation/${domain}.conf
-  echo "#ERROR-PAGE-START  错误页配置，可以注释、删除或修改" >>$vhostLocation/${domain}.conf
-  echo "#error_page 404 /404.html;" >>$vhostLocation/${domain}.conf
-  echo "#error_page 502 /502.html;" >>$vhostLocation/${domain}.conf
-  echo "#ERROR-PAGE-END" >>$vhostLocation/${domain}.conf
-  echo "#PHP-INFO-START  PHP引用配置，可以注释或修改" >>$vhostLocation/${domain}.conf
-  echo "#include enable-php-54.conf;" >>$vhostLocation/${domain}.conf
-  echo "#PHP-INFO-END" >>$vhostLocation/${domain}.conf
-  echo "#REWRITE-START URL重写规则引用,修改后将导致面板设置的伪静态规则失效" >>$vhostLocation/${domain}.conf
-  echo "#include /www/server/panel/vhost/rewrite/${domain}.conf;" >>$vhostLocation/${domain}.conf
-  echo "#REWRITE-END" >>$vhostLocation/${domain}.conf
-  echo "#禁止访问的文件或目录" >>$vhostLocation/${domain}.conf
-  echo "location ~ ^/(\.user.ini|\.htaccess|\.git|\.svn|\.project|LICENSE|README.md)" >>$vhostLocation/${domain}.conf
-  echo "{" >>$vhostLocation/${domain}.conf
-  echo "return 404;" >>$vhostLocation/${domain}.conf
-  echo "}" >>$vhostLocation/${domain}.conf
-  echo "#一键申请SSL证书验证目录相关设置" >>$vhostLocation/${domain}.conf
-  echo "location ~ \.well-known{" >>$vhostLocation/${domain}.conf
-  echo "allow all;" >>$vhostLocation/${domain}.conf
-  echo "}" >>$vhostLocation/${domain}.conf
-  echo "location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$" >>$vhostLocation/${domain}.conf
-  echo "{" >>$vhostLocation/${domain}.conf
-  echo "expires      30d;" >>$vhostLocation/${domain}.conf
-  echo "error_log off;" >>$vhostLocation/${domain}.conf
-  echo "access_log /dev/null;" >>$vhostLocation/${domain}.conf
-  echo "}" >>$vhostLocation/${domain}.conf
-  echo "location ~ .*\.(js|css)?$" >>$vhostLocation/${domain}.conf
-  echo "{" >>$vhostLocation/${domain}.conf
-  echo "expires      12h;" >>$vhostLocation/${domain}.conf
-  echo "error_log off;" >>$vhostLocation/${domain}.conf
-  echo "access_log /dev/null; " >>$vhostLocation/${domain}.conf
-  echo "}" >>$vhostLocation/${domain}.conf
-  echo "access_log  /www/wwwlogs/${domain}.log;" >>$vhostLocation/${domain}.conf
-  echo "error_log  /www/wwwlogs/${domain}.log;" >>$vhostLocation/${domain}.conf
-  echo "}" >>$vhostLocation/${domain}.conf
+for vhost in ${vhostLocation[@]}; do
+  for domain in ${domains}; do
+    if [ ! -d $vhost ]; then
+      echo -e "目标文件夹不存在，创建之..."
+      mkdir $vhost
+    fi
 
+    echo "server" >>$vhost/${domain}.conf
+    echo "{" >>$vhost/${domain}.conf
+    echo "listen 80;" >>$vhost/${domain}.conf
+    echo "server_name ${domain};" >>$vhost/${domain}.conf
+    echo "index index.php index.html index.htm default.php default.htm default.html;" >>$vhost/${domain}.conf
+    echo "root ${websiteLocation}/${domain}/;" >>$vhost/${domain}.conf
+    echo "#SSL-START SSL相关配置，请勿删除或修改下一行带注释的404规则" >>$vhost/${domain}.conf
+    echo "#error_page 404/404.html;" >>$vhost/${domain}.conf
+    echo "#SSL-END" >>$vhost/${domain}.conf
+    echo "#ERROR-PAGE-START  错误页配置，可以注释、删除或修改" >>$vhost/${domain}.conf
+    echo "#error_page 404 /404.html;" >>$vhost/${domain}.conf
+    echo "#error_page 502 /502.html;" >>$vhost/${domain}.conf
+    echo "#ERROR-PAGE-END" >>$vhost/${domain}.conf
+    echo "#PHP-INFO-START  PHP引用配置，可以注释或修改" >>$vhost/${domain}.conf
+    echo "#include enable-php-54.conf;" >>$vhost/${domain}.conf
+    echo "#PHP-INFO-END" >>$vhost/${domain}.conf
+    echo "#REWRITE-START URL重写规则引用,修改后将导致面板设置的伪静态规则失效" >>$vhost/${domain}.conf
+    echo "#include /www/server/panel/vhost/rewrite/${domain}.conf;" >>$vhost/${domain}.conf
+    echo "#REWRITE-END" >>$vhost/${domain}.conf
+    echo "#禁止访问的文件或目录" >>$vhost/${domain}.conf
+    echo "location ~ ^/(\.user.ini|\.htaccess|\.git|\.svn|\.project|LICENSE|README.md)" >>$vhost/${domain}.conf
+    echo "{" >>$vhost/${domain}.conf
+    echo "return 404;" >>$vhost/${domain}.conf
+    echo "}" >>$vhost/${domain}.conf
+    echo "#一键申请SSL证书验证目录相关设置" >>$vhost/${domain}.conf
+    echo "location ~ \.well-known{" >>$vhost/${domain}.conf
+    echo "allow all;" >>$vhost/${domain}.conf
+    echo "}" >>$vhost/${domain}.conf
+    echo "location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$" >>$vhost/${domain}.conf
+    echo "{" >>$vhost/${domain}.conf
+    echo "expires      30d;" >>$vhost/${domain}.conf
+    echo "error_log off;" >>$vhost/${domain}.conf
+    echo "access_log /dev/null;" >>$vhost/${domain}.conf
+    echo "}" >>$vhost/${domain}.conf
+    echo "location ~ .*\.(js|css)?$" >>$vhost/${domain}.conf
+    echo "{" >>$vhost/${domain}.conf
+    echo "expires      12h;" >>$vhost/${domain}.conf
+    echo "error_log off;" >>$vhost/${domain}.conf
+    echo "access_log /dev/null; " >>$vhost/${domain}.conf
+    echo "}" >>$vhost/${domain}.conf
+    echo "access_log  /www/wwwlogs/${domain}.log;" >>$vhost/${domain}.conf
+    echo "error_log  /www/wwwlogs/${domain}.log;" >>$vhost/${domain}.conf
+    echo "}" >>$vhost/${domain}.conf
+  done
 done
+
 echo "站点配置创建完成."
 
 read -p "是否删除复制的站点压缩包？(def:y/n)" delete
