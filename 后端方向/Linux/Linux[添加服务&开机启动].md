@@ -25,6 +25,8 @@
 
 	$ systemctl start frps
 	$ systemctl enable frps
+	# 查看服务自启动情况
+	$ systemctl list-unit-files
 
 
 ------------centos6.5及以下---------------------
