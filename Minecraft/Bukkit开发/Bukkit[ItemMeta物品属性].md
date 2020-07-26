@@ -47,4 +47,15 @@ public class GiveItemsFirst implements Listener {
 }
 ```
 
+ItemFlag 用于设置物品相关标记，一般用来隐藏某些信息
+
+```
+// 添加附魔属性隐藏
+swordMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+// 设置攻击等主要属性隐藏
+swordMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+// 设置隐藏不可破坏属性
+swordMeta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
+```
+
 Tips：文字的颜色通过 ChatColor 类与字符串拼接完成

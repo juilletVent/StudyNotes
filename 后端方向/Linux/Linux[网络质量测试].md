@@ -3,7 +3,7 @@
 	#安装yum前置源
 	yum -y install  epel-release
 	#安装
-	yum install iperf
+	yum -y install iperf
 
 参数说明：
 
@@ -42,7 +42,7 @@ server专用参数：
 
 	  服务器端： 
 	  执行
-	  iperf -s -d 
+	  iperf -s -d
 	  客户端： 
 	  执行
 	  iperf -c 192.168.100.55 -t 20 -i 2 -d -m
