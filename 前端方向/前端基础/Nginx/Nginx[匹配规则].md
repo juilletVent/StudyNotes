@@ -37,4 +37,4 @@ location ^~ /app_download {
 ## 优先级
 
 顺序优先级：
-(location = 完整路径) > (location 起始路径) > (location ^~ 路径) > (location ~或者~* 正则顺序) > (/)
+(location = 完整路径) > (location 起始路径) > (location ^~ 路径) > (location ~ 或者 location ~* 正则顺序) > (/)
