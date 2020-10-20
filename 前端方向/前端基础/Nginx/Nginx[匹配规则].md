@@ -34,7 +34,27 @@ location ^~ /app_download {
 }
 ~~~
 
+**重点2：所有的匹配规则，在默认情况下都会把命中的路径应用在请求的URI上，如果不需要命中的规则，则需要在proxy_pass或者alias的末尾添加一个正斜线。官方解释：如果proxy_pass具备资源URI定位符，则在请求时，将不会传递命中的代理URI；综上，如果你是用的是正则匹配，则一定要小心这里的坑，一般推荐配合前缀路径进行匹配,整站反代的话推荐使用独立的server段进行配置，因为如果以现有站点进行混用，由于正则命中优先于前缀命中，在静态资源部分会导致全部命中到当前站点，而不是目标站点。**
+
+重点2说明：
+
+~~~nginx
+# 转发情况 /local/1.png => 127.0.0.1:8080/1.png
+location /local {
+    proxy_pass http://127.0.0.1:8080/;
+    proxy_read_timeout 3s;
+}
+
+# 转发情况 /local/1.png => 127.0.0.1:8080/local/1.png
+location /local {
+    proxy_pass http://127.0.0.1:8080;
+    proxy_read_timeout 3s;
+}
+~~~
+
+
+
 ## 优先级
 
 顺序优先级：
-(location = 完整路径) > (location 起始路径) > (location ^~ 路径) > (location ~ 或者 location ~* 正则顺序) > (/)
+(location = 完整路径) >  (location ^~ 路径) > (location ~ 或者 location ~* 正则顺序)> (location 起始路径[如果有多个前缀匹配规则，则以最长的命中为准])  > (/)
