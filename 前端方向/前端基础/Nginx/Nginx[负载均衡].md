@@ -8,11 +8,12 @@ upstream serverName {
 	ip_hash;
 	# 权重1，最大失败次数5，死亡后的复活时间
 	server www.server0.com weight=1 max_fails=5 fail_timeout=10s;
-	server www.server1.com weight=5;
+	# 如果是HTTPS服务则一定要标识出服务端口，Nginx默认不管，直接送到80，哪怕你用的HTTPS
+	server www.server1.com:443 weight=5;
 	# 后备服务器，所有实例均宕机的时候转至这个位置
 	server www.server2.com backup;
 	# 停用，不转发到只配置
-	server www.server3.com done;
+	server www.server3.com:443 done;
 }
 ```
 
@@ -34,3 +35,17 @@ upstream serverName {
 | last_conn                 | 最少连接数，将请求分发到目前负载最小的服务端    |                                         |
 | url_hash                  | 按照 url 的 hash 结果分发请求                   | upstream 下添加`hash $request_uri;`即可 |
 | hash key [1.7.2 以上版本] | 自定义 hash 分发,语法规则`hash key [condition]` |                                         |
+
+## 使用
+
+使用样例：
+
+```nginx
+location ~ ^/(djc-datagateway|xcj-gateway) {
+		# 如果是http协议则server定一部分不需要标明端口，如果是https协议，则一定要在Server定义部分标明端口
+		proxy_pass https://xcjServer;
+		# 模拟请求来源，代理的是哪个域，就写那个域,如果不写，则后续的服务器将取得当前代理服务器的host
+		proxy_set_header host www.cqzcjshow.com;
+		proxy_read_timeout 3s;
+}
+```
