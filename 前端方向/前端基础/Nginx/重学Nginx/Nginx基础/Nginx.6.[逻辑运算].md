@@ -48,3 +48,64 @@ if ($flag = "011"){
 | -d, !-d | 判断指定的路径是否为存在且为目录；       |
 | -e, !-e | 判断指定的路径是否存在，文件或目录均可； |
 | -x, !-x | 判断指定路径的文件是否存在且可执行；     |
+
+## 使用说明
+
+Nginx 中 if 主要配合 rewrite 进行条件路径重写，不能用作“条件配置”，类似于这种配置，想法就是错误的：
+
+```nginx
+# 不能用这种方式来区分配置
+location / {
+  if ( $arg_type = '1' ) {
+    root /www/websit1;
+  }
+  if( $arg_type != '1' ) {
+    root /www/websit_other;
+  }
+  try_files $uri index.html;
+}
+# 正确思路应该是使用rewrite重新分发
+location / {
+  if ( $arg_type = '1' ) {
+    rewrite .* /websit1/$1/ break;
+  }
+  if( $arg_type != '1' ) {
+    rewrite .* /websit_other/$1/ break;
+  }
+}
+# 实际分发的配置
+location ^~ /websit1 {
+  root /www/website1;
+}
+location ^~ /websit_other {
+  root /www/website_other;
+}
+```
+
+另外一个小栗子：
+
+```nginx
+location / {
+    if ( $arg_type = '1' ) {
+        rewrite .* /index1.html last;
+    }
+
+    if ( $arg_proxy_domain != '' ){
+        rewrite /.* /proxy/$arg_proxy_domain last;
+    }
+
+    index index.html;
+    root   /root/nginx-test/nginx-1.18/conf/www;
+}
+
+location = /index1.html {
+    index index1.html;
+    root   /root/nginx-test/nginx-1.18/conf/www;
+}
+
+location ~ /proxy/(.*) {
+    add_header Host www.baidu.com;
+    add_header Port 80;
+    proxy_pass https://$1/;
+}
+```
