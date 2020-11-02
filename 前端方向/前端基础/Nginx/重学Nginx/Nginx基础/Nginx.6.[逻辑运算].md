@@ -13,6 +13,8 @@ if ($arg_unitid = 42012 && $uri ~ /thumb/){
 }
 ```
 
+_Tips : if 与 括号之间必须有空格，不然报错_
+
 如果按照这样来配置，就会报 nginx: [emerg] invalid condition 错误，可以这么来实现，如下所示：
 
 ```nginx
@@ -59,7 +61,7 @@ location / {
   if ( $arg_type = '1' ) {
     root /www/websit1;
   }
-  if( $arg_type != '1' ) {
+  if ( $arg_type != '1' ) {
     root /www/websit_other;
   }
   try_files $uri index.html;
