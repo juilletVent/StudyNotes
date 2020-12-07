@@ -1,0 +1,126 @@
+{
+  "dva-model": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "dva-model",
+    "body": [
+      "export default {",
+      "namespace: '$1',",
+      "state: {},",
+      "reducers: {",
+      "setData(state, { payload }) {",
+      "return { ...state, data: payload };",
+      "},",
+      "},",
+      "effects: {",
+      "*init({ payload: filter }, { call, put }) {",
+      "yield put(action('requestInfo', filter));",
+      "},",
+      "*requestInfo({ payload: filter }, { call, put }) {",
+      "try {",
+      "const respond = yield call($2, {",
+      "path: filter,",
+      "});",
+      "yield put(action('setData', respond.data.data));",
+      "} catch (e) {",
+      "$3",
+      "}",
+      "},",
+      "},",
+      "};"
+    ],
+    "description": "dav模型代码片段"
+  },
+  "dva-action": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "dva-action",
+    "body": [
+      "import { createActions } from 'redux-actions';",
+      "import { identity } from 'lodash/fp/identity';",
+      "export default createActions({",
+      "$1: {",
+      "$2: identity,",
+      "$3",
+      "},",
+      "});"
+    ],
+    "description": "dav-action代码片段"
+  },
+  "imp-destruction": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "imp-destruction",
+    "body": ["import { $2 } from '$1';"],
+    "description": "destruction"
+  },
+  "import": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "imp",
+    "body": ["import $2 from '$1';"],
+    "description": "imp"
+  },
+  "effect": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "effect",
+    "body": ["*$1({ payload }, { call, put }){", "$2", "}"],
+    "description": "try-catch"
+  },
+  "component": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "react-class",
+    "body": [
+      "/* @flow */",
+      "import React from 'react';",
+      "type Props = {};",
+      "class $1 extends React.Component<Props> {",
+      "constructor(props) {",
+      "super(props);",
+      "this.state = {$2};",
+      "}",
+      "render(){",
+      "return ($3);",
+      "}",
+      "}",
+      "export default $1;"
+    ],
+    "description": "component"
+  },
+  "component-func": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "react-func",
+    "body": [
+      "import React from 'react';",
+      "import { Row, Col } from 'antd';",
+      "import styled from 'styled-components';",
+      "import { connect } from 'react-redux';",
+      "",
+      "export interface $1 {",
+      "$2: any;",
+      "}",
+      "",
+      "function $3(props: $1) {",
+      "const {$2} = props;",
+      "return <>$4</>;",
+      "}",
+      "",
+      "export default $3;"
+    ],
+    "description": "React fn component"
+  },
+  "isc": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "isc",
+    "body": ["import styled from 'styled-components';"],
+    "description": "import styled-component"
+  },
+  "esc": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "esc",
+    "body": ["export const $1 = styled.div`", "  $2", "`;"],
+    "description": "export styled-component"
+  },
+  "eie": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "eie",
+    "body": ["export interface $1 {", "  $2", "}"],
+    "description": "export interface"
+  }
+}
