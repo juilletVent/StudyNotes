@@ -122,3 +122,5 @@ program
 1. 指令 js 文件需要指定 node 运行环境:`#!/usr/bin/env node`，如果你编写的是 python 或者其他语言的脚本，则需要对应定义运行环境，否 yarn 或者 npm 在安装时生成执行脚本入口的时候会直接生成打开文件的语句，造成安装失败
 2. 子指令需要拆分定义，有一个约定：commond 方法定义的子指令文件名规则为:`指令名-子指令名.js`
 3. 指令参数选项 option 有一个坑：不能使用以字母 a 开头的 option 名称，不知道是为什么，姿势有问题？
+
+*Tips：package.json中peerDependencies标明的为当前项目所引用的外部库，打包时打包程序将认为这一部分为外部引用，不会再目标代码中引入，但是dependencies中不能讲这一部分删除，构建代码将使用dependencies创建项目引用，peerDependencies只是作为一个额外项，确定依赖的库要不要进入目标代码*
