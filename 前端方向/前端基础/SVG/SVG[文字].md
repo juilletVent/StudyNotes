@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [SVG 文本](#svg-%E6%96%87%E6%9C%AC)
+    - [使用脚本控制路径文本](#%E4%BD%BF%E7%94%A8%E8%84%9A%E6%9C%AC%E6%8E%A7%E5%88%B6%E8%B7%AF%E5%BE%84%E6%96%87%E6%9C%AC)
+    - [使用超链接](#%E4%BD%BF%E7%94%A8%E8%B6%85%E9%93%BE%E6%8E%A5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # SVG 文本
 
 使用text标签：

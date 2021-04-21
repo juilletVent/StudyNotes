@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [类](#%E7%B1%BB)
+  - [继承](#%E7%BB%A7%E6%89%BF)
+  - [属性修饰符](#%E5%B1%9E%E6%80%A7%E4%BF%AE%E9%A5%B0%E7%AC%A6)
+  - [readonly修饰符](#readonly%E4%BF%AE%E9%A5%B0%E7%AC%A6)
+  - [参数属性](#%E5%8F%82%E6%95%B0%E5%B1%9E%E6%80%A7)
+  - [存取器[getter setter]](#%E5%AD%98%E5%8F%96%E5%99%A8getter-setter)
+  - [静态属性](#%E9%9D%99%E6%80%81%E5%B1%9E%E6%80%A7)
+  - [抽象类](#%E6%8A%BD%E8%B1%A1%E7%B1%BB)
+  - [高级技巧](#%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 类
 
 	class Greeter {

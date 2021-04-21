@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Promise](#promise)
+  - [链式调用](#%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8)
+  - [catch 错误捕获](#catch-%E9%94%99%E8%AF%AF%E6%8D%95%E8%8E%B7)
+  - [finally](#finally)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Promise
 	
 Promise构造函数接受一个函数作为参数，该函数的两个参数分别是resolve和reject。它们是两个函数，由 JavaScript 引擎提供，不用自己部署

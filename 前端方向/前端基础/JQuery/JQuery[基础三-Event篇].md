@@ -1,3 +1,30 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [JQuery 基础](#jquery-%E5%9F%BA%E7%A1%80)
+    - [jQuery鼠标事件之click与dbclick事件](#jquery%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E4%B9%8Bclick%E4%B8%8Edbclick%E4%BA%8B%E4%BB%B6)
+    - [jQuery鼠标事件之mousedown与mouseup事件](#jquery%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E4%B9%8Bmousedown%E4%B8%8Emouseup%E4%BA%8B%E4%BB%B6)
+    - [jQuery鼠标事件之mousemove事件](#jquery%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E4%B9%8Bmousemove%E4%BA%8B%E4%BB%B6)
+    - [jQuery鼠标事件之mouseover与mouseout事件](#jquery%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E4%B9%8Bmouseover%E4%B8%8Emouseout%E4%BA%8B%E4%BB%B6)
+    - [jQuery鼠标事件之mouseenter与mouseleave事件](#jquery%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E4%B9%8Bmouseenter%E4%B8%8Emouseleave%E4%BA%8B%E4%BB%B6)
+    - [jQuery鼠标事件之hover事件](#jquery%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E4%B9%8Bhover%E4%BA%8B%E4%BB%B6)
+    - [jQuery鼠标事件之focusin事件](#jquery%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E4%B9%8Bfocusin%E4%BA%8B%E4%BB%B6)
+    - [jQuery鼠标事件之focusout事件](#jquery%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E4%B9%8Bfocusout%E4%BA%8B%E4%BB%B6)
+    - [jQuery表单事件之blur与focus事件](#jquery%E8%A1%A8%E5%8D%95%E4%BA%8B%E4%BB%B6%E4%B9%8Bblur%E4%B8%8Efocus%E4%BA%8B%E4%BB%B6)
+    - [jQuery表单事件之change事件](#jquery%E8%A1%A8%E5%8D%95%E4%BA%8B%E4%BB%B6%E4%B9%8Bchange%E4%BA%8B%E4%BB%B6)
+    - [jQuery表单事件之select事件](#jquery%E8%A1%A8%E5%8D%95%E4%BA%8B%E4%BB%B6%E4%B9%8Bselect%E4%BA%8B%E4%BB%B6)
+    - [jQuery表单事件之submit事件](#jquery%E8%A1%A8%E5%8D%95%E4%BA%8B%E4%BB%B6%E4%B9%8Bsubmit%E4%BA%8B%E4%BB%B6)
+    - [jQuery键盘事件之keydown()与keyup()事件与keypress事件](#jquery%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6%E4%B9%8Bkeydown%E4%B8%8Ekeyup%E4%BA%8B%E4%BB%B6%E4%B8%8Ekeypress%E4%BA%8B%E4%BB%B6)
+    - [on()的多事件绑定](#on%E7%9A%84%E5%A4%9A%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A)
+    - [on()的高级用法](#on%E7%9A%84%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95)
+    - [卸载事件off()方法](#%E5%8D%B8%E8%BD%BD%E4%BA%8B%E4%BB%B6off%E6%96%B9%E6%B3%95)
+    - [jQuery事件对象的作用](#jquery%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%BD%9C%E7%94%A8)
+    - [jQuery事件对象的属性和方法](#jquery%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95)
+    - [jQuery自定义事件之trigger事件](#jquery%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6%E4%B9%8Btrigger%E4%BA%8B%E4%BB%B6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## JQuery 基础
 
 #### jQuery鼠标事件之click与dbclick事件

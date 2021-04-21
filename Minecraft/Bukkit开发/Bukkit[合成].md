@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [有序合成](#%E6%9C%89%E5%BA%8F%E5%90%88%E6%88%90)
+- [无序合成](#%E6%97%A0%E5%BA%8F%E5%90%88%E6%88%90)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 有序合成
 
 	// 有序合成

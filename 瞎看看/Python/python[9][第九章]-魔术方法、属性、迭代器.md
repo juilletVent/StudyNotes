@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [第九章 魔术方法、属性、迭代器](#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95%E5%B1%9E%E6%80%A7%E8%BF%AD%E4%BB%A3%E5%99%A8)
+    - [魔术方法](#%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95)
+    - [静态方法和成员方法](#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E5%92%8C%E6%88%90%E5%91%98%E6%96%B9%E6%B3%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 第九章 魔术方法、属性、迭代器
 
 #### 魔术方法

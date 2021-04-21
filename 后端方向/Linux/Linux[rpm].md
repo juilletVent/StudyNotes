@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Rpm软件管理](#rpm%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86)
+  - [install](#install)
+  - [update](#update)
+  - [query](#query)
+  - [uninstall](#uninstall)
+  - [重建rpm数据库](#%E9%87%8D%E5%BB%BArpm%E6%95%B0%E6%8D%AE%E5%BA%93)
+- [实用技巧](#%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7)
+  - [软件重安装](#%E8%BD%AF%E4%BB%B6%E9%87%8D%E5%AE%89%E8%A3%85)
+  - [寻找文件来源](#%E5%AF%BB%E6%89%BE%E6%96%87%E4%BB%B6%E6%9D%A5%E6%BA%90)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Rpm软件管理
 
 ### install

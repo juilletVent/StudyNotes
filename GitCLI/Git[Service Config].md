@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Linux 下 安装Git，并配置Git服务端](#linux-%E4%B8%8B-%E5%AE%89%E8%A3%85git%E5%B9%B6%E9%85%8D%E7%BD%AEgit%E6%9C%8D%E5%8A%A1%E7%AB%AF)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Linux 下 安装Git，并配置Git服务端
 
 > Install Git

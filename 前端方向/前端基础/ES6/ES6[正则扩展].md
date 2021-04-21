@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Regexp](#regexp)
+- [断言](#%E6%96%AD%E8%A8%80)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Regexp
 
 	var regex = new RegExp('xyz', 'i');

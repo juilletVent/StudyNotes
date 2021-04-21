@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [clipPath创建剪贴蒙版](#clippath%E5%88%9B%E5%BB%BA%E5%89%AA%E8%B4%B4%E8%92%99%E7%89%88)
+    - [剪贴蒙版](#%E5%89%AA%E8%B4%B4%E8%92%99%E7%89%88)
+    - [普通蒙版](#%E6%99%AE%E9%80%9A%E8%92%99%E7%89%88)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## clipPath创建剪贴蒙版
 
 #### 剪贴蒙版

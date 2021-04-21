@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [JavaScript OOP](#javascript-oop)
+  - [定义](#%E5%AE%9A%E4%B9%89)
+  - [继承](#%E7%BB%A7%E6%89%BF)
+  - [获取实例对象的对象原型](#%E8%8E%B7%E5%8F%96%E5%AE%9E%E4%BE%8B%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%8E%9F%E5%9E%8B)
+  - [获取对象本身是否具备某个属性](#%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E6%9C%AC%E8%BA%AB%E6%98%AF%E5%90%A6%E5%85%B7%E5%A4%87%E6%9F%90%E4%B8%AA%E5%B1%9E%E6%80%A7)
+  - [调用父类被覆盖的方法](#%E8%B0%83%E7%94%A8%E7%88%B6%E7%B1%BB%E8%A2%AB%E8%A6%86%E7%9B%96%E7%9A%84%E6%96%B9%E6%B3%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # JavaScript OOP
 
 ## 定义

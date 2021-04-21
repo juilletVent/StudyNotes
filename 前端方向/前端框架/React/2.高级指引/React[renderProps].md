@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Render props](#render-props)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Render props
 
 这是一个在React中复用代码非常有用的小技巧，

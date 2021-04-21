@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [事件处理](#%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86)
+  - [事件绑定](#%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A)
+  - [传递事件参数](#%E4%BC%A0%E9%80%92%E4%BA%8B%E4%BB%B6%E5%8F%82%E6%95%B0)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 事件处理
 
 两点注意：

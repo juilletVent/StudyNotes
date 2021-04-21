@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [组件创建方式](#%E7%BB%84%E4%BB%B6%E5%88%9B%E5%BB%BA%E6%96%B9%E5%BC%8F)
+  - [无状态函数式组件](#%E6%97%A0%E7%8A%B6%E6%80%81%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BB%84%E4%BB%B6)
+  - [React.createClass](#reactcreateclass)
+  - [React.Component](#reactcomponent)
+    - [组件属性与默认值](#%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E4%B8%8E%E9%BB%98%E8%AE%A4%E5%80%BC)
+  - [如何选择哪种方式创建组件](#%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%93%AA%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%88%9B%E5%BB%BA%E7%BB%84%E4%BB%B6)
+    - [补充一点](#%E8%A1%A5%E5%85%85%E4%B8%80%E7%82%B9)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 组件创建方式
 
 在React中具备三种组件创建方式：

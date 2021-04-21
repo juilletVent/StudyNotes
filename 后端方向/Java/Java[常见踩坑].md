@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [编码字符集](#%E7%BC%96%E7%A0%81%E5%AD%97%E7%AC%A6%E9%9B%86)
+- [IDEA tomcat部署问题](#idea-tomcat%E9%83%A8%E7%BD%B2%E9%97%AE%E9%A2%98)
+- [IDEA 控制台乱码](#idea-%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B9%B1%E7%A0%81)
+- [Maven慢](#maven%E6%85%A2)
+- [Spring AOP代理失败](#spring-aop%E4%BB%A3%E7%90%86%E5%A4%B1%E8%B4%A5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 
 

@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Mybatis 批量插入](#mybatis-%E6%89%B9%E9%87%8F%E6%8F%92%E5%85%A5)
+  - [Mybatis 批量插入实现思路](#mybatis-%E6%89%B9%E9%87%8F%E6%8F%92%E5%85%A5%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF)
+  - [最佳实践](#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Mybatis 批量插入
 
 回顾：

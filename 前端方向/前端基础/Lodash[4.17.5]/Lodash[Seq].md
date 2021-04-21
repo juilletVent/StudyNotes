@@ -1,3 +1,24 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Seq](#seq)
+    - [_ 【隐式调用】](#_-%E9%9A%90%E5%BC%8F%E8%B0%83%E7%94%A8)
+    - [chain 【显示调用】](#chain-%E6%98%BE%E7%A4%BA%E8%B0%83%E7%94%A8)
+    - [tap](#tap)
+    - [thru](#thru)
+  - [原型链方法](#%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%96%B9%E6%B3%95)
+    - [_.prototypeSymbol.iterator](#_prototypesymboliterator)
+    - [at](#at)
+    - [chain](#chain)
+    - [commit](#commit)
+    - [next](#next)
+    - [plant](#plant)
+    - [reverse](#reverse)
+    - [value / toJson / valueOf](#value--tojson--valueof)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Seq
 
 ### _ 【隐式调用】

@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Mybatis 参数传递](#mybatis-%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92)
+  - [单参](#%E5%8D%95%E5%8F%82)
+  - [多参传递](#%E5%A4%9A%E5%8F%82%E4%BC%A0%E9%80%92)
+      - [多参封装形式](#%E5%A4%9A%E5%8F%82%E5%B0%81%E8%A3%85%E5%BD%A2%E5%BC%8F)
+  - [集合类型参数](#%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0)
+  - [最佳实践](#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Mybatis 参数传递
 
 - [多参数传递](##多参传递)

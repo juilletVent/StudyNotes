@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [泛型](#%E6%B3%9B%E5%9E%8B)
+  - [泛型类型](#%E6%B3%9B%E5%9E%8B%E7%B1%BB%E5%9E%8B)
+  - [泛型接口](#%E6%B3%9B%E5%9E%8B%E6%8E%A5%E5%8F%A3)
+  - [泛型类](#%E6%B3%9B%E5%9E%8B%E7%B1%BB)
+  - [泛型约束](#%E6%B3%9B%E5%9E%8B%E7%BA%A6%E6%9D%9F)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 泛型
 
 > 最简单的栗子

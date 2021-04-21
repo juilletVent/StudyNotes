@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Rollup 基础](#rollup-%E5%9F%BA%E7%A1%80)
+  - [常用 CLI 参数](#%E5%B8%B8%E7%94%A8-cli-%E5%8F%82%E6%95%B0)
+  - [与 npm 包协作](#%E4%B8%8E-npm-%E5%8C%85%E5%8D%8F%E4%BD%9C)
+  - [外部引用](#%E5%A4%96%E9%83%A8%E5%BC%95%E7%94%A8)
+  - [使用 Babel](#%E4%BD%BF%E7%94%A8-babel)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Rollup 基础
 
 默认配置：`rollup.config.js`

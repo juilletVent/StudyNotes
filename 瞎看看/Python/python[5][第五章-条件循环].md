@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [第五章 条件、循环与其他语句](#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%9D%A1%E4%BB%B6%E5%BE%AA%E7%8E%AF%E4%B8%8E%E5%85%B6%E4%BB%96%E8%AF%AD%E5%8F%A5)
+    - [倒入模块](#%E5%80%92%E5%85%A5%E6%A8%A1%E5%9D%97)
+    - [解构赋值](#%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC)
+    - [块语句](#%E5%9D%97%E8%AF%AD%E5%8F%A5)
+      - [连接运算符  and or not](#%E8%BF%9E%E6%8E%A5%E8%BF%90%E7%AE%97%E7%AC%A6--and-or-not)
+    - [循环控制语句](#%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5)
+    - [动态py代码](#%E5%8A%A8%E6%80%81py%E4%BB%A3%E7%A0%81)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 第五章 条件、循环与其他语句
 
 #### 倒入模块

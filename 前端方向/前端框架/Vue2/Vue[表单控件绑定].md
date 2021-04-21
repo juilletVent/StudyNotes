@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [表单控件绑定](#%E8%A1%A8%E5%8D%95%E6%8E%A7%E4%BB%B6%E7%BB%91%E5%AE%9A)
+  - [用法](#%E7%94%A8%E6%B3%95)
+  - [修饰符](#%E4%BF%AE%E9%A5%B0%E7%AC%A6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 表单控件绑定
 
 ## 用法

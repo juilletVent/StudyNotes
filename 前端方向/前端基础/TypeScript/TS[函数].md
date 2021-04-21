@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [函数](#%E5%87%BD%E6%95%B0)
+  - [书写完整函数类型](#%E4%B9%A6%E5%86%99%E5%AE%8C%E6%95%B4%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B)
+  - [可选参数](#%E5%8F%AF%E9%80%89%E5%8F%82%E6%95%B0)
+  - [可变参数(剩余参数)](#%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0%E5%89%A9%E4%BD%99%E5%8F%82%E6%95%B0)
+  - [this 与 Lambda表达式](#this-%E4%B8%8E-lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+  - [overload](#overload)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 函数
 
 ## 书写完整函数类型

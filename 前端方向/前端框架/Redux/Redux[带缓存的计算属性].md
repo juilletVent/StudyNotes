@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Reselect](#reselect)
+  - [连接 Selector 和 Redux Store](#%E8%BF%9E%E6%8E%A5-selector-%E5%92%8C-redux-store)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Reselect
 
 Reselect selectors 可以用来高效地计算 Redux store 里的衍生数据

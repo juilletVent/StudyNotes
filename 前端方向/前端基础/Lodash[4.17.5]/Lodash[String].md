@@ -1,3 +1,42 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [String](#string)
+    - [camelCase](#camelcase)
+    - [capitalize](#capitalize)
+    - [deburr](#deburr)
+    - [endsWith](#endswith)
+    - [startsWith](#startswith)
+    - [escape](#escape)
+    - [unescape](#unescape)
+    - [escapeRegExp](#escaperegexp)
+    - [kebabCase](#kebabcase)
+    - [lowerCase](#lowercase)
+    - [lowerFirst](#lowerfirst)
+    - [pad](#pad)
+    - [padEnd](#padend)
+    - [padStart](#padstart)
+    - [parseInt](#parseint)
+    - [repeat](#repeat)
+    - [replace](#replace)
+    - [snakeCase](#snakecase)
+    - [split](#split)
+    - [startCase](#startcase)
+    - [toLower](#tolower)
+    - [toUpper](#toupper)
+    - [trim](#trim)
+    - [trimEnd](#trimend)
+    - [trimStart](#trimstart)
+    - [truncate](#truncate)
+    - [upperCase](#uppercase)
+    - [upperFirst](#upperfirst)
+    - [words](#words)
+  - [模板函数](#%E6%A8%A1%E6%9D%BF%E5%87%BD%E6%95%B0)
+    - [template](#template)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # String
 
 ### camelCase

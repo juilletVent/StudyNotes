@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [chattr 可以设置文件/目录的隐藏属性 有些场景下 非常有用](#chattr-%E5%8F%AF%E4%BB%A5%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%9A%84%E9%9A%90%E8%97%8F%E5%B1%9E%E6%80%A7-%E6%9C%89%E4%BA%9B%E5%9C%BA%E6%99%AF%E4%B8%8B-%E9%9D%9E%E5%B8%B8%E6%9C%89%E7%94%A8)
+- [lsattr](#lsattr)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## chattr 可以设置文件/目录的隐藏属性 有些场景下 非常有用
 
 - A：即 Atime，告诉系统不要修改对这个文件的最后访问时间。

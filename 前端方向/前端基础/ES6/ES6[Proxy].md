@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Proxy 为对象设置代理](#proxy-%E4%B8%BA%E5%AF%B9%E8%B1%A1%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86)
+    - [get](#get)
+    - [Set方法](#set%E6%96%B9%E6%B3%95)
+    - [apply 方法](#apply-%E6%96%B9%E6%B3%95)
+    - [construct](#construct)
+    - [this问题](#this%E9%97%AE%E9%A2%98)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Proxy 为对象设置代理
 
 	var proxy = new Proxy(target, handler);

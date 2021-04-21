@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Vue 过渡](#vue-%E8%BF%87%E6%B8%A1)
+- [CSS 动画](#css-%E5%8A%A8%E7%94%BB)
+- [自定义过渡类名](#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%BF%87%E6%B8%A1%E7%B1%BB%E5%90%8D)
+- [JavaScript 钩子](#javascript-%E9%92%A9%E5%AD%90)
+- [多个元素的过渡](#%E5%A4%9A%E4%B8%AA%E5%85%83%E7%B4%A0%E7%9A%84%E8%BF%87%E6%B8%A1)
+  - [过渡模式](#%E8%BF%87%E6%B8%A1%E6%A8%A1%E5%BC%8F)
+- [列表过渡](#%E5%88%97%E8%A1%A8%E8%BF%87%E6%B8%A1)
+  - [列表的位移过渡](#%E5%88%97%E8%A1%A8%E7%9A%84%E4%BD%8D%E7%A7%BB%E8%BF%87%E6%B8%A1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Vue 过渡
 
 只需要定义四个关键帧CSS状态以及两个动画执行函数即可

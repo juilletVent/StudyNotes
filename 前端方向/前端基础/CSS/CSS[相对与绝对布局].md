@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [DOM布局](#dom%E5%B8%83%E5%B1%80)
+  - [绝对布局特点](#%E7%BB%9D%E5%AF%B9%E5%B8%83%E5%B1%80%E7%89%B9%E7%82%B9)
+  - [相对布局特点](#%E7%9B%B8%E5%AF%B9%E5%B8%83%E5%B1%80%E7%89%B9%E7%82%B9)
+    - [Relative与Absolute组合使用](#relative%E4%B8%8Eabsolute%E7%BB%84%E5%90%88%E4%BD%BF%E7%94%A8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## DOM布局
 
 ### 绝对布局特点

@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [webpack](#webpack)
+- [mode 运行模式](#mode-%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F)
+- [Vue-loader](#vue-loader)
+  - [单文件组件样式解析](#%E5%8D%95%E6%96%87%E4%BB%B6%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F%E8%A7%A3%E6%9E%90)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## webpack
 
 在 Webpack4 中，webpack 拆分为两个包，用法为，局部安装 webpack webpack-cli，不要全局安装 webpack，容易出现依赖包找不到的问题。

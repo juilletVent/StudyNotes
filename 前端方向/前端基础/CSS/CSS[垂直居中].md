@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [垂直居中](#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD)
+  - [行级元素垂直居中](#%E8%A1%8C%E7%BA%A7%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD)
+  - [绝对定位[常用]](#%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E5%B8%B8%E7%94%A8)
+  - [table-cell定位](#table-cell%E5%AE%9A%E4%BD%8D)
+  - [tranform 定位 [终极大招]](#tranform-%E5%AE%9A%E4%BD%8D-%E7%BB%88%E6%9E%81%E5%A4%A7%E6%8B%9B)
+  - [Flex 布局](#flex-%E5%B8%83%E5%B1%80)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 垂直居中
 
 ## 行级元素垂直居中

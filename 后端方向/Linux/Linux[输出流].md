@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [输入输出流](#%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%B5%81)
+- [指令返回值与指令关联性](#%E6%8C%87%E4%BB%A4%E8%BF%94%E5%9B%9E%E5%80%BC%E4%B8%8E%E6%8C%87%E4%BB%A4%E5%85%B3%E8%81%94%E6%80%A7)
+- [管道命令](#%E7%AE%A1%E9%81%93%E5%91%BD%E4%BB%A4)
+- [Bash中的正则](#bash%E4%B8%AD%E7%9A%84%E6%AD%A3%E5%88%99)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 输入输出流
 
 - > 标准输出流，覆盖方式

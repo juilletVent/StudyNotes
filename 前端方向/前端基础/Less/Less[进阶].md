@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [引导](#%E5%BC%95%E5%AF%BC)
+- [Color 函数](#color-%E5%87%BD%E6%95%B0)
+  - [数学函数](#%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0)
+  - [命名空间](#%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4)
+  - [导入](#%E5%AF%BC%E5%85%A5)
+  - [字符串插值](#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8F%92%E5%80%BC)
+  - [避免编译](#%E9%81%BF%E5%85%8D%E7%BC%96%E8%AF%91)
+  - [JS表达式](#js%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 引导
 
 	.mixin (@a) when (lightness(@a) >= 50%) {

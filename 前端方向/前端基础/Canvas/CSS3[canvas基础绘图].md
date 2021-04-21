@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CSS3 canvas绘图基础](#css3-canvas%E7%BB%98%E5%9B%BE%E5%9F%BA%E7%A1%80)
+  - [前置操作](#%E5%89%8D%E7%BD%AE%E6%93%8D%E4%BD%9C)
+  - [基本概念](#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5)
+  - [基础绘制方法：](#%E5%9F%BA%E7%A1%80%E7%BB%98%E5%88%B6%E6%96%B9%E6%B3%95)
+  - [2D变换方法](#2d%E5%8F%98%E6%8D%A2%E6%96%B9%E6%B3%95)
+  - [渐变填充](#%E6%B8%90%E5%8F%98%E5%A1%AB%E5%85%85)
+  - [图片填充](#%E5%9B%BE%E7%89%87%E5%A1%AB%E5%85%85)
+  - [检查点是否位于路径内部](#%E6%A3%80%E6%9F%A5%E7%82%B9%E6%98%AF%E5%90%A6%E4%BD%8D%E4%BA%8E%E8%B7%AF%E5%BE%84%E5%86%85%E9%83%A8)
+  - [状态保存](#%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98)
+  - [绘制思想](#%E7%BB%98%E5%88%B6%E6%80%9D%E6%83%B3)
+  - [附1：2048棋盘绘制](#%E9%99%8412048%E6%A3%8B%E7%9B%98%E7%BB%98%E5%88%B6)
+  - [绘制月亮](#%E7%BB%98%E5%88%B6%E6%9C%88%E4%BA%AE)
+  - [附3：绘制星星](#%E9%99%843%E7%BB%98%E5%88%B6%E6%98%9F%E6%98%9F)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # CSS3 canvas绘图基础
 
 ## 前置操作

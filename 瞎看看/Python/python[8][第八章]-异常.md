@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [异常](#%E5%BC%82%E5%B8%B8)
+    - [捕捉异常](#%E6%8D%95%E6%8D%89%E5%BC%82%E5%B8%B8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 异常
 
 异常抛出关键字：raise，而不是常用的 throw关键字

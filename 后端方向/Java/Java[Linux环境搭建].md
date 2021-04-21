@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Linux下Java环境搭建](#linux%E4%B8%8Bjava%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Linux下Java环境搭建
 
 1. 下载JDK以及Tomcat

@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [基本编译](#%E5%9F%BA%E6%9C%AC%E7%BC%96%E8%AF%91)
+- [makefile](#makefile)
+- [makefile衍生](#makefile%E8%A1%8D%E7%94%9F)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 基本编译
 
 直接编译就好，如果使用了动态链接库添加-l参数指名动态链接库即可

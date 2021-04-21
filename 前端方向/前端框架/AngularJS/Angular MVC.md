@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Angular MVC基础](#angular-mvc%E5%9F%BA%E7%A1%80)
+  - [Controller 注意事项](#controller-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
+  - [使用](#%E4%BD%BF%E7%94%A8)
+  - [路由](#%E8%B7%AF%E7%94%B1)
+  - [指令](#%E6%8C%87%E4%BB%A4)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Angular MVC基础
 
 ## Controller 注意事项

@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [注释](#%E6%B3%A8%E9%87%8A)
+- [数据类型](#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
+- [修改表](#%E4%BF%AE%E6%94%B9%E8%A1%A8)
+- [存储引擎](#%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <!--
  * @Author: Gmsoft - WeiHong Ran
  * @Date: 2019-09-07 08:23:53

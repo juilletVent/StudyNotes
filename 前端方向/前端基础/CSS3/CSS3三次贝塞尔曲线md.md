@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CSS3 动画/渐变 三次贝塞尔曲线](#css3-%E5%8A%A8%E7%94%BB%E6%B8%90%E5%8F%98-%E4%B8%89%E6%AC%A1%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # CSS3 动画/渐变 三次贝塞尔曲线
 
 cubic-bezier 又称三次贝塞尔，主要是为 animation 生成速度曲线的函数。

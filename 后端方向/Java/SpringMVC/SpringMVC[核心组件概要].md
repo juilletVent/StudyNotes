@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [核心组件概要](#%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6%E6%A6%82%E8%A6%81)
+- [通用简单处理流程概要](#%E9%80%9A%E7%94%A8%E7%AE%80%E5%8D%95%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B%E6%A6%82%E8%A6%81)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 核心组件概要
 
 - DispatcherServlet：前置核心控制器，请求入口，负责请求分发、调度

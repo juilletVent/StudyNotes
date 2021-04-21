@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Vue Ajax网络访问](#vue-ajax%E7%BD%91%E7%BB%9C%E8%AE%BF%E9%97%AE)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Vue Ajax网络访问
 
 引入Vue-resource文件

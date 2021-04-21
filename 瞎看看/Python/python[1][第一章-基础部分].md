@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [基础部分](#%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86)
+    - [指定源文件编码格式](#%E6%8C%87%E5%AE%9A%E6%BA%90%E6%96%87%E4%BB%B6%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F)
+    - [运算部分](#%E8%BF%90%E7%AE%97%E9%83%A8%E5%88%86)
+- [字符串部分](#%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%83%A8%E5%88%86)
+    - [编码问题](#%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98)
+    - [字符串拼接](#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8B%BC%E6%8E%A5)
+    - [跨行字符串](#%E8%B7%A8%E8%A1%8C%E5%AD%97%E7%AC%A6%E4%B8%B2)
+    - [原始字符串](#%E5%8E%9F%E5%A7%8B%E5%AD%97%E7%AC%A6%E4%B8%B2)
+    - [Unicode 字符串](#unicode-%E5%AD%97%E7%AC%A6%E4%B8%B2)
+    - [获取用户输入](#%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 基础部分
 
 #### 指定源文件编码格式

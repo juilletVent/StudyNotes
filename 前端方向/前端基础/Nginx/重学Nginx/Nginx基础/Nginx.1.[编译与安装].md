@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [安装、编译参数](#%E5%AE%89%E8%A3%85%E7%BC%96%E8%AF%91%E5%8F%82%E6%95%B0)
+  - [Linux 下的编译安装](#linux-%E4%B8%8B%E7%9A%84%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85)
+  - [windows 下的编译安装](#windows-%E4%B8%8B%E7%9A%84%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 安装、编译参数
 
 ### Linux 下的编译安装

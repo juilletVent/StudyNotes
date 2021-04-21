@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Set & Map结构](#set--map%E7%BB%93%E6%9E%84)
+  - [Set 结构](#set-%E7%BB%93%E6%9E%84)
+      - [keys()，values()，entries()](#keysvaluesentries)
+      - [forEach()](#foreach)
+      - [注意](#%E6%B3%A8%E6%84%8F)
+  - [WeakSet](#weakset)
+  - [Map 结构](#map-%E7%BB%93%E6%9E%84)
+      - [含义与基本用法](#%E5%90%AB%E4%B9%89%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95)
+      - [实例的属性和操作方法](#%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%B1%9E%E6%80%A7%E5%92%8C%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95)
+      - [遍历方法](#%E9%81%8D%E5%8E%86%E6%96%B9%E6%B3%95)
+      - [与其他数据结构的互相转换](#%E4%B8%8E%E5%85%B6%E4%BB%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E4%BA%92%E7%9B%B8%E8%BD%AC%E6%8D%A2)
+      - [WeakMap](#weakmap)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Set & Map结构
 
 ## Set 结构

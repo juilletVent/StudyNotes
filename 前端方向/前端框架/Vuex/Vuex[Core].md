@@ -1,3 +1,33 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Vuex Core](#vuex-core)
+  - [State](#state)
+    - [组件中获取Store状态](#%E7%BB%84%E4%BB%B6%E4%B8%AD%E8%8E%B7%E5%8F%96store%E7%8A%B6%E6%80%81)
+    - [mapState](#mapstate)
+    - [保有局部状态](#%E4%BF%9D%E6%9C%89%E5%B1%80%E9%83%A8%E7%8A%B6%E6%80%81)
+  - [Getter](#getter)
+    - [通过属性访问](#%E9%80%9A%E8%BF%87%E5%B1%9E%E6%80%A7%E8%AE%BF%E9%97%AE)
+    - [mapGetters](#mapgetters)
+  - [Mutation](#mutation)
+    - [携带参数的Mutation](#%E6%90%BA%E5%B8%A6%E5%8F%82%E6%95%B0%E7%9A%84mutation)
+    - [Mutation 需遵守 Vue 的响应规则](#mutation-%E9%9C%80%E9%81%B5%E5%AE%88-vue-%E7%9A%84%E5%93%8D%E5%BA%94%E8%A7%84%E5%88%99)
+    - [使用常量代替Mutation类型](#%E4%BD%BF%E7%94%A8%E5%B8%B8%E9%87%8F%E4%BB%A3%E6%9B%BFmutation%E7%B1%BB%E5%9E%8B)
+    - [Mutation 必须是同步的](#mutation-%E5%BF%85%E9%A1%BB%E6%98%AF%E5%90%8C%E6%AD%A5%E7%9A%84)
+    - [组件中提交Mutation  mapMutation](#%E7%BB%84%E4%BB%B6%E4%B8%AD%E6%8F%90%E4%BA%A4mutation--mapmutation)
+  - [Action](#action)
+    - [分发Action](#%E5%88%86%E5%8F%91action)
+    - [在组件中分发Action](#%E5%9C%A8%E7%BB%84%E4%BB%B6%E4%B8%AD%E5%88%86%E5%8F%91action)
+    - [组合Action](#%E7%BB%84%E5%90%88action)
+  - [Module](#module)
+    - [模块的局部状态](#%E6%A8%A1%E5%9D%97%E7%9A%84%E5%B1%80%E9%83%A8%E7%8A%B6%E6%80%81)
+    - [命名空间](#%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4)
+    - [在带命名空间的模块内访问全局内容](#%E5%9C%A8%E5%B8%A6%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E7%9A%84%E6%A8%A1%E5%9D%97%E5%86%85%E8%AE%BF%E9%97%AE%E5%85%A8%E5%B1%80%E5%86%85%E5%AE%B9)
+    - [在带命名空间的模块注册全局 action](#%E5%9C%A8%E5%B8%A6%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E7%9A%84%E6%A8%A1%E5%9D%97%E6%B3%A8%E5%86%8C%E5%85%A8%E5%B1%80-action)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Vuex Core
 
 > 最简单的Store

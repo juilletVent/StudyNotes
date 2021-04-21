@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Angular[介绍]](#angular%E4%BB%8B%E7%BB%8D)
+    - [启动点/模块定义[ng-app]](#%E5%90%AF%E5%8A%A8%E7%82%B9%E6%A8%A1%E5%9D%97%E5%AE%9A%E4%B9%89ng-app)
+    - [scope 上下文模型](#scope-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%A8%A1%E5%9E%8B)
+    - [表达式渲染闪烁问题](#%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B8%B2%E6%9F%93%E9%97%AA%E7%83%81%E9%97%AE%E9%A2%98)
+    - [控制器](#%E6%8E%A7%E5%88%B6%E5%99%A8)
+    - [数据绑定](#%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A)
+    - [数据监控](#%E6%95%B0%E6%8D%AE%E7%9B%91%E6%8E%A7)
+    - [数据空间[上下文Scope]](#%E6%95%B0%E6%8D%AE%E7%A9%BA%E9%97%B4%E4%B8%8A%E4%B8%8B%E6%96%87scope)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Angular[介绍]
 
 ### 启动点/模块定义[ng-app]

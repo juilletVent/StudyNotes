@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Angular注意事项](#angular%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Angular注意事项
 
 - 子级scope引用父集scope中的元素 使用$parent前缀

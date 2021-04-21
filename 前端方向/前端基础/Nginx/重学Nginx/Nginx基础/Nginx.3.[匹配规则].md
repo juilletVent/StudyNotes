@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [匹配规则](#%E5%8C%B9%E9%85%8D%E8%A7%84%E5%88%99)
+- [Alias 与 Root](#alias-%E4%B8%8E-root)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 匹配规则
 
 语法规则： location [=|~|~*|^~] /uri/ { … }

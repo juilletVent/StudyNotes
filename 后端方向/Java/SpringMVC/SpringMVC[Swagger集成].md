@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [SpringMVC 集成 Swagger](#springmvc-%E9%9B%86%E6%88%90-swagger)
+- [SpringBoot 开启Swagger](#springboot-%E5%BC%80%E5%90%AFswagger)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## SpringMVC 集成 Swagger
 
 1、添加依赖，Swagger 最好使用 2.7.0 版本，2.8.x 及以上的版本，前端变换很大，排版没有 2.7 紧凑，不利于前端查看、调试，最好使用这个版本，jackson 为必须选项，对象序列化的时候会使用到

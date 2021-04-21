@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Log相关](#log%E7%9B%B8%E5%85%B3)
+- [备份log到远程主机](#%E5%A4%87%E4%BB%BDlog%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%B8%BB%E6%9C%BA)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Log相关
 
 - /var/log/cron：还记得第十六章例行性工作排程吧？你的 crontab 排程有没有实际被迚行？ 迚行过程有没有发生错诨？你的

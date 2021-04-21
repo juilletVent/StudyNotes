@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Excel 导入](#excel-%E5%AF%BC%E5%85%A5)
+    - [不保存文件直接导入的场景](#%E4%B8%8D%E4%BF%9D%E5%AD%98%E6%96%87%E4%BB%B6%E7%9B%B4%E6%8E%A5%E5%AF%BC%E5%85%A5%E7%9A%84%E5%9C%BA%E6%99%AF)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <!--
  * @Author: Gmsoft - WeiHong Ran
  * @Date: 2019-08-28 20:21:04

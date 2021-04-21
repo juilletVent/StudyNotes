@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Swagger 文档常用注解](#swagger-%E6%96%87%E6%A1%A3%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3)
+- [忽略某个字段](#%E5%BF%BD%E7%95%A5%E6%9F%90%E4%B8%AA%E5%AD%97%E6%AE%B5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Swagger 文档常用注解
 
 - @Api(value = "card", tags = "卡片管理 3") ：标明对象为 Api 类，tags 为本组接口组名

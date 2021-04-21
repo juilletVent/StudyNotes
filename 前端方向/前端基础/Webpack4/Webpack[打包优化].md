@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [模块体积监控 （webpack-bundle-analyzer）](#%E6%A8%A1%E5%9D%97%E4%BD%93%E7%A7%AF%E7%9B%91%E6%8E%A7-webpack-bundle-analyzer)
+- [点线程打包，榨干 CPU 性能（HappyPack/ThreadLoad）](#%E7%82%B9%E7%BA%BF%E7%A8%8B%E6%89%93%E5%8C%85%E6%A6%A8%E5%B9%B2-cpu-%E6%80%A7%E8%83%BDhappypackthreadload)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 模块体积监控 （webpack-bundle-analyzer）
 
 只需要简单的将插件引入即可，打包后会产生一张模块大小分布的可视化占比图，能直观地反映出打包后的文件中各个模块的体积占比

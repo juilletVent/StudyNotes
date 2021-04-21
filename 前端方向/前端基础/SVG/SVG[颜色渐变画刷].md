@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [颜色、渐变、画刷](#%E9%A2%9C%E8%89%B2%E6%B8%90%E5%8F%98%E7%94%BB%E5%88%B7)
+    - [颜色](#%E9%A2%9C%E8%89%B2)
+    - [渐变](#%E6%B8%90%E5%8F%98)
+    - [笔刷](#%E7%AC%94%E5%88%B7)
+    - [patternUnits patternContentUnits](#patternunits-patterncontentunits)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 颜色、渐变、画刷
 
 #### 颜色

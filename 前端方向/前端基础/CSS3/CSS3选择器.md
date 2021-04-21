@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CSS3选择器](#css3%E9%80%89%E6%8B%A9%E5%99%A8)
+  - [CSS3选择器 属性选择器](#css3%E9%80%89%E6%8B%A9%E5%99%A8-%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8)
+  - [CSS3 结构性伪类选择器—root](#css3-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8root)
+  - [CSS3 结构性伪类选择器—not](#css3-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8not)
+  - [CSS3 结构性伪类选择器—empty](#css3-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8empty)
+  - [CSS3 结构性伪类选择器—target](#css3-%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8target)
+  - [子代选择器](#%E5%AD%90%E4%BB%A3%E9%80%89%E6%8B%A9%E5%99%A8)
+      - [特殊筛选器](#%E7%89%B9%E6%AE%8A%E7%AD%9B%E9%80%89%E5%99%A8)
+      - [状态选择器](#%E7%8A%B6%E6%80%81%E9%80%89%E6%8B%A9%E5%99%A8)
+  - [CSS样式选择器](#css%E6%A0%B7%E5%BC%8F%E9%80%89%E6%8B%A9%E5%99%A8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # CSS3选择器
 
 ## CSS3选择器 属性选择器

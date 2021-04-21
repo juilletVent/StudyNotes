@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [基础窗口部分](#%E5%9F%BA%E7%A1%80%E7%AA%97%E5%8F%A3%E9%83%A8%E5%88%86)
+- [槽函数绑定](#%E6%A7%BD%E5%87%BD%E6%95%B0%E7%BB%91%E5%AE%9A)
+    - [通过调用静态方法进行默认绑定](#%E9%80%9A%E8%BF%87%E8%B0%83%E7%94%A8%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E8%BF%9B%E8%A1%8C%E9%BB%98%E8%AE%A4%E7%BB%91%E5%AE%9A)
+    - [手动绑定](#%E6%89%8B%E5%8A%A8%E7%BB%91%E5%AE%9A)
+- [编码问题](#%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98)
+- [依赖相关](#%E4%BE%9D%E8%B5%96%E7%9B%B8%E5%85%B3)
+- [虚拟环境](#%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83)
+- [弹层提示](#%E5%BC%B9%E5%B1%82%E6%8F%90%E7%A4%BA)
+- [主程载体代码段](#%E4%B8%BB%E7%A8%8B%E8%BD%BD%E4%BD%93%E4%BB%A3%E7%A0%81%E6%AE%B5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 基础窗口部分
 
 使用PyUIC编译出来的文件为，使用布局文件生成的ui初始化代码，所以主类直接继承这个类，然后在init方法中执行相关初始化代码即可，由于PyUIC编译出来的代码仅仅是ui初始化代码，没有继承QMainWindow类，所以需要自己进行继承，因此主类继承ui类以及QMainWindow就可以了

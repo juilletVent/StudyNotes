@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [基础](#%E5%9F%BA%E7%A1%80)
+  - [read、array、declare/typeset 的使用](#readarraydeclaretypeset-%E7%9A%84%E4%BD%BF%E7%94%A8)
+      - [](#)
+      - [array](#array)
+      - [declare/typeset](#declaretypeset)
+  - [变量内容变更](#%E5%8F%98%E9%87%8F%E5%86%85%E5%AE%B9%E5%8F%98%E6%9B%B4)
+  - [变量默认值](#%E5%8F%98%E9%87%8F%E9%BB%98%E8%AE%A4%E5%80%BC)
+  - [echo](#echo)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 基础
 
 ## read、array、declare/typeset 的使用

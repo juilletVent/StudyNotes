@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [函数](#%E5%87%BD%E6%95%B0)
+  - [默认值](#%E9%BB%98%E8%AE%A4%E5%80%BC)
+  - [解构赋值](#%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC)
+  - [函数 length](#%E5%87%BD%E6%95%B0-length)
+  - [参数独立作用域](#%E5%8F%82%E6%95%B0%E7%8B%AC%E7%AB%8B%E4%BD%9C%E7%94%A8%E5%9F%9F)
+  - [不定参数 rest](#%E4%B8%8D%E5%AE%9A%E5%8F%82%E6%95%B0-rest)
+  - [函数内部使用严格模式](#%E5%87%BD%E6%95%B0%E5%86%85%E9%83%A8%E4%BD%BF%E7%94%A8%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F)
+  - [获取函数名](#%E8%8E%B7%E5%8F%96%E5%87%BD%E6%95%B0%E5%90%8D)
+  - [Lambda表达式（箭头函数）](#lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0)
+  - [尾调用优化](#%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96)
+  - [尾递归优化](#%E5%B0%BE%E9%80%92%E5%BD%92%E4%BC%98%E5%8C%96)
+  - [调用优化的使用场景](#%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96%E7%9A%84%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF)
+  - [函数定义/调用逗号](#%E5%87%BD%E6%95%B0%E5%AE%9A%E4%B9%89%E8%B0%83%E7%94%A8%E9%80%97%E5%8F%B7)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 函数
 
 ## 默认值

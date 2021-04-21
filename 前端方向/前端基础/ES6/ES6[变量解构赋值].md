@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [解构赋值](#%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC)
+  - [数组解构赋值](#%E6%95%B0%E7%BB%84%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC)
+  - [默认值](#%E9%BB%98%E8%AE%A4%E5%80%BC)
+  - [对象解构赋值](#%E5%AF%B9%E8%B1%A1%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC)
+  - [用途](#%E7%94%A8%E9%80%94)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 解构赋值
 
 ## 数组解构赋值

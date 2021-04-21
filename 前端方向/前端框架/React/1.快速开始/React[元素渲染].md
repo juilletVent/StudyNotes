@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [元素渲染](#%E5%85%83%E7%B4%A0%E6%B8%B2%E6%9F%93)
+  - [元素不可变](#%E5%85%83%E7%B4%A0%E4%B8%8D%E5%8F%AF%E5%8F%98)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 元素渲染
 
 **元素事实上只是构成组件的一个部分**

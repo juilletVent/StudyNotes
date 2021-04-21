@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [webpacket 处理资源文件](#webpacket-%E5%A4%84%E7%90%86%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6)
+    - [loader安装](#loader%E5%AE%89%E8%A3%85)
+  - [CSS引入](#css%E5%BC%95%E5%85%A5)
+  - [Less文件处理](#less%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86)
+  - [CSS文件中的路径问题](#css%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98)
+  - [HTML文件中类似img标签的文件引入](#html%E6%96%87%E4%BB%B6%E4%B8%AD%E7%B1%BB%E4%BC%BCimg%E6%A0%87%E7%AD%BE%E7%9A%84%E6%96%87%E4%BB%B6%E5%BC%95%E5%85%A5)
+  - [JS中路径](#js%E4%B8%AD%E8%B7%AF%E5%BE%84)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # webpacket 处理资源文件
 
 ### loader安装

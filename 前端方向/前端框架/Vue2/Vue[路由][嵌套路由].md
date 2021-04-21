@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Vue 路由[嵌套路由]](#vue-%E8%B7%AF%E7%94%B1%E5%B5%8C%E5%A5%97%E8%B7%AF%E7%94%B1)
+  - [嵌套路由](#%E5%B5%8C%E5%A5%97%E8%B7%AF%E7%94%B1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Vue 路由[嵌套路由]
 
 ## 嵌套路由

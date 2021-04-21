@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [html](#html)
+  - [通用约定](#%E9%80%9A%E7%94%A8%E7%BA%A6%E5%AE%9A)
+    - [class 与 id](#class-%E4%B8%8E-id)
+    - [属性顺序](#%E5%B1%9E%E6%80%A7%E9%A1%BA%E5%BA%8F)
+    - [引号](#%E5%BC%95%E5%8F%B7)
+  - [语义化](#%E8%AF%AD%E4%B9%89%E5%8C%96)
+  - [HEAD](#head)
+    - [语言属性](#%E8%AF%AD%E8%A8%80%E5%B1%9E%E6%80%A7)
+    - [字符编码](#%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81)
+    - [兼容模式](#%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F)
+    - [SOE](#soe)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # html 
 
 ## 通用约定

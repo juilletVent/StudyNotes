@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [高阶组件](#%E9%AB%98%E9%98%B6%E7%BB%84%E4%BB%B6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 高阶组件
 
 高阶组件的实际意义就是对大量行为方式类似的组件进行逻辑提升，抽象出一层与UI渲染无关但行为类似的高层组件，已达到局部复用的目的

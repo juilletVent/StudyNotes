@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Webpack 提取公共模块](#webpack-%E6%8F%90%E5%8F%96%E5%85%AC%E5%85%B1%E6%A8%A1%E5%9D%97)
+  - [使用webpack自带的模块实现公共模块的提取](#%E4%BD%BF%E7%94%A8webpack%E8%87%AA%E5%B8%A6%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AE%9E%E7%8E%B0%E5%85%AC%E5%85%B1%E6%A8%A1%E5%9D%97%E7%9A%84%E6%8F%90%E5%8F%96)
+  - [缓存问题](#%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Webpack 提取公共模块
 
 ## 使用webpack自带的模块实现公共模块的提取

@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CSS3 滤镜](#css3-%E6%BB%A4%E9%95%9C)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # CSS3 滤镜
 
 filter：其默认值是none，他不具备继承性 注意浏览器前缀

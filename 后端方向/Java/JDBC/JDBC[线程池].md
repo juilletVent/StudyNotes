@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [C3P0 创建线程池](#c3p0-%E5%88%9B%E5%BB%BA%E7%BA%BF%E7%A8%8B%E6%B1%A0)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## C3P0 创建线程池
 
 需要引入C3P0相关的jar包

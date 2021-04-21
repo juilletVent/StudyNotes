@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [过滤](#%E8%BF%87%E6%BB%A4)
+    - [描述](#%E6%8F%8F%E8%BF%B0)
+    - [常用过滤器](#%E5%B8%B8%E7%94%A8%E8%BF%87%E6%BB%A4%E5%99%A8)
+    - [自定义过滤器](#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%BF%87%E6%BB%A4%E5%99%A8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 过滤
 
 > Use filter

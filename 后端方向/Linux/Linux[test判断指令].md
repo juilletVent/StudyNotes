@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [test判断指令](#test%E5%88%A4%E6%96%AD%E6%8C%87%E4%BB%A4)
+    - [文件与目录部分](#%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E9%83%A8%E5%88%86)
+    - [权限部分](#%E6%9D%83%E9%99%90%E9%83%A8%E5%88%86)
+    - [杂项部分](#%E6%9D%82%E9%A1%B9%E9%83%A8%E5%88%86)
+    - [数值字符串部分](#%E6%95%B0%E5%80%BC%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%83%A8%E5%88%86)
+    - [多条件部分](#%E5%A4%9A%E6%9D%A1%E4%BB%B6%E9%83%A8%E5%88%86)
+- [简写](#%E7%AE%80%E5%86%99)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## test判断指令
 
 文件、目录之类的判断，script应该会比较常用

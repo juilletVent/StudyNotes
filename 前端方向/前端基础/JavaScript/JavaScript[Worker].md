@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Worker 后台线程](#worker-%E5%90%8E%E5%8F%B0%E7%BA%BF%E7%A8%8B)
+    - [index.html](#indexhtml)
+    - [back.js](#backjs)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Worker 后台线程
 
 ### index.html

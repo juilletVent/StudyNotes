@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [定时器](#%E5%AE%9A%E6%97%B6%E5%99%A8)
+- [历史记录](#%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95)
+- [窗口位置对象[location]](#%E7%AA%97%E5%8F%A3%E4%BD%8D%E7%BD%AE%E5%AF%B9%E8%B1%A1location)
+- [Navigator对象](#navigator%E5%AF%B9%E8%B1%A1)
+- [screen对象](#screen%E5%AF%B9%E8%B1%A1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 #### 定时器
 
 ![](http://img.mukewang.com/56976e1700014fc504090143.jpg)

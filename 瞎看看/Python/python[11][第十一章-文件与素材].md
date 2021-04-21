@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [第十一章 文件](#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E6%96%87%E4%BB%B6)
+    - [打开文件](#%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6)
+    - [文件读写](#%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99)
+    - [关闭文件](#%E5%85%B3%E9%97%AD%E6%96%87%E4%BB%B6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 第十一章 文件
 
 python中的文件操作基本与c语言中的文件操作一致，几乎所有的概念都是共通的，文件指针，文件操作模式，读写位置，基本完全相同，所以按照c语言的思路进行编写即可，操作api也非常相似

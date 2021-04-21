@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [JavaScript 动画](#javascript-%E5%8A%A8%E7%94%BB)
+  - [思想](#%E6%80%9D%E6%83%B3)
+  - [缓冲速度](#%E7%BC%93%E5%86%B2%E9%80%9F%E5%BA%A6)
+  - [动画链](#%E5%8A%A8%E7%94%BB%E9%93%BE)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # JavaScript 动画
 
 ## 思想

@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [信号绑定方式](#%E4%BF%A1%E5%8F%B7%E7%BB%91%E5%AE%9A%E6%96%B9%E5%BC%8F)
+- [第二种绑定方式](#%E7%AC%AC%E4%BA%8C%E7%A7%8D%E7%BB%91%E5%AE%9A%E6%96%B9%E5%BC%8F)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 信号绑定方式
 
 一般采用默认的约定行事绑定槽函数：

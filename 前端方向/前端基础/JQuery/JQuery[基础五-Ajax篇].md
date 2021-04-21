@@ -1,3 +1,30 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Ajax与JQuery插件](#ajax%E4%B8%8Ejquery%E6%8F%92%E4%BB%B6)
+    - [使用load()方法异步请求数据](#%E4%BD%BF%E7%94%A8load%E6%96%B9%E6%B3%95%E5%BC%82%E6%AD%A5%E8%AF%B7%E6%B1%82%E6%95%B0%E6%8D%AE)
+    - [使用getJSON()方法异步加载JSON格式数据](#%E4%BD%BF%E7%94%A8getjson%E6%96%B9%E6%B3%95%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BDjson%E6%A0%BC%E5%BC%8F%E6%95%B0%E6%8D%AE)
+    - [使用getScript()方法异步加载并执行js文件](#%E4%BD%BF%E7%94%A8getscript%E6%96%B9%E6%B3%95%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E5%B9%B6%E6%89%A7%E8%A1%8Cjs%E6%96%87%E4%BB%B6)
+    - [使用get()方法以GET方式从服务器获取数据](#%E4%BD%BF%E7%94%A8get%E6%96%B9%E6%B3%95%E4%BB%A5get%E6%96%B9%E5%BC%8F%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE)
+    - [使用post()方法以POST方式从服务器发送数据](#%E4%BD%BF%E7%94%A8post%E6%96%B9%E6%B3%95%E4%BB%A5post%E6%96%B9%E5%BC%8F%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E9%80%81%E6%95%B0%E6%8D%AE)
+    - [使用serialize()方法序列化表单元素值](#%E4%BD%BF%E7%94%A8serialize%E6%96%B9%E6%B3%95%E5%BA%8F%E5%88%97%E5%8C%96%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0%E5%80%BC)
+    - [使用ajax()方法加载服务器数据](#%E4%BD%BF%E7%94%A8ajax%E6%96%B9%E6%B3%95%E5%8A%A0%E8%BD%BD%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%B0%E6%8D%AE)
+    - [使用ajaxSetup()方法设置全局Ajax默认选项](#%E4%BD%BF%E7%94%A8ajaxsetup%E6%96%B9%E6%B3%95%E8%AE%BE%E7%BD%AE%E5%85%A8%E5%B1%80ajax%E9%BB%98%E8%AE%A4%E9%80%89%E9%A1%B9)
+    - [使用ajaxStart()和ajaxStop()方法](#%E4%BD%BF%E7%94%A8ajaxstart%E5%92%8Cajaxstop%E6%96%B9%E6%B3%95)
+    - [常用插件记录](#%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E8%AE%B0%E5%BD%95)
+    - [自定义JQuery插件函数](#%E8%87%AA%E5%AE%9A%E4%B9%89jquery%E6%8F%92%E4%BB%B6%E5%87%BD%E6%95%B0)
+    - [获取浏览器的名称与版本信息](#%E8%8E%B7%E5%8F%96%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%90%8D%E7%A7%B0%E4%B8%8E%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF)
+    - [判断浏览器名称](#%E5%88%A4%E6%96%AD%E6%B5%8F%E8%A7%88%E5%99%A8%E5%90%8D%E7%A7%B0)
+    - [检测对象是否为空](#%E6%A3%80%E6%B5%8B%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A9%BA)
+    - [检测对象是否为原始对象](#%E6%A3%80%E6%B5%8B%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E5%8E%9F%E5%A7%8B%E5%AF%B9%E8%B1%A1)
+    - [检测两个节点的包含关系](#%E6%A3%80%E6%B5%8B%E4%B8%A4%E4%B8%AA%E8%8A%82%E7%82%B9%E7%9A%84%E5%8C%85%E5%90%AB%E5%85%B3%E7%B3%BB)
+    - [URL操作函数](#url%E6%93%8D%E4%BD%9C%E5%87%BD%E6%95%B0)
+    - [使用$.extend()扩展工具函数](#%E4%BD%BF%E7%94%A8extend%E6%89%A9%E5%B1%95%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0)
+    - [使用$.extend()扩展Object对象](#%E4%BD%BF%E7%94%A8extend%E6%89%A9%E5%B1%95object%E5%AF%B9%E8%B1%A1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Ajax与JQuery插件
 
 #### 使用load()方法异步请求数据

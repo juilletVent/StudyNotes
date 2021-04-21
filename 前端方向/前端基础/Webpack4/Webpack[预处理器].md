@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Webpack 预处理器](#webpack-%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8)
+  - [webpack 中的 resource 与 issuer [加载者 and 被加载者]](#webpack-%E4%B8%AD%E7%9A%84-resource-%E4%B8%8E-issuer-%E5%8A%A0%E8%BD%BD%E8%80%85-and-%E8%A2%AB%E5%8A%A0%E8%BD%BD%E8%80%85)
+  - [enforce 提升 loader 执行优先级](#enforce-%E6%8F%90%E5%8D%87-loader-%E6%89%A7%E8%A1%8C%E4%BC%98%E5%85%88%E7%BA%A7)
+  - [常用loader介绍](#%E5%B8%B8%E7%94%A8loader%E4%BB%8B%E7%BB%8D)
+    - [babel-loader](#babel-loader)
+    - [ts-loader](#ts-loader)
+    - [html-loader](#html-loader)
+    - [file-loader](#file-loader)
+    - [url-loader](#url-loader)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Webpack 预处理器
 
 loader 的相关配置均在 webpack 配置的 module 键名下，配合一个栗子进行说明

@@ -1,3 +1,26 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Insert](#insert)
+- [Update](#update)
+- [delete](#delete)
+- [Query](#query)
+    - [别名](#%E5%88%AB%E5%90%8D)
+    - [查询 NULL](#%E6%9F%A5%E8%AF%A2-null)
+    - [范围 BETWEEN...AND](#%E8%8C%83%E5%9B%B4-betweenand)
+    - [指定集合 IN](#%E6%8C%87%E5%AE%9A%E9%9B%86%E5%90%88-in)
+    - [逻辑运算符](#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6)
+    - [模糊查询](#%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2)
+    - [Group By](#group-by)
+    - [Having](#having)
+    - [Order by](#order-by)
+    - [Limit](#limit)
+    - [去重](#%E5%8E%BB%E9%87%8D)
+    - [联合查询](#%E8%81%94%E5%90%88%E6%9F%A5%E8%AF%A2)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <!--
  * @Author: Gmsoft - WeiHong Ran
  * @Date: 2019-09-07 15:07:58

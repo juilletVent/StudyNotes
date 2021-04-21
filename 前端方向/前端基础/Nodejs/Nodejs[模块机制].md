@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [模块](#%E6%A8%A1%E5%9D%97)
+  - [包结构](#%E5%8C%85%E7%BB%93%E6%9E%84)
+  - [package.json 模块描述详细](#packagejson-%E6%A8%A1%E5%9D%97%E6%8F%8F%E8%BF%B0%E8%AF%A6%E7%BB%86)
+  - [npm钩子命令](#npm%E9%92%A9%E5%AD%90%E5%91%BD%E4%BB%A4)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 模块
 
 ## 包结构

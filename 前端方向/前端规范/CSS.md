@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [css](#css)
+  - [通用约定](#%E9%80%9A%E7%94%A8%E7%BA%A6%E5%AE%9A)
+    - [声明顺序](#%E5%A3%B0%E6%98%8E%E9%A1%BA%E5%BA%8F)
+    - [引号](#%E5%BC%95%E5%8F%B7)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # css
 
 ## 通用约定

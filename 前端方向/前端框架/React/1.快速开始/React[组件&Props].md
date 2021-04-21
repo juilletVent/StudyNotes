@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [组件 & Props](#%E7%BB%84%E4%BB%B6--props)
+  - [Props & 只读性](#props--%E5%8F%AA%E8%AF%BB%E6%80%A7)
+  - [与UI无关的其他属性](#%E4%B8%8Eui%E6%97%A0%E5%85%B3%E7%9A%84%E5%85%B6%E4%BB%96%E5%B1%9E%E6%80%A7)
+- [State](#state)
+  - [不要直接更新状态](#%E4%B8%8D%E8%A6%81%E7%9B%B4%E6%8E%A5%E6%9B%B4%E6%96%B0%E7%8A%B6%E6%80%81)
+  - [状态更新可能是异步的](#%E7%8A%B6%E6%80%81%E6%9B%B4%E6%96%B0%E5%8F%AF%E8%83%BD%E6%98%AF%E5%BC%82%E6%AD%A5%E7%9A%84)
+  - [状态更新合并](#%E7%8A%B6%E6%80%81%E6%9B%B4%E6%96%B0%E5%90%88%E5%B9%B6)
+- [数据自顶向下流动](#%E6%95%B0%E6%8D%AE%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%B5%81%E5%8A%A8)
+- [有无状态](#%E6%9C%89%E6%97%A0%E7%8A%B6%E6%80%81)
+- [生命周期Hook](#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9Fhook)
+- [属性验证](#%E5%B1%9E%E6%80%A7%E9%AA%8C%E8%AF%81)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 组件 & Props
 
 组件从概念上看就像是函数，它可以接收任意的输入值（称之为“props”），并返回一个需要在页面上展示的React元素。

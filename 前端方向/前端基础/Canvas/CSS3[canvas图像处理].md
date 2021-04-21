@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Canvas图像处理](#canvas%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86)
+  - [绘制图像](#%E7%BB%98%E5%88%B6%E5%9B%BE%E5%83%8F)
+  - [像素级图形处理](#%E5%83%8F%E7%B4%A0%E7%BA%A7%E5%9B%BE%E5%BD%A2%E5%A4%84%E7%90%86)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Canvas图像处理
 
 ## 绘制图像

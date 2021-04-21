@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [第六章 抽象](#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E6%8A%BD%E8%B1%A1)
+    - [局部作用域全局变量获取](#%E5%B1%80%E9%83%A8%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E8%8E%B7%E5%8F%96)
+    - [匿名函数](#%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 第六章 抽象
 
 api：

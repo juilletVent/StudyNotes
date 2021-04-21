@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Ajax 文件上传+进度监听](#ajax-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E8%BF%9B%E5%BA%A6%E7%9B%91%E5%90%AC)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Ajax 文件上传+进度监听
 
 	//记录当前时间

@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [常用约束条件](#%E5%B8%B8%E7%94%A8%E7%BA%A6%E6%9D%9F%E6%9D%A1%E4%BB%B6)
+    - [复合主键](#%E5%A4%8D%E5%90%88%E4%B8%BB%E9%94%AE)
+    - [外键](#%E5%A4%96%E9%94%AE)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <!--
  * @Author: Gmsoft - WeiHong Ran
  * @Date: 2019-09-07 09:46:42

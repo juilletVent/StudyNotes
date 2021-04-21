@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Vue 模板语法](#vue-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95)
+  - [差值](#%E5%B7%AE%E5%80%BC)
+    - [文本](#%E6%96%87%E6%9C%AC)
+    - [纯HTML](#%E7%BA%AFhtml)
+    - [属性](#%E5%B1%9E%E6%80%A7)
+    - [使用 JavaScript 表达式](#%E4%BD%BF%E7%94%A8-javascript-%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+  - [Direct 指令](#direct-%E6%8C%87%E4%BB%A4)
+    - [参数](#%E5%8F%82%E6%95%B0)
+    - [修饰符](#%E4%BF%AE%E9%A5%B0%E7%AC%A6)
+    - [Filter 过滤器](#filter-%E8%BF%87%E6%BB%A4%E5%99%A8)
+  - [缩写](#%E7%BC%A9%E5%86%99)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Vue 模板语法
 
 ## 差值

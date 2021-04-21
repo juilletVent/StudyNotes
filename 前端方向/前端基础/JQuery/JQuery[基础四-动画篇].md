@@ -1,3 +1,29 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [JQuery 动画篇](#jquery-%E5%8A%A8%E7%94%BB%E7%AF%87)
+    - [jQuery中隐藏元素的hide方法](#jquery%E4%B8%AD%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%E7%9A%84hide%E6%96%B9%E6%B3%95)
+    - [jQuery中显示元素的show方法](#jquery%E4%B8%AD%E6%98%BE%E7%A4%BA%E5%85%83%E7%B4%A0%E7%9A%84show%E6%96%B9%E6%B3%95)
+    - [jQuery中显示与隐藏切换toggle方法](#jquery%E4%B8%AD%E6%98%BE%E7%A4%BA%E4%B8%8E%E9%9A%90%E8%97%8F%E5%88%87%E6%8D%A2toggle%E6%96%B9%E6%B3%95)
+    - [jQuery中下拉动画slideDown](#jquery%E4%B8%AD%E4%B8%8B%E6%8B%89%E5%8A%A8%E7%94%BBslidedown)
+    - [jQuery中上卷动画slideUp](#jquery%E4%B8%AD%E4%B8%8A%E5%8D%B7%E5%8A%A8%E7%94%BBslideup)
+    - [jQuery中上卷下拉切换slideToggle](#jquery%E4%B8%AD%E4%B8%8A%E5%8D%B7%E4%B8%8B%E6%8B%89%E5%88%87%E6%8D%A2slidetoggle)
+    - [jQuery中淡出动画fadeOut & jQuery中淡入动画fadeIn & jQuery中淡入淡出切换fadeToggle](#jquery%E4%B8%AD%E6%B7%A1%E5%87%BA%E5%8A%A8%E7%94%BBfadeout--jquery%E4%B8%AD%E6%B7%A1%E5%85%A5%E5%8A%A8%E7%94%BBfadein--jquery%E4%B8%AD%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E5%88%87%E6%8D%A2fadetoggle)
+    - [jQuery中淡入效果fadeTo](#jquery%E4%B8%AD%E6%B7%A1%E5%85%A5%E6%95%88%E6%9E%9Cfadeto)
+    - [jQuery中动画animate(上)](#jquery%E4%B8%AD%E5%8A%A8%E7%94%BBanimate%E4%B8%8A)
+    - [jQuery中动画animate(下)](#jquery%E4%B8%AD%E5%8A%A8%E7%94%BBanimate%E4%B8%8B)
+    - [有关动画的相关方法](#%E6%9C%89%E5%85%B3%E5%8A%A8%E7%94%BB%E7%9A%84%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95)
+    - [动画总结](#%E5%8A%A8%E7%94%BB%E6%80%BB%E7%BB%93)
+  - [JQuery 核心方法](#jquery-%E6%A0%B8%E5%BF%83%E6%96%B9%E6%B3%95)
+    - [jQuery中each方法的应用](#jquery%E4%B8%ADeach%E6%96%B9%E6%B3%95%E7%9A%84%E5%BA%94%E7%94%A8)
+    - [jQuery中查找数组中的索引inArray](#jquery%E4%B8%AD%E6%9F%A5%E6%89%BE%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E7%B4%A2%E5%BC%95inarray)
+    - [jQuery中去空格神器trim方法](#jquery%E4%B8%AD%E5%8E%BB%E7%A9%BA%E6%A0%BC%E7%A5%9E%E5%99%A8trim%E6%96%B9%E6%B3%95)
+    - [jQuery中DOM元素的获取get方法](#jquery%E4%B8%ADdom%E5%85%83%E7%B4%A0%E7%9A%84%E8%8E%B7%E5%8F%96get%E6%96%B9%E6%B3%95)
+    - [jQuery中DOM元素的获取index方法](#jquery%E4%B8%ADdom%E5%85%83%E7%B4%A0%E7%9A%84%E8%8E%B7%E5%8F%96index%E6%96%B9%E6%B3%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## JQuery 动画篇
 
 #### jQuery中隐藏元素的hide方法

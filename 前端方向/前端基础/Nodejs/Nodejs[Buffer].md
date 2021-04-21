@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Buffer](#buffer)
+    - [Buffer 与字符串](#buffer-%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2)
+    - [Buffer 与字符串互转](#buffer-%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BA%92%E8%BD%AC)
+    - [分段读取时字符串边界乱码问题](#%E5%88%86%E6%AE%B5%E8%AF%BB%E5%8F%96%E6%97%B6%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BE%B9%E7%95%8C%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98)
+    - [Buffer与性能问题](#buffer%E4%B8%8E%E6%80%A7%E8%83%BD%E9%97%AE%E9%A2%98)
+    - [文件读取时的优化](#%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96%E6%97%B6%E7%9A%84%E4%BC%98%E5%8C%96)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Buffer
 
 Buffer 的单元素为 8 个 Bit 位的 Byte，所以可存储无符号整数 0-255

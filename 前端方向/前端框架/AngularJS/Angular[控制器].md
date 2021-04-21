@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Controller](#controller)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Controller
 
 $scope具备多级作用域，控制器如果需要使用顶级scope作用域需要进行依赖注入，如果不需要则最好监理独立作用域的scope

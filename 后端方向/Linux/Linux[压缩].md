@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Linux 下常用压缩命令 tar, tar.gz(tgz), tar.bz2,zip](#linux-%E4%B8%8B%E5%B8%B8%E7%94%A8%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4-tar-targztgz-tarbz2zip)
+  - [tar](#tar)
+  - [tar.gz tgz](#targz-tgz)
+  - [tar.bz](#tarbz)
+  - [gz](#gz)
+  - [zip](#zip)
+  - [rar](#rar)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Linux 下常用压缩命令 tar, tar.gz(tgz), tar.bz2,zip
 
 - [tar 命令](#tar)

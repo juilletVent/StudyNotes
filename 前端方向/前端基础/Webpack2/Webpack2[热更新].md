@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Webpack2 热更新](#webpack2-%E7%83%AD%E6%9B%B4%E6%96%B0)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Webpack2 热更新
 
 1. 安装webpack-dev-server 

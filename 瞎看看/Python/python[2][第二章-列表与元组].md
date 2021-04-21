@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [列表 与 元组](#%E5%88%97%E8%A1%A8-%E4%B8%8E-%E5%85%83%E7%BB%84)
+    - [常用api](#%E5%B8%B8%E7%94%A8api)
+    - [数组操作](#%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C)
+    - [分片](#%E5%88%86%E7%89%87)
+    - [序列相加](#%E5%BA%8F%E5%88%97%E7%9B%B8%E5%8A%A0)
+    - [元素操作](#%E5%85%83%E7%B4%A0%E6%93%8D%E4%BD%9C)
+- [元组 不可变序列](#%E5%85%83%E7%BB%84-%E4%B8%8D%E5%8F%AF%E5%8F%98%E5%BA%8F%E5%88%97)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 列表 与 元组
 
 #### 常用api

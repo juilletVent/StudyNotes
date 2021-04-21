@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [单文件组件-根组件](#%E5%8D%95%E6%96%87%E4%BB%B6%E7%BB%84%E4%BB%B6-%E6%A0%B9%E7%BB%84%E4%BB%B6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 单文件组件-根组件
 
 在Vue实例中渲染根组件的时候不能直接使用components选项声明根组件

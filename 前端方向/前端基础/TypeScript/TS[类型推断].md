@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [类型推断](#%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD)
+  - [上下文类型推断](#%E4%B8%8A%E4%B8%8B%E6%96%87%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 类型推断
 
 TypeScript里，在有些没有明确指出类型的地方，类型推论会帮助提供类型

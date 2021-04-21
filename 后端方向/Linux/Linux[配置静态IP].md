@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Centos 配置静态IP](#centos-%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81ip)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Centos 配置静态IP
 
 1、修改网络配置文件`vi /etc/sysconfig/network-scripts/ifcfg-你的网卡名字`

@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Nginx 流量分发](#nginx-%E6%B5%81%E9%87%8F%E5%88%86%E5%8F%91)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Nginx 流量分发
 
 Nginx 可以按域名进行不同的流量分发，这里指的分发是在 OSI 模型中的第四层(传输层)完成的，不同于使用 proxy_pass（应用层），在第四层完成转发，可以忽视上层协议的相关问题，对上层协议透明，所以在某些场景下有奇效（trojan 代理流量分发场景）

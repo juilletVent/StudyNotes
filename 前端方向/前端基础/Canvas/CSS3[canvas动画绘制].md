@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Canvas绘制动画](#canvas%E7%BB%98%E5%88%B6%E5%8A%A8%E7%94%BB)
+  - [使用 window.requestAnimationFrame](#%E4%BD%BF%E7%94%A8-windowrequestanimationframe)
+  - [兼容问题|优雅降级](#%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Canvas绘制动画
 
 ## 使用 window.requestAnimationFrame

@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [函数指令 Function Directives](#%E5%87%BD%E6%95%B0%E6%8C%87%E4%BB%A4-function-directives)
+- [输出格式](#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 函数指令 Function Directives
 
 Sass 支持自定义函数，并能在任何属性值或 Sass script 中使用

@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [接口](#%E6%8E%A5%E5%8F%A3)
+  - [可选属性](#%E5%8F%AF%E9%80%89%E5%B1%9E%E6%80%A7)
+  - [只读属性](#%E5%8F%AA%E8%AF%BB%E5%B1%9E%E6%80%A7)
+  - [额外的属性检查](#%E9%A2%9D%E5%A4%96%E7%9A%84%E5%B1%9E%E6%80%A7%E6%A3%80%E6%9F%A5)
+  - [函数类型](#%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B)
+  - [接口](#%E6%8E%A5%E5%8F%A3-1)
+  - [接口继承](#%E6%8E%A5%E5%8F%A3%E7%BB%A7%E6%89%BF)
+  - [混合类型](#%E6%B7%B7%E5%90%88%E7%B1%BB%E5%9E%8B)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 接口
 
 	interface LabelledValue {

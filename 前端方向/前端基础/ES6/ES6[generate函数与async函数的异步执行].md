@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Generate 函数](#generate-%E5%87%BD%E6%95%B0)
+- [Async 函数](#async-%E5%87%BD%E6%95%B0)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Generate 函数
 
 Generate函数借助yield表达式将执行权交回外部，但是异步流程执行核心仍然为 callback 或者 promise，并且由于需要调用next推进generate继续执行，需要一个执行器才能完成函数的自动执行，下面是一个generate函数自动执行的promise实现：

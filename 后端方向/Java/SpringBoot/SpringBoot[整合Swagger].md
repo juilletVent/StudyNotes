@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [SpringBoot 开启 Swagger](#springboot-%E5%BC%80%E5%90%AF-swagger)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## SpringBoot 开启 Swagger
 
 1、引入依赖

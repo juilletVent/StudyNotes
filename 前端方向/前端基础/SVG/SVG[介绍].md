@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [SVG 入门介绍](#svg-%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D)
+  - [基本型](#%E5%9F%BA%E6%9C%AC%E5%9E%8B)
+  - [样式](#%E6%A0%B7%E5%BC%8F)
+  - [动态生成](#%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90)
+  - [定义引用元素](#%E5%AE%9A%E4%B9%89%E5%BC%95%E7%94%A8%E5%85%83%E7%B4%A0)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## SVG 入门介绍
 
 > 基本属性

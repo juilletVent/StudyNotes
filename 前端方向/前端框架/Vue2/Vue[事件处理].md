@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [事件处理](#%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86)
+  - [监听事件](#%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6)
+  - [方法事件处理器](#%E6%96%B9%E6%B3%95%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E5%99%A8)
+  - [内联处理器方法](#%E5%86%85%E8%81%94%E5%A4%84%E7%90%86%E5%99%A8%E6%96%B9%E6%B3%95)
+  - [事件修饰符](#%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6)
+  - [键值修饰符](#%E9%94%AE%E5%80%BC%E4%BF%AE%E9%A5%B0%E7%AC%A6)
+    - [修饰键](#%E4%BF%AE%E9%A5%B0%E9%94%AE)
+    - [滑鼠按键修饰符](#%E6%BB%91%E9%BC%A0%E6%8C%89%E9%94%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 事件处理
 
 ## 监听事件

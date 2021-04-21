@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [SassScript](#sassscript)
+  - [变量](#%E5%8F%98%E9%87%8F)
+  - [运算符](#%E8%BF%90%E7%AE%97%E7%AC%A6)
+    - [颜色运算](#%E9%A2%9C%E8%89%B2%E8%BF%90%E7%AE%97)
+    - [字符串运算](#%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%90%E7%AE%97)
+  - [函数](#%E5%87%BD%E6%95%B0)
+    - [插值表达式](#%E6%8F%92%E5%80%BC%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+    - [&选择器](#%E9%80%89%E6%8B%A9%E5%99%A8)
+    - [变量定义的默认值  !default](#%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC--default)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # SassScript
 
 ## 变量

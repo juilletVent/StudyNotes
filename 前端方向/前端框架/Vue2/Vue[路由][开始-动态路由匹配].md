@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Vue 路由[开始-动态路由匹配]](#vue-%E8%B7%AF%E7%94%B1%E5%BC%80%E5%A7%8B-%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E5%8C%B9%E9%85%8D)
+  - [起步](#%E8%B5%B7%E6%AD%A5)
+  - [动态路由匹配](#%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E5%8C%B9%E9%85%8D)
+  - [响应路由参数的变化](#%E5%93%8D%E5%BA%94%E8%B7%AF%E7%94%B1%E5%8F%82%E6%95%B0%E7%9A%84%E5%8F%98%E5%8C%96)
+  - [匹配优先级](#%E5%8C%B9%E9%85%8D%E4%BC%98%E5%85%88%E7%BA%A7)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Vue 路由[开始-动态路由匹配]
 
 所谓动态就是将一组模式相同的路由导向至同一个组件

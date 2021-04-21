@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [演示使用[嵌套路由]](#%E6%BC%94%E7%A4%BA%E4%BD%BF%E7%94%A8%E5%B5%8C%E5%A5%97%E8%B7%AF%E7%94%B1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 演示使用[嵌套路由]
 
 使用流程，在app外层包裹Router(BrowserRouter/HashRouter)，如果使用了Redux，则将Provider包裹在Router外面,接管url，然后添加Switch组件，在Switch组件中添加路由匹配规则[Route组件，指定component属性来指定匹配时渲染的React组件]和匹配时渲染的组件，Switch的功能是实现单一匹配，在Switch外添加Link/NavLink路由导航，并制定to属性，标识导航位置，嵌套路由时，在组件内部再次构建上述过程。

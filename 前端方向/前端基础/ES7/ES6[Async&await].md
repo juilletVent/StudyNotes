@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Async/await](#asyncawait)
+  - [Async](#async)
+  - [Await](#await)
+    - [thenables](#thenables)
+    - [Class成员方法](#class%E6%88%90%E5%91%98%E6%96%B9%E6%B3%95)
+    - [Promise all](#promise-all)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Async/await
 
 ## Async

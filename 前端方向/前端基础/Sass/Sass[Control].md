@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [控制指令 Control Directives](#%E6%8E%A7%E5%88%B6%E6%8C%87%E4%BB%A4-control-directives)
+  - [@if](#if)
+  - [@for](#for)
+  - [@each](#each)
+  - [@while](#while)
+- [混合指令](#%E6%B7%B7%E5%90%88%E6%8C%87%E4%BB%A4)
+  - [参数](#%E5%8F%82%E6%95%B0)
+  - [关键词参数](#%E5%85%B3%E9%94%AE%E8%AF%8D%E5%8F%82%E6%95%B0)
+  - [可变参数变量](#%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0%E5%8F%98%E9%87%8F)
+  - [像混合样式中导入内容](#%E5%83%8F%E6%B7%B7%E5%90%88%E6%A0%B7%E5%BC%8F%E4%B8%AD%E5%AF%BC%E5%85%A5%E5%86%85%E5%AE%B9)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 控制指令 Control Directives
 
 ### @if

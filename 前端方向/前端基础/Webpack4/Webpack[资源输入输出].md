@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Webpack 资源输入输出](#webpack-%E8%B5%84%E6%BA%90%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA)
+  - [资源输入](#%E8%B5%84%E6%BA%90%E8%BE%93%E5%85%A5)
+    - [Context 属性](#context-%E5%B1%9E%E6%80%A7)
+    - [entry 属性](#entry-%E5%B1%9E%E6%80%A7)
+    - [提取 Vendor](#%E6%8F%90%E5%8F%96-vendor)
+  - [资源输出](#%E8%B5%84%E6%BA%90%E8%BE%93%E5%87%BA)
+    - [outout.filename](#outoutfilename)
+    - [output.path](#outputpath)
+    - [output.publicPath](#outputpublicpath)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Webpack 资源输入输出
 
 ## 资源输入

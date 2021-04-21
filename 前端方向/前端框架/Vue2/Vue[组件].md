@@ -1,3 +1,34 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [组件](#%E7%BB%84%E4%BB%B6)
+  - [注册](#%E6%B3%A8%E5%86%8C)
+    - [局部注册](#%E5%B1%80%E9%83%A8%E6%B3%A8%E5%86%8C)
+    - [data 必须是函数](#data-%E5%BF%85%E9%A1%BB%E6%98%AF%E5%87%BD%E6%95%B0)
+    - [构成组件](#%E6%9E%84%E6%88%90%E7%BB%84%E4%BB%B6)
+    - [使用 Prop 传递数据](#%E4%BD%BF%E7%94%A8-prop-%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE)
+    - [camelCase vs. kebab-case 命名转换](#camelcase-vs-kebab-case-%E5%91%BD%E5%90%8D%E8%BD%AC%E6%8D%A2)
+    - [动态 Prop](#%E5%8A%A8%E6%80%81-prop)
+    - [字面量语法 vs 动态语法](#%E5%AD%97%E9%9D%A2%E9%87%8F%E8%AF%AD%E6%B3%95-vs-%E5%8A%A8%E6%80%81%E8%AF%AD%E6%B3%95)
+    - [单向数据绑定](#%E5%8D%95%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A)
+    - [Prop 验证](#prop-%E9%AA%8C%E8%AF%81)
+  - [非 Prop 属性](#%E9%9D%9E-prop-%E5%B1%9E%E6%80%A7)
+    - [替换/覆盖现有的特性](#%E6%9B%BF%E6%8D%A2%E8%A6%86%E7%9B%96%E7%8E%B0%E6%9C%89%E7%9A%84%E7%89%B9%E6%80%A7)
+  - [自定义事件](#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6)
+    - [使用 v-on 绑定自定义事件](#%E4%BD%BF%E7%94%A8-v-on-%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6)
+    - [给组件绑定原生事件](#%E7%BB%99%E7%BB%84%E4%BB%B6%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%94%9F%E4%BA%8B%E4%BB%B6)
+    - [.sync 修饰符](#sync-%E4%BF%AE%E9%A5%B0%E7%AC%A6)
+    - [使用自定义事件的表单输入组件](#%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%A1%A8%E5%8D%95%E8%BE%93%E5%85%A5%E7%BB%84%E4%BB%B6)
+    - [非父子组件通信](#%E9%9D%9E%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1)
+  - [使用 Slot 分发内容](#%E4%BD%BF%E7%94%A8-slot-%E5%88%86%E5%8F%91%E5%86%85%E5%AE%B9)
+    - [编译作用域](#%E7%BC%96%E8%AF%91%E4%BD%9C%E7%94%A8%E5%9F%9F)
+    - [单个 Slot](#%E5%8D%95%E4%B8%AA-slot)
+    - [具名 Slot](#%E5%85%B7%E5%90%8D-slot)
+  - [父组件通知子组件](#%E7%88%B6%E7%BB%84%E4%BB%B6%E9%80%9A%E7%9F%A5%E5%AD%90%E7%BB%84%E4%BB%B6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 组件
 
 ## 注册

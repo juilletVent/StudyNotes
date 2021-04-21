@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [流程控制指令](#%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E6%8C%87%E4%BB%A4)
+    - [IF判断](#if%E5%88%A4%E6%96%AD)
+    - [Switch语句](#switch%E8%AF%AD%E5%8F%A5)
+    - [循环](#%E5%BE%AA%E7%8E%AF)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 流程控制指令
 
 #### IF判断

@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Openssl 自签证书](#openssl-%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6)
+  - [生成私钥](#%E7%94%9F%E6%88%90%E7%A7%81%E9%92%A5)
+  - [生成 CSR（证书签名请求）](#%E7%94%9F%E6%88%90-csr%E8%AF%81%E4%B9%A6%E7%AD%BE%E5%90%8D%E8%AF%B7%E6%B1%82)
+  - [删除私钥中的密码](#%E5%88%A0%E9%99%A4%E7%A7%81%E9%92%A5%E4%B8%AD%E7%9A%84%E5%AF%86%E7%A0%81)
+  - [创建 extfile,为证书添加使用者，不然浏览器不认](#%E5%88%9B%E5%BB%BA-extfile%E4%B8%BA%E8%AF%81%E4%B9%A6%E6%B7%BB%E5%8A%A0%E4%BD%BF%E7%94%A8%E8%80%85%E4%B8%8D%E7%84%B6%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8D%E8%AE%A4)
+  - [生成自签名证书](#%E7%94%9F%E6%88%90%E8%87%AA%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Openssl 自签证书
 
 ### 生成私钥

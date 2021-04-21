@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Vue 组件通讯](#vue-%E7%BB%84%E4%BB%B6%E9%80%9A%E8%AE%AF)
+  - [父组件到子组件的数据传递 [Props]](#%E7%88%B6%E7%BB%84%E4%BB%B6%E5%88%B0%E5%AD%90%E7%BB%84%E4%BB%B6%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92-props)
+  - [父组件到子组件的事件传递 [ref]](#%E7%88%B6%E7%BB%84%E4%BB%B6%E5%88%B0%E5%AD%90%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BA%8B%E4%BB%B6%E4%BC%A0%E9%80%92-ref)
+  - [子组件到父组件的事件传递 [emit]](#%E5%AD%90%E7%BB%84%E4%BB%B6%E5%88%B0%E7%88%B6%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BA%8B%E4%BB%B6%E4%BC%A0%E9%80%92-emit)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Vue 组件通讯
 
 ## 父组件到子组件的数据传递 [Props]

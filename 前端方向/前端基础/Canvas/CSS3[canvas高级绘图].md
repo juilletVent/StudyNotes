@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Canvas搞基绘图](#canvas%E6%90%9E%E5%9F%BA%E7%BB%98%E5%9B%BE)
+  - [阴影](#%E9%98%B4%E5%BD%B1)
+  - [全局属性](#%E5%85%A8%E5%B1%80%E5%B1%9E%E6%80%A7)
+  - [剪辑区域](#%E5%89%AA%E8%BE%91%E5%8C%BA%E5%9F%9F)
+  - [非零环绕原则](#%E9%9D%9E%E9%9B%B6%E7%8E%AF%E7%BB%95%E5%8E%9F%E5%88%99)
+  - [扩充canvas Context API](#%E6%89%A9%E5%85%85canvas-context-api)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Canvas搞基绘图
 
 ## 阴影

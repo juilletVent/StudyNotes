@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [基础指令](#%E5%9F%BA%E7%A1%80%E6%8C%87%E4%BB%A4)
+- [数据模型绑定](#%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E7%BB%91%E5%AE%9A)
+- [标签属性绑定](#%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7%E7%BB%91%E5%AE%9A)
+- [数据监听](#%E6%95%B0%E6%8D%AE%E7%9B%91%E5%90%AC)
+- [事件绑定](#%E4%BA%8B%E4%BB%B6%E7%BB%91%E5%AE%9A)
+- [组件定义](#%E7%BB%84%E4%BB%B6%E5%AE%9A%E4%B9%89)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 #组件
 
 > 基础结构

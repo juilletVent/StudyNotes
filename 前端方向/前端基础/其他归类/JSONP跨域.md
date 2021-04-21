@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [跨域请求](#%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82)
+      - [同源策略限制](#%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5%E9%99%90%E5%88%B6)
+      - [如何使用JSONP](#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8jsonp)
+      - [Jsonp原理](#jsonp%E5%8E%9F%E7%90%86)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 跨域请求
 
 #### 同源策略限制

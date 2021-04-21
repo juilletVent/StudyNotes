@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Minecraft 中给予玩家刷怪笼](#minecraft-%E4%B8%AD%E7%BB%99%E4%BA%88%E7%8E%A9%E5%AE%B6%E5%88%B7%E6%80%AA%E7%AC%BC)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Minecraft 中给予玩家刷怪笼
 
 刷怪笼本身默认只有一个，不带有 NBT 标签，这种刷怪笼使用指令：

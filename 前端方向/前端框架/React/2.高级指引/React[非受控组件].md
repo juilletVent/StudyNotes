@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [非受控组件](#%E9%9D%9E%E5%8F%97%E6%8E%A7%E7%BB%84%E4%BB%B6)
+  - [defaultVal](#defaultval)
+  - [文件标签](#%E6%96%87%E4%BB%B6%E6%A0%87%E7%AD%BE)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 非受控组件
 
 一个典型的非受控组件

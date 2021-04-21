@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CSS3 媒体查询](#css3-%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2)
+  - [Media Queries——媒体类型（一）](#media-queries%E5%AA%92%E4%BD%93%E7%B1%BB%E5%9E%8B%E4%B8%80)
+  - [media queries——媒体类型（二）](#media-queries%E5%AA%92%E4%BD%93%E7%B1%BB%E5%9E%8B%E4%BA%8C)
+      - [@import语法](#import%E8%AF%AD%E6%B3%95)
+  - [使用link标签的媒体查询属性进行导入](#%E4%BD%BF%E7%94%A8link%E6%A0%87%E7%AD%BE%E7%9A%84%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2%E5%B1%9E%E6%80%A7%E8%BF%9B%E8%A1%8C%E5%AF%BC%E5%85%A5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # CSS3 媒体查询
 
 ## Media Queries——媒体类型（一）

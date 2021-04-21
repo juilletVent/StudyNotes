@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Npm CLI 工具开发流程](#npm-cli-%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B)
+- [总结](#%E6%80%BB%E7%BB%93)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Npm CLI 工具开发流程
 
 1、创建 package.json，同正常项目一致，但是需要额外添加 bin、main，标准 CLI 入口在哪里：

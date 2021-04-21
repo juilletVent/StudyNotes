@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [配置服务启动](#%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 配置服务启动
 
 这里以添加frp服务为栗子，其他自启动脚本、可执行程序都可以参照这种方法进行添加

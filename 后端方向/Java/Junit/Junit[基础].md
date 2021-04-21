@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Junit 4 单元测试](#junit-4-%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)
+    - [前置准备](#%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87)
+    - [常用测试注解](#%E5%B8%B8%E7%94%A8%E6%B5%8B%E8%AF%95%E6%B3%A8%E8%A7%A3)
+    - [多场景打包测试](#%E5%A4%9A%E5%9C%BA%E6%99%AF%E6%89%93%E5%8C%85%E6%B5%8B%E8%AF%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <!--
  * @Author: WeiHong Ran
  * @Date: 2019-09-02 23:43:22

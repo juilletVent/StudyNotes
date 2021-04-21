@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [JavaScript基础](#javascript%E5%9F%BA%E7%A1%80)
+  - [数据类型](#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
+  - [类型检测](#%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B)
+  - [变量作用域](#%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F)
+  - [严格模式](#%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F)
+  - [原型链](#%E5%8E%9F%E5%9E%8B%E9%93%BE)
+  - [JSON](#json)
+  - [闭包](#%E9%97%AD%E5%8C%85)
+        - [弹窗](#%E5%BC%B9%E7%AA%97)
+        - [主要事件](#%E4%B8%BB%E8%A6%81%E4%BA%8B%E4%BB%B6)
+        - [Date对象](#date%E5%AF%B9%E8%B1%A1)
+        - [数组对象常用方法](#%E6%95%B0%E7%BB%84%E5%AF%B9%E8%B1%A1%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95)
+        - [Window对象方法](#window%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # JavaScript基础
 
 ## 数据类型

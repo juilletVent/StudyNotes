@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [SELinux](#selinux)
+  - [后台指令、切换管理](#%E5%90%8E%E5%8F%B0%E6%8C%87%E4%BB%A4%E5%88%87%E6%8D%A2%E7%AE%A1%E7%90%86)
+  - [脱机运行程序 nohup](#%E8%84%B1%E6%9C%BA%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F-nohup)
+  - [进程管理](#%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86)
+  - [进程查杀](#%E8%BF%9B%E7%A8%8B%E6%9F%A5%E6%9D%80)
+  - [指令CPU优先级](#%E6%8C%87%E4%BB%A4cpu%E4%BC%98%E5%85%88%E7%BA%A7)
+  - [内存](#%E5%86%85%E5%AD%98)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## SELinux
 
 ps -l 显示正在执行的前台程序

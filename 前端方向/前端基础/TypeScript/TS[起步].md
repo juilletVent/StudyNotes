@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [开始](#%E5%BC%80%E5%A7%8B)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 开始
 
 > 安装

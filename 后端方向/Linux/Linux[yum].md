@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [yum 在线依赖管理](#yum-%E5%9C%A8%E7%BA%BF%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86)
+  - [query](#query)
+  - [install & update](#install--update)
+  - [uninstall](#uninstall)
+  - [群组](#%E7%BE%A4%E7%BB%84)
+  - [换源](#%E6%8D%A2%E6%BA%90)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## yum 在线依赖管理
 
 ### query

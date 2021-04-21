@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [字典-对象](#%E5%AD%97%E5%85%B8-%E5%AF%B9%E8%B1%A1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 字典-对象
 
 常用api

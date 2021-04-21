@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [ItemMeta 的简单使用](#itemmeta-%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## ItemMeta 的简单使用
 
 ItemMeta 配合 ItemStack 实现简单的自定义物品，可以自定义名称，附魔属性，物品描述等等，下面是一个简单的使用栗子

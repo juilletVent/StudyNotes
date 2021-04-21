@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [自定义登录提示](#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%99%BB%E5%BD%95%E6%8F%90%E7%A4%BA)
+- [指令别名](#%E6%8C%87%E4%BB%A4%E5%88%AB%E5%90%8D)
+- [Vim tab缩进更改](#vim-tab%E7%BC%A9%E8%BF%9B%E6%9B%B4%E6%94%B9)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 自定义登录提示
 
 /etc下存有issue、issus.net、motd三个欢迎用的提示文件，自定义登陆页面的输出只需要修改issue或者motd即可，issus.net的欢迎仅用于telnet连接输出室友，其他两个文件将会在全部用户登录时显示

@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [基础事件：玩家移动](#%E5%9F%BA%E7%A1%80%E4%BA%8B%E4%BB%B6%E7%8E%A9%E5%AE%B6%E7%A7%BB%E5%8A%A8)
+- [移动事件](#%E7%A7%BB%E5%8A%A8%E4%BA%8B%E4%BB%B6)
+- [方块交互事件](#%E6%96%B9%E5%9D%97%E4%BA%A4%E4%BA%92%E4%BA%8B%E4%BB%B6)
+- [实体伤害](#%E5%AE%9E%E4%BD%93%E4%BC%A4%E5%AE%B3)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 基础事件：玩家移动
 
 **重点：Listener 中定义的事件，实际上跟名字没什么关系，主要是跟事件参数类型有关系，Server 会通过注解查询到需要处理的事件回调有哪些，

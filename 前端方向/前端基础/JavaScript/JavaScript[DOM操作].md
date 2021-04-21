@@ -1,3 +1,28 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [DOM对象](#dom%E5%AF%B9%E8%B1%A1)
+      - [选取元素](#%E9%80%89%E5%8F%96%E5%85%83%E7%B4%A0)
+      - [选取表单元素值](#%E9%80%89%E5%8F%96%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0%E5%80%BC)
+      - [获取标签属性值](#%E8%8E%B7%E5%8F%96%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7%E5%80%BC)
+      - [节点属性](#%E8%8A%82%E7%82%B9%E5%B1%9E%E6%80%A7)
+      - [访问子节点childNodes[属性]](#%E8%AE%BF%E9%97%AE%E5%AD%90%E8%8A%82%E7%82%B9childnodes%E5%B1%9E%E6%80%A7)
+      - [访问父节点[属性]](#%E8%AE%BF%E9%97%AE%E7%88%B6%E8%8A%82%E7%82%B9%E5%B1%9E%E6%80%A7)
+      - [访问兄弟节点[属性]](#%E8%AE%BF%E9%97%AE%E5%85%84%E5%BC%9F%E8%8A%82%E7%82%B9%E5%B1%9E%E6%80%A7)
+      - [插入节点appendChild()](#%E6%8F%92%E5%85%A5%E8%8A%82%E7%82%B9appendchild)
+      - [插入节点insertBefore()](#%E6%8F%92%E5%85%A5%E8%8A%82%E7%82%B9insertbefore)
+      - [删除节点removeChild()](#%E5%88%A0%E9%99%A4%E8%8A%82%E7%82%B9removechild)
+      - [替换元素节点replaceChild()](#%E6%9B%BF%E6%8D%A2%E5%85%83%E7%B4%A0%E8%8A%82%E7%82%B9replacechild)
+      - [创建元素节点createElement](#%E5%88%9B%E5%BB%BA%E5%85%83%E7%B4%A0%E8%8A%82%E7%82%B9createelement)
+      - [创建文本节点createTextNode](#%E5%88%9B%E5%BB%BA%E6%96%87%E6%9C%AC%E8%8A%82%E7%82%B9createtextnode)
+      - [浏览器窗口可视区域大小](#%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AA%97%E5%8F%A3%E5%8F%AF%E8%A7%86%E5%8C%BA%E5%9F%9F%E5%A4%A7%E5%B0%8F)
+      - [网页尺寸scrollHeight](#%E7%BD%91%E9%A1%B5%E5%B0%BA%E5%AF%B8scrollheight)
+      - [网页尺寸offsetHeight](#%E7%BD%91%E9%A1%B5%E5%B0%BA%E5%AF%B8offsetheight)
+      - [网页卷去的距离与偏移量](#%E7%BD%91%E9%A1%B5%E5%8D%B7%E5%8E%BB%E7%9A%84%E8%B7%9D%E7%A6%BB%E4%B8%8E%E5%81%8F%E7%A7%BB%E9%87%8F)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## DOM对象
 
 文档对象模型DOM（Document Object Model）定义访问和处理HTML文档的标准方法。DOM 将HTML文档呈现为带有元素、属性和文本的树结构（节点树）。

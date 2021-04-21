@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Job Control](#job-control)
+    - [后台运行](#%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C)
+    - [管理操作](#%E7%AE%A1%E7%90%86%E6%93%8D%E4%BD%9C)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Job Control
 
 ### 后台运行

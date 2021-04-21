@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [深入JSX](#%E6%B7%B1%E5%85%A5jsx)
+    - [指定元素类型](#%E6%8C%87%E5%AE%9A%E5%85%83%E7%B4%A0%E7%B1%BB%E5%9E%8B)
+    - [必须声明](#%E5%BF%85%E9%A1%BB%E5%A3%B0%E6%98%8E)
+    - [点表示法，集中导出](#%E7%82%B9%E8%A1%A8%E7%A4%BA%E6%B3%95%E9%9B%86%E4%B8%AD%E5%AF%BC%E5%87%BA)
+    - [首字母大写](#%E9%A6%96%E5%AD%97%E6%AF%8D%E5%A4%A7%E5%86%99)
+    - [运行时类型选择](#%E8%BF%90%E8%A1%8C%E6%97%B6%E7%B1%BB%E5%9E%8B%E9%80%89%E6%8B%A9)
+  - [属性](#%E5%B1%9E%E6%80%A7)
+    - [扩展属性](#%E6%89%A9%E5%B1%95%E5%B1%9E%E6%80%A7)
+  - [子代](#%E5%AD%90%E4%BB%A3)
+    - [JavaScript表达式](#javascript%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 深入JSX
 
 ### 指定元素类型

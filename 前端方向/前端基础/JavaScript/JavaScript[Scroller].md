@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [常用滚动条属性](#%E5%B8%B8%E7%94%A8%E6%BB%9A%E5%8A%A8%E6%9D%A1%E5%B1%9E%E6%80%A7)
+- [滚动事件](#%E6%BB%9A%E5%8A%A8%E4%BA%8B%E4%BB%B6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 常用滚动条属性
 
 - $('.menu-content')[0].scrollHeight 元素的全部高度包括溢出高度

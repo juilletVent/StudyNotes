@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Fragments](#fragments)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Fragments
 
 在返回子元素列表集合的时候可以使用Fragments，而不是在返回的外层套上额外的div

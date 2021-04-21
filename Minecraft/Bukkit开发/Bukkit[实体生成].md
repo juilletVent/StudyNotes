@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [使用指令生成实体](#%E4%BD%BF%E7%94%A8%E6%8C%87%E4%BB%A4%E7%94%9F%E6%88%90%E5%AE%9E%E4%BD%93)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 使用指令生成实体
 
 使用指令生成指定数量的生物实体

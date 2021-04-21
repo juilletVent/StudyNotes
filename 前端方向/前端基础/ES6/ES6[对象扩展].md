@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [对象扩展](#%E5%AF%B9%E8%B1%A1%E6%89%A9%E5%B1%95)
+  - [Object.assign()](#objectassign)
+  - [属性的可枚举性和遍历](#%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8F%AF%E6%9E%9A%E4%B8%BE%E6%80%A7%E5%92%8C%E9%81%8D%E5%8E%86)
+  - [对象原型](#%E5%AF%B9%E8%B1%A1%E5%8E%9F%E5%9E%8B)
+  - [super](#super)
+  - [Object.keys()，Object.values()，Object.entries()](#objectkeysobjectvaluesobjectentries)
+  - [扩展运算符](#%E6%89%A9%E5%B1%95%E8%BF%90%E7%AE%97%E7%AC%A6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 对象扩展
 
 ## Object.assign()

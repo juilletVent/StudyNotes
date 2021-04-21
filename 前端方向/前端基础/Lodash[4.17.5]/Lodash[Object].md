@@ -1,3 +1,50 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Object](#object)
+    - [assign](#assign)
+    - [assignIn](#assignin)
+    - [assignInWith](#assigninwith)
+    - [assignInWith](#assigninwith-1)
+    - [at](#at)
+    - [create](#create)
+    - [defaults](#defaults)
+    - [defaultsDeep](#defaultsdeep)
+    - [toPairs](#topairs)
+    - [toPairsIn](#topairsin)
+    - [findKey](#findkey)
+    - [findLastKey](#findlastkey)
+    - [forIn](#forin)
+    - [forInRight](#forinright)
+    - [forOwn](#forown)
+    - [forOwnRight](#forownright)
+    - [functions functionsIn keys keysIn](#functions-functionsin-keys-keysin)
+    - [get](#get)
+    - [has](#has)
+    - [hasIn](#hasin)
+    - [invert](#invert)
+    - [invertBy](#invertby)
+    - [invoke](#invoke)
+    - [mapKeys](#mapkeys)
+    - [mapValues](#mapvalues)
+    - [merge](#merge)
+    - [mergeWith](#mergewith)
+    - [omit](#omit)
+    - [omitBy](#omitby)
+    - [pick](#pick)
+    - [pickBy](#pickby)
+    - [result](#result)
+    - [set](#set)
+    - [setWith](#setwith)
+    - [transform](#transform)
+    - [unset](#unset)
+    - [update](#update)
+    - [values](#values)
+    - [baluesIn](#baluesin)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Object
 
 ### assign

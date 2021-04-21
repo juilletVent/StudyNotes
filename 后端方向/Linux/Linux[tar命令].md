@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [tar -cf all.tar *.jpg](#tar--cf-alltar-jpg)
+- [tar -rf all.tar *.gif](#tar--rf-alltar-gif)
+- [tar -uf all.tar logo.gif](#tar--uf-alltar-logogif)
+- [tar -tf all.tar](#tar--tf-alltar)
+- [tar -xf all.tar](#tar--xf-alltar)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 tar
 
 -c: 建立压缩档案

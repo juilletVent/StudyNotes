@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [自定义拦截器](#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 自定义拦截器
 
 定义类，实现接口org.apache.ibatis.plugin.Interceptor，实现接口内的三个方法，plugin方法为固定写法，setProperties用于插件参数初始化，intercept方法为拦截操作主要的实现位置，事先完毕后，添加拦截注解@Intercepts，配置要拦截的目标对象、方法、形式参数表，最后将插件类在Mybatis配置文件中进行配置即可

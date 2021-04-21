@@ -1,3 +1,35 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [countBy](#countby)
+- [forEach=>each  forEachRight=>eachRight](#foreacheach--foreachrighteachright)
+- [every](#every)
+- [filter](#filter)
+- [find](#find)
+- [findLast](#findlast)
+- [flatMap](#flatmap)
+- [flatMapDeep](#flatmapdeep)
+- [flatMapDepth](#flatmapdepth)
+- [groupBy](#groupby)
+- [includes](#includes)
+- [invokeMap](#invokemap)
+- [keyBy](#keyby)
+- [map](#map)
+- [orderBy](#orderby)
+- [partition](#partition)
+- [reduce](#reduce)
+- [reduceRight](#reduceright)
+- [reject](#reject)
+- [sample](#sample)
+- [sampleSize](#samplesize)
+- [shuffle](#shuffle)
+- [size](#size)
+- [some](#some)
+- [sortBy](#sortby)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## countBy
 
 _.countBy(collection, [iteratee=_.identity])

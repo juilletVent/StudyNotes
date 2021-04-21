@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Angular [Route|路由]](#angular-route%E8%B7%AF%E7%94%B1)
+  - [路由地址带有#!/时的处理方式](#%E8%B7%AF%E7%94%B1%E5%9C%B0%E5%9D%80%E5%B8%A6%E6%9C%89%E6%97%B6%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F)
+  - [重定向[$location]](#%E9%87%8D%E5%AE%9A%E5%90%91location)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Angular [Route|路由]
 
 1. 引入Angular路由模块

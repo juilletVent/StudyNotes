@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [第七章](#%E7%AC%AC%E4%B8%83%E7%AB%A0)
+    - [创建类](#%E5%88%9B%E5%BB%BA%E7%B1%BB)
+    - [继承](#%E7%BB%A7%E6%89%BF)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 第七章
 
 api:

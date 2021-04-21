@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Vuex](#vuex)
+  - [安装](#%E5%AE%89%E8%A3%85)
+  - [Promise依赖](#promise%E4%BE%9D%E8%B5%96)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Vuex
 
 vuex数据流图示

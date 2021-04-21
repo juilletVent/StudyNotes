@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [第十四章 网络编程](#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0-%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B)
+    - [强大的网络模块 urllib与urllib2](#%E5%BC%BA%E5%A4%A7%E7%9A%84%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9D%97-urllib%E4%B8%8Eurllib2)
+    - [socket 服务端编写](#socket-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%BC%96%E5%86%99)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 第十四章 网络编程
 
 相关的一些模块索引：

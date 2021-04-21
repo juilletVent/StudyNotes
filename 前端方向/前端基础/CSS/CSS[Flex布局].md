@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CSS3 伸缩布局（一）[Flexible Box]](#css3-%E4%BC%B8%E7%BC%A9%E5%B8%83%E5%B1%80%E4%B8%80flexible-box)
+  - [一、什么是Flexible？](#%E4%B8%80%E4%BB%80%E4%B9%88%E6%98%AFflexible)
+  - [二、基本概念](#%E4%BA%8C%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5)
+  - [三、 容器的属性](#%E4%B8%89-%E5%AE%B9%E5%99%A8%E7%9A%84%E5%B1%9E%E6%80%A7)
+  - [四、项目属性](#%E5%9B%9B%E9%A1%B9%E7%9B%AE%E5%B1%9E%E6%80%A7)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # CSS3 伸缩布局（一）[Flexible Box]
 
 Flexible [ˈfleksəbl] 灵活的、柔韧的

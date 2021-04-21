@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Sprin IOC](#sprin-ioc)
+      - [常用的ApplicationContext实现类](#%E5%B8%B8%E7%94%A8%E7%9A%84applicationcontext%E5%AE%9E%E7%8E%B0%E7%B1%BB)
+      - [Bean声明相关注解](#bean%E5%A3%B0%E6%98%8E%E7%9B%B8%E5%85%B3%E6%B3%A8%E8%A7%A3)
+      - [Bean注入相关注解](#bean%E6%B3%A8%E5%85%A5%E7%9B%B8%E5%85%B3%E6%B3%A8%E8%A7%A3)
+      - [配置相关注解](#%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E6%B3%A8%E8%A7%A3)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <!--
  * @Author: WeiHong Ran
  * @Date: 2019-10-18 20:53:29

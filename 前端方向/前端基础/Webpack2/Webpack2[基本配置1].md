@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [**调试必备**](#%E8%B0%83%E8%AF%95%E5%BF%85%E5%A4%87)
+- [配置sourceMap](#%E9%85%8D%E7%BD%AEsourcemap)
+- [构建本地服务器](#%E6%9E%84%E5%BB%BA%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1%E5%99%A8)
+- [Babel 配置](#babel-%E9%85%8D%E7%BD%AE)
+- [postcss & autoprefixer 配置](#postcss--autoprefixer-%E9%85%8D%E7%BD%AE)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## **调试必备**
 
 webpack 指定CLI参数`--display detailed`,提供尽可能多的编译信息，对于定位错误很有帮助

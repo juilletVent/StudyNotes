@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CSS常用属性](#css%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7)
+      - [水平居中](#%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD)
+    - [垂直居中](#%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD)
+        - [使用CSS盒子传统方式](#%E4%BD%BF%E7%94%A8css%E7%9B%92%E5%AD%90%E4%BC%A0%E7%BB%9F%E6%96%B9%E5%BC%8F)
+        - [使用Flex布局实现](#%E4%BD%BF%E7%94%A8flex%E5%B8%83%E5%B1%80%E5%AE%9E%E7%8E%B0)
+      - [CSS的Display隐式转换](#css%E7%9A%84display%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## CSS常用属性
 
 - letter-spacing：1px 字间距

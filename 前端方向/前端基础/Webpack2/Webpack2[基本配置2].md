@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Webpacket](#webpacket)
+  - [install](#install)
+  - [webpack 基本配置](#webpack-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE)
+  - [打包指令](#%E6%89%93%E5%8C%85%E6%8C%87%E4%BB%A4)
+  - [文件监视](#%E6%96%87%E4%BB%B6%E7%9B%91%E8%A7%86)
+  - [附加指令](#%E9%99%84%E5%8A%A0%E6%8C%87%E4%BB%A4)
+  - [loader](#loader)
+  - [多入口输入打包](#%E5%A4%9A%E5%85%A5%E5%8F%A3%E8%BE%93%E5%85%A5%E6%89%93%E5%8C%85)
+  - [文件名替换[html-webpack-plugin] HTML生成](#%E6%96%87%E4%BB%B6%E5%90%8D%E6%9B%BF%E6%8D%A2html-webpack-plugin-html%E7%94%9F%E6%88%90)
+  - [内联JavaScript](#%E5%86%85%E8%81%94javascript)
+  - [publicPath](#publicpath)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Webpacket
 
 ## install

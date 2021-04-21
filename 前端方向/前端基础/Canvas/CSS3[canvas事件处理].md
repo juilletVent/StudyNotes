@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CSS3[canvas事件处理]](#css3canvas%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86)
+  - [canvas绑定鼠标事件：](#canvas%E7%BB%91%E5%AE%9A%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # CSS3[canvas事件处理]
 
 ## canvas绑定鼠标事件：

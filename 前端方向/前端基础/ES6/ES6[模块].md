@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [ES6 模块](#es6-%E6%A8%A1%E5%9D%97)
+  - [模块导出](#%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%87%BA)
+      - [命名导出](#%E5%91%BD%E5%90%8D%E5%AF%BC%E5%87%BA)
+      - [默认导出](#%E9%BB%98%E8%AE%A4%E5%AF%BC%E5%87%BA)
+  - [模块导入](#%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5)
+  - [复合写法](#%E5%A4%8D%E5%90%88%E5%86%99%E6%B3%95)
+  - [ES6 与 CommonJS的区别](#es6-%E4%B8%8E-commonjs%E7%9A%84%E5%8C%BA%E5%88%AB)
+    - [1、模块引入支持的区别](#1%E6%A8%A1%E5%9D%97%E5%BC%95%E5%85%A5%E6%94%AF%E6%8C%81%E7%9A%84%E5%8C%BA%E5%88%AB)
+    - [2、模块引入后对值的处理策略](#2%E6%A8%A1%E5%9D%97%E5%BC%95%E5%85%A5%E5%90%8E%E5%AF%B9%E5%80%BC%E7%9A%84%E5%A4%84%E7%90%86%E7%AD%96%E7%95%A5)
+    - [3、处理循环引用](#3%E5%A4%84%E7%90%86%E5%BE%AA%E7%8E%AF%E5%BC%95%E7%94%A8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # ES6 模块
 
 ## 模块导出

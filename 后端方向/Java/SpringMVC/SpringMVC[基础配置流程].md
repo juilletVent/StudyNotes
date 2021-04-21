@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [基础配置流程](#%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%E6%B5%81%E7%A8%8B)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 基础配置流程
 
 1、依赖配置 引入依赖：spring-webmvc、servlet 依赖

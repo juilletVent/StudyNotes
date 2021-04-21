@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [第十章](#%E7%AC%AC%E5%8D%81%E7%AB%A0)
+    - [模块](#%E6%A8%A1%E5%9D%97)
+    - [包](#%E5%8C%85)
+- [包](#%E5%8C%85-1)
+    - [sys模块](#sys%E6%A8%A1%E5%9D%97)
+    - [os模块](#os%E6%A8%A1%E5%9D%97)
+    - [fileinput 文件输入模块](#fileinput-%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5%E6%A8%A1%E5%9D%97)
+    - [常用数据结构](#%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+    - [time模块](#time%E6%A8%A1%E5%9D%97)
+    - [random](#random)
+    - [shelve 文件存储](#shelve-%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8)
+    - [re 正则表达式](#re-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+    - [其他的一些有用的库](#%E5%85%B6%E4%BB%96%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E7%94%A8%E7%9A%84%E5%BA%93)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 第十章
 
 #### 模块

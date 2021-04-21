@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [列表渲染](#%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93)
+  - [v-for](#v-for)
+    - [基本使用](#%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8)
+    - [Template v-for](#template-v-for)
+    - [对象迭代 v-for](#%E5%AF%B9%E8%B1%A1%E8%BF%AD%E4%BB%A3-v-for)
+    - [整数迭代 v-for](#%E6%95%B4%E6%95%B0%E8%BF%AD%E4%BB%A3-v-for)
+  - [数组更新检测](#%E6%95%B0%E7%BB%84%E6%9B%B4%E6%96%B0%E6%A3%80%E6%B5%8B)
+    - [Vue 包含一组观察数组的变异方法，所以它们也将会触发视图更新。这些方法如下：](#vue-%E5%8C%85%E5%90%AB%E4%B8%80%E7%BB%84%E8%A7%82%E5%AF%9F%E6%95%B0%E7%BB%84%E7%9A%84%E5%8F%98%E5%BC%82%E6%96%B9%E6%B3%95%E6%89%80%E4%BB%A5%E5%AE%83%E4%BB%AC%E4%B9%9F%E5%B0%86%E4%BC%9A%E8%A7%A6%E5%8F%91%E8%A7%86%E5%9B%BE%E6%9B%B4%E6%96%B0%E8%BF%99%E4%BA%9B%E6%96%B9%E6%B3%95%E5%A6%82%E4%B8%8B)
+    - [注意事项](#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
+  - [显示过滤/排序结果](#%E6%98%BE%E7%A4%BA%E8%BF%87%E6%BB%A4%E6%8E%92%E5%BA%8F%E7%BB%93%E6%9E%9C)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 列表渲染
 
 ## v-for 

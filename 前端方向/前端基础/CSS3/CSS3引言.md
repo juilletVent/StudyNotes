@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [初识CSS3](#%E5%88%9D%E8%AF%86css3)
+  - [前缀](#%E5%89%8D%E7%BC%80)
+  - [CSS3能做什么？](#css3%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 初识CSS3
 
 ## 前缀

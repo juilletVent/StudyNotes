@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Redux 介绍](#redux-%E4%BB%8B%E7%BB%8D)
+  - [核心概念](#%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5)
+  - [三大原则](#%E4%B8%89%E5%A4%A7%E5%8E%9F%E5%88%99)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Redux 介绍
 
 ## 核心概念

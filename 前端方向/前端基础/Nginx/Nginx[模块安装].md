@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [为 Nginx 添加自定义模块](#%E4%B8%BA-nginx-%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9D%97)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 为 Nginx 添加自定义模块
 
 1. 执行 nginx -V 查看现有的模块，并保存相关编译参数

@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Iterator](#iterator)
+  - [概念](#%E6%A6%82%E5%BF%B5)
+  - [默认 Iterator 接口](#%E9%BB%98%E8%AE%A4-iterator-%E6%8E%A5%E5%8F%A3)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Iterator
 
 ## 概念

@@ -1,3 +1,25 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Angular[指令]](#angular%E6%8C%87%E4%BB%A4)
+  - [Directive](#directive)
+    - [ng-model](#ng-model)
+    - [ng-bind](#ng-bind)
+    - [ng-cloak](#ng-cloak)
+    - [ng-repeat](#ng-repeat)
+    - [ng-class](#ng-class)
+    - [ng-show/ng-hide](#ng-showng-hide)
+    - [ng-if](#ng-if)
+    - [ng-href/ng-src](#ng-hrefng-src)
+    - [ng-switch](#ng-switch)
+    - [ng-checked/ng-selected](#ng-checkedng-selected)
+    - [ng-disabled/ng-readonly](#ng-disabledng-readonly)
+    - [常用事件指令](#%E5%B8%B8%E7%94%A8%E4%BA%8B%E4%BB%B6%E6%8C%87%E4%BB%A4)
+  - [自定义指令](#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Angular[指令]
 
 > 符合HTML5规范

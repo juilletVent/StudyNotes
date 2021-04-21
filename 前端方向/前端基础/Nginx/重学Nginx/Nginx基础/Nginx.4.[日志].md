@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [日志系统](#%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F)
+  - [日志定义：](#%E6%97%A5%E5%BF%97%E5%AE%9A%E4%B9%89)
+  - [日志使用](#%E6%97%A5%E5%BF%97%E4%BD%BF%E7%94%A8)
+- [日志允许包含的变量](#%E6%97%A5%E5%BF%97%E5%85%81%E8%AE%B8%E5%8C%85%E5%90%AB%E7%9A%84%E5%8F%98%E9%87%8F)
+- [常用的 Nginx 内置变量](#%E5%B8%B8%E7%94%A8%E7%9A%84-nginx-%E5%86%85%E7%BD%AE%E5%8F%98%E9%87%8F)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 日志系统
 
 日志相关的配置如 access_log、 log_format、open_log_file_cache、 log_not_found、 log_subrequest、 rewrite_log、 error_log

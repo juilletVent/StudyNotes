@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Vue Class与Style绑定](#vue-class%E4%B8%8Estyle%E7%BB%91%E5%AE%9A)
+  - [绑定HTML Class](#%E7%BB%91%E5%AE%9Ahtml-class)
+    - [对象语法](#%E5%AF%B9%E8%B1%A1%E8%AF%AD%E6%B3%95)
+    - [数组语法](#%E6%95%B0%E7%BB%84%E8%AF%AD%E6%B3%95)
+  - [绑定内联样式](#%E7%BB%91%E5%AE%9A%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F)
+    - [对象语法](#%E5%AF%B9%E8%B1%A1%E8%AF%AD%E6%B3%95-1)
+    - [数组语法](#%E6%95%B0%E7%BB%84%E8%AF%AD%E6%B3%95-1)
+    - [自动添加前缀](#%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%89%8D%E7%BC%80)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Vue Class与Style绑定
 
 ## 绑定HTML Class

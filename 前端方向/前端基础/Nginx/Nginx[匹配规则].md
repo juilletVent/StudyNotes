@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [匹配模式](#%E5%8C%B9%E9%85%8D%E6%A8%A1%E5%BC%8F)
+- [优先级](#%E4%BC%98%E5%85%88%E7%BA%A7)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 匹配模式
 
 - = 开头表示精确匹配 如 A 中只匹配根目录结尾的请求，后面不能带任何字符串。

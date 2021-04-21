@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Nodejs内存机制](#nodejs%E5%86%85%E5%AD%98%E6%9C%BA%E5%88%B6)
+- [V8的垃圾回收机制](#v8%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6)
+  - [1、针对新生代的对象使用Scavenge `/ˈskævɪndʒ/`算法进行回收，](#1%E9%92%88%E5%AF%B9%E6%96%B0%E7%94%9F%E4%BB%A3%E7%9A%84%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8scavenge-%CB%88sk%C3%A6v%C9%AAnd%CA%92%E7%AE%97%E6%B3%95%E8%BF%9B%E8%A1%8C%E5%9B%9E%E6%94%B6)
+  - [2、Mark-Sweep `/swiːp/`](#2mark-sweep-swi%CB%90p)
+  - [3、Mark-Compact `kɒmpækt`](#3mark-compact-k%C9%92mp%C3%A6kt)
+- [使用内存作为缓存的风险](#%E4%BD%BF%E7%94%A8%E5%86%85%E5%AD%98%E4%BD%9C%E4%B8%BA%E7%BC%93%E5%AD%98%E7%9A%84%E9%A3%8E%E9%99%A9)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Nodejs内存机制
 
 nodejs基于V8，具有内存使用上限，64位系统的内存使用上限为1.4GB左右，32位系统位0.7GB左右

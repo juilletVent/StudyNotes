@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [指令](#%E6%8C%87%E4%BB%A4)
+  - [定义指令](#%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4)
+  - [钩子函数](#%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0)
+  - [钩子函数参数](#%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0)
+  - [函数简写](#%E5%87%BD%E6%95%B0%E7%AE%80%E5%86%99)
+  - [对象字面量](#%E5%AF%B9%E8%B1%A1%E5%AD%97%E9%9D%A2%E9%87%8F)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 指令
 
 ## 定义指令

@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [函数](#%E5%87%BD%E6%95%B0)
+    - [返回值](#%E8%BF%94%E5%9B%9E%E5%80%BC)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 函数
 
 定义语法：与js定义一致，不过bash中没有函数形参的概念，所有参数均为约定形式，$0代表bash本身执行路径，函数参数为$1-$n表示，调用时不需要括号，参数跟在函数名之后，多个参数空格分隔

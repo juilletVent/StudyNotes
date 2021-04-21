@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Spring 基础](#spring-%E5%9F%BA%E7%A1%80)
+  - [依赖安装](#%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85)
+  - [简单的 IOC](#%E7%AE%80%E5%8D%95%E7%9A%84-ioc)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <!--
  * @Author: Gmsoft - WeiHong Ran
  * @Date: 2019-10-09 21:47:29

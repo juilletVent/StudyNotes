@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [组合与继承](#%E7%BB%84%E5%90%88%E4%B8%8E%E7%BB%A7%E6%89%BF)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 组合与继承
 
 > 包含关系

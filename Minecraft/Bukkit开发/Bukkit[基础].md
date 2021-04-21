@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [plugin.yml 插件描述文件](#pluginyml-%E6%8F%92%E4%BB%B6%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6)
+- [主类](#%E4%B8%BB%E7%B1%BB)
+- [检查用户是否是首次登录](#%E6%A3%80%E6%9F%A5%E7%94%A8%E6%88%B7%E6%98%AF%E5%90%A6%E6%98%AF%E9%A6%96%E6%AC%A1%E7%99%BB%E5%BD%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## plugin.yml 插件描述文件
 
 name: 插件名称

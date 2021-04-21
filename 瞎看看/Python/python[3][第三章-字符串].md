@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [第三章 字符串](#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%AD%97%E7%AC%A6%E4%B8%B2)
+    - [常用api](#%E5%B8%B8%E7%94%A8api)
+    - [格式化](#%E6%A0%BC%E5%BC%8F%E5%8C%96)
+    - [保持字符串不被转译 & 跨行字符串](#%E4%BF%9D%E6%8C%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8D%E8%A2%AB%E8%BD%AC%E8%AF%91--%E8%B7%A8%E8%A1%8C%E5%AD%97%E7%AC%A6%E4%B8%B2)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 第三章 字符串
 
 #### 常用api

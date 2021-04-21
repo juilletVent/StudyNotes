@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Install](#install)
+- [Use](#use)
+    - [动画结束后移除组件](#%E5%8A%A8%E7%94%BB%E7%BB%93%E6%9D%9F%E5%90%8E%E7%A7%BB%E9%99%A4%E7%BB%84%E4%BB%B6)
+- [动画钩子](#%E5%8A%A8%E7%94%BB%E9%92%A9%E5%AD%90)
+- [初始化动画](#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8A%A8%E7%94%BB)
+- [使用 TransitionGroup](#%E4%BD%BF%E7%94%A8-transitiongroup)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Install
 
 `yarn add react-transition-group`
