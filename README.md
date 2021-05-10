@@ -13,5 +13,3 @@
 | 测试      | Fiddler                                                 | 一点点            |
 | 中间件    | Nginx                                                   | 一点点            |
 | Minecraft | Bukkit 开发、Server                                     | 一点点            |
-
-测试提交GPG签名
