@@ -71,6 +71,7 @@ commond > save
     gpgSign = true
 [gpg]
 ; 这里 program 的位置是 Gpg4win 安装时的默认位置，斜线需要转义
-; 非常重要：这里的程序必须与你上面导入秘钥所使用的的gpg.exe程序是同一个，不然就会导致秘钥找不到，报错：No secret key
+; 非常重要：这里的程序必须与你上面导入秘钥所使用的的gpg.exe程序是同一个，不然就会导致秘钥找不到
+; 类似报错：gpg: skipped "4020AEF0": No secret key
 	program = c:\\Program Files (x86)\\gnupg\\bin\\gpg.exe
 ```
