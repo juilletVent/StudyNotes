@@ -35,17 +35,25 @@
 gpg: skipped "4020AEF0": No secret key
 ```
 
-```js
-// 公钥私钥一起导入了，也可以分开导入
+```bash
+# 导出
+gpg --output mygpgkey_pub.gpg --armor --export 375A500B
+gpg --output mygpgkey_sec.gpg --armor --export-secret-key 375A500B
+# 导入
+gpg --import ~/mygpgkey_pub.gpg
+gpg --allow-secret-key-import --import ~/mygpgkey_sec.gpg
+
+
+# 公钥私钥一起导入了，也可以分开导入
 gpg  --import ./git_gpgkey_pub.gpg ./git_gpgkey_sec.gpg
-// 将导入的私钥设置为授信的:编辑秘钥，进入交互模式，使用邮箱或者ID进入，都可以
+# 将导入的私钥设置为授信的:编辑秘钥，进入交互模式，使用邮箱或者ID进入，都可以
 gpg --edit-key 971616154@qq.com
 gpg --edit-key 8BF6A83D4F8FE1957D86E5903D61B9364020AEF0
-// 设置授信
+# 设置授信
 commond > trust
-// 不限制
+# 不限制
 commond > 5
-// 保存退出
+# 保存退出
 commond > save
 ```
 
