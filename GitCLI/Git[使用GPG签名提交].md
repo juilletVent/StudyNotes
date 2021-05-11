@@ -4,10 +4,12 @@
 
 ## 安装基础件
 
-- gnupg （必须）：提供 gpg 命令
-- gpg4win （可选的 GUI）：提供操作的 GUI 图形，如果纯粹使用 CLI 的话，这个东西可以不要
+如果安装了 gitbash 或者 cmder 这些终端工具，就不需要安装任何基础套件，安装了之后反而会导致存在多个 gpg 程序，需要你自己对应环境变量去匹配使用，否则将导致秘钥导入不生效的问题；
 
-Tips：不需要安装任何附加组件如果你安装了 gitbash 或者 cmder，他们都是都有 gpg 套件的
+如果你已经安装了 gitbash 并且也单独安装了 gnugp/gpg4win，则可以用 everything 搜一下`gpg.exe`有几个，然后检查环境变量，把多余的 gpg 程序环境变量删除掉，在全局环境变量中，保证只能所引导一个 gpg.exe 程序，否则可能会导致混乱
+
+- gnupg ：提供 gpg 命令
+- gpg4win ：提供操作的 GUI 图形，如果纯粹使用 CLI 的话，这个东西可以不要
 
 ## 导入秘钥
 
@@ -22,8 +24,8 @@ gpg --edit-key 971616154@qq.com
 commond > trust
 // 不限制
 commond > 5
-// 退出
-commond > exit
+// 保存退出
+commond > save
 ```
 
 GUI 操作：使用 GUI 操作导入公钥私钥然后右键设置已认证即可（自己测试使用 GUI 成功完成提交），CLI 不知道为什么没成功
