@@ -7,6 +7,8 @@
 - gnupg （必须）：提供 gpg 命令
 - gpg4win （可选的 GUI）：提供操作的 GUI 图形，如果纯粹使用 CLI 的话，这个东西可以不要
 
+Tips：不需要安装任何附加组件如果你安装了 gitbash 或者 cmder，他们都是都有 gpg 套件的
+
 ## 导入秘钥
 
 CLI 操作（没成功）：
