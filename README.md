@@ -1,21 +1,3 @@
-<style>
-.head-img{
-	display:block;
-	margin:10px auto;
-	width:350px;
-	border-radius:3000px;
-    	padding: 10px;
-    	border: 1px solid #d9d9d9;
-}
-.head-msg{
-	margin:15px 0;
-	text-align:center;
-}
-.head-desc{
-  margin-bottom:35px;
-}
-</style>
-
 <img src="./img/luna.png" class="head-img">
 
 <!-- <p class="head-msg">露娜様：好好学习，天天向上</p> -->
