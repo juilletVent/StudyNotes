@@ -1,9 +1,26 @@
-<link rel="stylesheet" href="./img/readme.css">
+<style>
+.head-img{
+	display:block;
+	margin:10px auto;
+	width:350px;
+	border-radius:3000px;
+    	padding: 10px;
+    	border: 1px solid #d9d9d9;
+}
+.head-msg{
+	margin:15px 0;
+	text-align:center;
+}
+.head-desc{
+  margin-bottom:35px;
+}
+</style>
 
 <img src="./img/luna.png" class="head-img">
 
-<p class="head-msg">露娜様：好好学习，天天向上</p>
-<p class="head-msg">归纳整理了蛮大一部分的学习笔记，很多方向都有，很多都浅尝辄止。</p>
+<!-- <p class="head-msg">露娜様：好好学习，天天向上</p> -->
+<h3 class="head-msg">露娜様：人生是一场开放式的MMORGP，想要过得舒服，要么肝，要么氪。</h3>
+<p class="head-msg head-desc">归纳整理了蛮大一部分的学习笔记，很多方向都有，很多都浅尝辄止。</p>
 
 | 大方向    | 包含的小版块                                            | 学习程度          |
 | :-------- | :------------------------------------------------------ | :---------------- |
