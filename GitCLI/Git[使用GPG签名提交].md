@@ -83,3 +83,52 @@ commond > save
 ; 类似报错：gpg: skipped "4020AEF0": No secret key
 	program = c:\\Program Files (x86)\\gnupg\\bin\\gpg.exe
 ```
+
+## 全局配置 GPG 提交
+
+按顺序执行以下命令开启全局 GPG 提交签名，不用再单独为每个项目配置 GPG 了：
+
+```bash
+# 由于是命令行模式，需要携带引号执行
+# 设置GPG签名程序路径
+git config --global gpg.program "c:\Program Files (x86)\gnupg\bin\gpg.exe"
+# 设置你的昵称
+git config --global user.name juilletVent
+# 设置你的邮箱（与证书的一致）
+git config --global user.email julysunshine0914@gmail.com
+# 指定用于签名的证书特征ID
+git config --global user.signingkey BD98179E
+# 开启GPG签名
+git config --global commit.gpgsign true
+```
+
+### 全局配置文件
+
+为文件位置：`用户家目录/.gitconfig`
+
+配置样例：
+
+```ini
+; 关键配置，其他配置没有写进来
+[user]
+	name = juilletVent
+	email = julysunshine0914@gmail.com
+	signingkey = BD98179E
+[http]
+	proxy = socks5://127.0.0.1:8887
+[gpg]
+	program = 'C:\\Program Files (x86)\\GnuPG\\bin'
+[https]
+	proxy = socks5://127.0.0.1:8887
+[commit]
+	gpgsign = true
+
+```
+
+## 开启提交代理
+
+git 的代理请使用 socks5,不要使用 http(s) 代理
+
+```bash
+git config --global http.proxy socks5://127.0.0.1:8887
+```
