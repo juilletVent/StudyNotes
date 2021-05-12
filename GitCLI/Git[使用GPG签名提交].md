@@ -1,14 +1,16 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
 - [生成密钥对](#%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5%E5%AF%B9)
 - [安装基础件](#%E5%AE%89%E8%A3%85%E5%9F%BA%E7%A1%80%E4%BB%B6)
 - [导入秘钥](#%E5%AF%BC%E5%85%A5%E7%A7%98%E9%92%A5)
   - [使用 CLI 操作](#%E4%BD%BF%E7%94%A8-cli-%E6%93%8D%E4%BD%9C)
   - [GUI 操作](#gui-%E6%93%8D%E4%BD%9C)
-- [修改 git 提交配置](#%E4%BF%AE%E6%94%B9-git-%E6%8F%90%E4%BA%A4%E9%85%8D%E7%BD%AE)
+- [单个项目配置](#%E5%8D%95%E4%B8%AA%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE)
+- [全局配置 GPG 提交](#%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE-gpg-%E6%8F%90%E4%BA%A4)
+  - [全局配置文件](#%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+- [开启提交代理](#%E5%BC%80%E5%90%AF%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%90%86)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
