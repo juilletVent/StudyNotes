@@ -61,7 +61,7 @@ commond > save
 
 使用 GUI 操作导入公钥私钥然后右键设置已认证即可,然后找到 gui 安装目录下 gpg.exe 所有的目录，将该目录配置到 gitconfig 中即可，gui 程序也是对上面 CLI 操作步骤的封装，实质上是一样的
 
-## 修改 git 提交配置
+## 单个项目配置
 
 增加如下配置
 
@@ -104,7 +104,7 @@ git config --global commit.gpgsign true
 
 ### 全局配置文件
 
-为文件位置：`用户家目录/.gitconfig`
+文件位置：`用户家目录/.gitconfig`
 
 配置样例：
 
