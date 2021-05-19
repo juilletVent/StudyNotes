@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" />
+    <button>Run Main</button>
+    <button>Run Worker</button>
+    <script>
+      window.onload = function () {
+        // Worker演示
+        // btns = document.getElementsByTagName("button");
+        // btns[0].addEventListener("click", () => {
+        //   const now = Date.now() + 5000;
+        //   let a = 0;
+        //   while (Date.now() < now) {
+        //     a += 1;
+        //   }
+        //   console.log("main done");
+        // });
+        // btns[1].addEventListener("click", () => {
+        //   btns[1].setAttribute("disabled", "disabled");
+        //   worker.postMessage("start");
+        // });
+        // const worker = new Worker("./worker.js");
+        // worker.onmessage = function (event) {
+        //   console.log("worker done", event);
+        //   btns[1].removeAttribute("disabled");
+        // };
+        // 多线程安全访问演示
+        const workerScript = function () {
+          self.onmessage = ({ data }) => {
+            const view = new Uint32Array(data);
+            // 执行 1 000 000 次加操作
+            for (let i = 0; i < 1e6; ++i) {
+              // 线程不安全加操作会导致资源争用
+              // view[0] += 1;
+              Atomics.add(view, 0, 1);
+            }
+            self.postMessage(null);
+          };
+        };
+        const workerScriptBlobUrl = URL.createObjectURL(
+          new Blob([`(${workerScript.toString()})()`])
+        );
+        // 创建容量为 4 的工作线程池
+        const workers = [];
+        for (let i = 0; i < 4; ++i) {
+          workers.push(new Worker(workerScriptBlobUrl));
+        }
+        // 在最后一个工作线程完成后打印出最终值
+        let responseCount = 0;
+        for (const worker of workers) {
+          worker.onmessage = () => {
+            if (++responseCount == workers.length) {
+              console.log(`Final buffer value: ${view[0]}`);
+            }
+          };
+        }
+        // 初始化 SharedArrayBuffer
+        const sharedArrayBuffer = new SharedArrayBuffer(4);
+        const view = new Uint32Array(sharedArrayBuffer);
+        view[0] = 1;
+        // 把 SharedArrayBuffer 发送到每个工作线程
+        for (const worker of workers) {
+          worker.postMessage(sharedArrayBuffer);
+        }
+      };
+    </script>
+  </body>
+</html>
