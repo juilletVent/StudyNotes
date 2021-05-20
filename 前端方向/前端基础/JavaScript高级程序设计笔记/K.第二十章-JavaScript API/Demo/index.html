@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        height: 300px;
+        border: 1px dashed #d9d9d9;
+        display: flex;
+        justify-content: space-around;
+      }
+      #left,
+      #right {
+        width: 45%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img id="left" src="http://127.0.0.1:8000/head.jpg" />
+      <img id="right" />
+    </div>
+  </body>
+  <script>
+    window.onload = function () {
+      let droptarget = document.getElementById("right");
+      function handleEvent(event) {
+        event.preventDefault();
+        if (event.type == "drop") {
+          url = event.dataTransfer.getData("URL");
+          droptarget.src = url;
+        }
+      }
+      droptarget.addEventListener("dragenter", handleEvent);
+      droptarget.addEventListener("dragover", handleEvent);
+      droptarget.addEventListener("drop", handleEvent);
+    };
+  </script>
+</html>
