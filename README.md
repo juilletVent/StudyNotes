@@ -8,7 +8,7 @@
 | :-------- | :------------------------------------------------------ | :---------------- |
 | 前端方向  | 前端基础、Angularjs、Vue、React、前端工程化、CSS 预处理 | 较为详细          |
 | 后端方向  | ThinkPHP、JavaWeb、Mybatis、Spring MVC/Boot、Mysql      | Java 部分较为详细 |
-| 脚本      | ES6、TypeScript、Nodejs                                 | 一点点            |
+| 脚本      | ES6、TypeScript、Nodejs                                 | 比较熟悉            |
 | 测试      | Fiddler                                                 | 一点点            |
-| 中间件    | Nginx                                                   | 一点点            |
+| 中间件    | Nginx                                                   | 比较熟悉            |
 | Minecraft | Bukkit 开发、Server                                     | 一点点            |
