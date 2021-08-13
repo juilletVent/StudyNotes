@@ -49,7 +49,7 @@ gpg --allow-secret-key-import --import ~/mygpgkey_sec.gpg
 # 公钥私钥一起导入了，也可以分开导入
 gpg  --import ./git_gpgkey_pub.gpg ./git_gpgkey_sec.gpg
 # 将导入的私钥设置为授信的:编辑秘钥，进入交互模式，使用邮箱或者ID进入，都可以
-gpg --edit-key 971616154@qq.com
+gpg --edit-key youemail
 gpg --edit-key 8BF6A83D4F8FE1957D86E5903D61B9364020AEF0
 # 设置授信
 commond > trust
@@ -73,9 +73,9 @@ commond > save
 ; name指gpg签名生成时你填的名字
     name = WeiHong Ran
 ; email指gpg签名生成时你填的邮箱
-    email = 971616154@qq.com
+    email = youemail
 ; signingkey指公钥ID的后八位，或者说指纹的后八位
-    signingkey = 4020AEF0
+    signingkey = 4020AAAA
 [commit]
 ; 此处gpgSign的值可为true或者false，true指开启gpg签名
     gpgSign = true
@@ -95,11 +95,11 @@ commond > save
 # 设置GPG签名程序路径
 git config --global gpg.program "c:\Program Files (x86)\gnupg\bin\gpg.exe"
 # 设置你的昵称
-git config --global user.name juilletVent
+git config --global user.name youname
 # 设置你的邮箱（与证书的一致）
-git config --global user.email julysunshine0914@gmail.com
+git config --global user.email youemail
 # 指定用于签名的证书特征ID
-git config --global user.signingkey BD98179E
+git config --global user.signingkey BD9817AA
 # 开启GPG签名
 git config --global commit.gpgsign true
 ```
@@ -113,9 +113,9 @@ git config --global commit.gpgsign true
 ```ini
 ; 关键配置，其他配置没有写进来
 [user]
-	name = juilletVent
-	email = julysunshine0914@gmail.com
-	signingkey = BD98179E
+	name = youname
+	email = youemail
+	signingkey = BD9817AA
 [http]
 	proxy = socks5://127.0.0.1:8887
 [gpg]
