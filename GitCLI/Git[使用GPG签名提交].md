@@ -1,7 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [生成密钥对](#%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5%E5%AF%B9)
 - [安装基础件](#%E5%AE%89%E8%A3%85%E5%9F%BA%E7%A1%80%E4%BB%B6)
 - [导入秘钥](#%E5%AF%BC%E5%85%A5%E7%A7%98%E9%92%A5)
@@ -115,11 +114,12 @@ git config --global commit.gpgsign true
 [user]
 	name = youname
 	email = youemail
+	; 这里的key就是证书指纹，可以写全也可以只写一段，只要能索引的到就行
 	signingkey = BD9817AA
 [http]
 	proxy = socks5://127.0.0.1:8887
 [gpg]
-	program = 'C:\\Program Files (x86)\\GnuPG\\bin'
+	program = c:\\Program Files (x86)\\gnupg\\bin\\gpg.exe
 [https]
 	proxy = socks5://127.0.0.1:8887
 [commit]
