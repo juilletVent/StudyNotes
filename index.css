@@ -1,0 +1,42 @@
+nav > a {
+  display: inline-block;
+  color: white;
+  margin: 0 3px;
+  font-size: 18px;
+  transition: all 0.3s;
+  border-radius: 3px;
+  padding: 5px;
+  min-width: 100px;
+  text-align: center;
+}
+nav > a:hover {
+  background-color: rgba(255, 255, 255, 0.205);
+}
+
+@font-face {
+  font-family: "xdn";
+  src: url("./x.woff") format("woff");
+}
+
+#studynotes,
+blockquote,
+blockquote + ul,
+blockquote + ul + p,
+.app-nav > a {
+  font-family: "xdn";
+}
+.app-nav > a {
+  font-size: 26px;
+}
+
+.head-img {
+  padding: 5px;
+  background: white;
+  border-radius: 100%;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 0 5px rgb(187 187 187 / 16%);
+}
+
+:root {
+  --cover-max-width: 80em;
+}

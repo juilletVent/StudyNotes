@@ -1,0 +1,12 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "docsify s ./ -p 8000"
+  },
+  "dependencies": {
+    "docsify-cli": "^4.4.3"
+  }
+}
