@@ -1,4 +1,5 @@
-<img src="./img/luna.png" class="head-img">
+<!-- <img src="./img/luna.png" class="head-img"> -->
+<img src="./img/flower.jpg" class="head-img">
 
 # StudyNotes
 
