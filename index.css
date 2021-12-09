@@ -13,17 +13,17 @@ nav > a:hover {
   background-color: rgba(255, 255, 255, 0.205);
 }
 
-@font-face {
+/* @font-face {
   font-family: "xdn";
   src: url("./x.woff") format("woff");
-}
+} */
 
 #studynotes,
 blockquote,
 blockquote + ul,
 blockquote + ul + p,
 .app-nav > a {
-  font-family: "xdn";
+  /* font-family: "xdn"; */
 }
 .app-nav > a {
   font-size: 26px;
