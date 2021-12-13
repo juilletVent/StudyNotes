@@ -1,13 +1,14 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
 - [Firewall](#firewall)
-    - [添加规则](#%E6%B7%BB%E5%8A%A0%E8%A7%84%E5%88%99)
-    - [重启生效](#%E9%87%8D%E5%90%AF%E7%94%9F%E6%95%88)
-    - [查询](#%E6%9F%A5%E8%AF%A2)
-- [配置 ssh 端口](#%E9%85%8D%E7%BD%AE-ssh-%E7%AB%AF%E5%8F%A3)
-- [IP 封禁](#ip-%E5%B0%81%E7%A6%81)
+    - [添加规则](#添加规则)
+    - [重启生效](#重启生效)
+    - [查询](#查询)
+- [配置 ssh 端口](#配置-ssh-端口)
+- [IP 封禁](#ip-封禁)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -33,7 +34,14 @@
 
 ## IP 封禁
 
-    firewall-cmd --permanent --add-rich-rule="rule family='ipv4' source address='222.222.222.222' reject"
+    # 封禁
+    firewall-cmd --permanent --add-rich-rule="rule family='ipv4' source address='222.222.222.222' reject" --permanent
+    # 白名单
+    firewall-cmd --add-rich-rule='rule family=ipv4 source address=172.16.1.0/24 port port="11211" protocol="tcp" accept' --permanent
+    # 记得重启
+
+    # 也可直接编辑配置文件
+    vim /etc/firewalld/zones/public.xml
 
 修改 port 配置项即可，多个端口配置多个，然后重新启动 sshd 服务即可
 
