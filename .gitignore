@@ -2,3 +2,5 @@
 Java/TestProject/MessageBook/out/*
 Java/TestProject/testMybatis/target/*
 /**/.DS_Store
+node_modules
+.vscode/settings.json

@@ -5,7 +5,6 @@
   - [Git[使用GPG签名提交]](GitCLI/Git[使用GPG签名提交].md)
   - [Git[基础命令]](GitCLI/Git[基础命令].md)
   - [Git[设置代理-芜湖]](GitCLI/Git[设置代理-芜湖].md)
-- img
 - Minecraft
   - Bukkit开发
     - [Bukkit[ItemMeta物品属性]](Minecraft/Bukkit开发/Bukkit[ItemMeta物品属性].md)
@@ -15,12 +14,10 @@
     - [Bukkit[实体生成]](Minecraft/Bukkit开发/Bukkit[实体生成].md)
     - [Bukkit[指令]](Minecraft/Bukkit开发/Bukkit[指令].md)
     - [Bukkit[玩家事件]](Minecraft/Bukkit开发/Bukkit[玩家事件].md)
-    - Java[执行Dos
-      - [Java[执行Dos]](Minecraft/Bukkit开发/Java[执行Dos/Java[执行Dos].md)
+    - [Java[执行Dos]](Minecraft/Bukkit开发/Java[执行Dos].md)
   - Server
     - [Bukkit[插件]](Minecraft/Server/Bukkit[插件].md)
     - [Minecraft[刷怪笼]](Minecraft/Server/Minecraft[刷怪笼].md)
-  - 公共
 - 其他归类
   - IDEA
     - [1.IDEA[常用快捷键整理]](其他归类/IDEA/1.IDEA[常用快捷键整理].md)
@@ -32,7 +29,6 @@
     - [1.进入root模式](其他归类/openwrt/1.进入root模式.md)
     - [2.配置opkg包管理环境](其他归类/openwrt/2.配置opkg包管理环境.md)
     - [3.黑群晖自启动](其他归类/openwrt/3.黑群晖自启动.md)
-  - VsCode
 - 前端方向
   - [i18n-code](前端方向/i18n-code.md)
   - 前端基础
@@ -201,7 +197,6 @@
         - [5.页面是否可见](前端方向/前端基础/JavaScript高级程序设计笔记/K.第二十章-JavaScript%20API/5.页面是否可见.md)
         - [6.计时API](前端方向/前端基础/JavaScript高级程序设计笔记/K.第二十章-JavaScript%20API/6.计时API.md)
         - [7.消息加密(摘要)](前端方向/前端基础/JavaScript高级程序设计笔记/K.第二十章-JavaScript%20API/7.消息加密(摘要).md)
-        - Demo
       - L.第二十一章-错误处理与调试
         - [1.一些知识点](前端方向/前端基础/JavaScript高级程序设计笔记/L.第二十一章-错误处理与调试/1.一些知识点.md)
       - M.第二十二章-XML处理
@@ -222,7 +217,6 @@
         - [1.WebWorker简介](前端方向/前端基础/JavaScript高级程序设计笔记/R.第二十七章-WebWorker/1.WebWorker简介.md)
         - [2.线程池](前端方向/前端基础/JavaScript高级程序设计笔记/R.第二十七章-WebWorker/2.线程池.md)
         - [3.共享与服务工作线程](前端方向/前端基础/JavaScript高级程序设计笔记/R.第二十七章-WebWorker/3.共享与服务工作线程.md)
-        - Demo
       - S.第二十八章-最佳实践
         - [1.可维护性](前端方向/前端基础/JavaScript高级程序设计笔记/S.第二十八章-最佳实践/1.可维护性.md)
         - [2.性能](前端方向/前端基础/JavaScript高级程序设计笔记/S.第二十八章-最佳实践/2.性能.md)
@@ -231,7 +225,6 @@
         - [2.关于正则的新东西](前端方向/前端基础/JavaScript高级程序设计笔记/T.附录A/2.关于正则的新东西.md)
         - [3.关于新增的API](前端方向/前端基础/JavaScript高级程序设计笔记/T.附录A/3.关于新增的API.md)
         - [4.异常处理的变化](前端方向/前端基础/JavaScript高级程序设计笔记/T.附录A/4.异常处理的变化.md)
-      - zz_asset
     - JQuery
       - [JQuery[基础一-样式篇]](前端方向/前端基础/JQuery/JQuery[基础一-样式篇].md)
       - [JQuery[基础三-Event篇]](前端方向/前端基础/JQuery/JQuery[基础三-Event篇].md)
@@ -264,6 +257,7 @@
       - [Nginx[流量分发]](前端方向/前端基础/Nginx/Nginx[流量分发].md)
       - [Nginx[访问限制]](前端方向/前端基础/Nginx/Nginx[访问限制].md)
       - [Nginx[负载均衡]](前端方向/前端基础/Nginx/Nginx[负载均衡].md)
+      - [Nginx[跨域控制]](前端方向/前端基础/Nginx/Nginx[跨域控制].md)
       - 重学Nginx
         - Nginx变量
           - [1.基础部分](前端方向/前端基础/Nginx/重学Nginx/Nginx变量/1.基础部分.md)
@@ -343,7 +337,6 @@
       - [Webpack[资源输入输出]](前端方向/前端基础/Webpack4/Webpack[资源输入输出].md)
       - [Webpack[预处理器]](前端方向/前端基础/Webpack4/Webpack[预处理器].md)
     - Webpack5
-      - 样例配置
       - 概念
         - [1.Entry](前端方向/前端基础/Webpack5/概念/1.Entry.md)
         - [2.Output](前端方向/前端基础/Webpack5/概念/2.Output.md)
@@ -366,6 +359,13 @@
       - [前端工程化[Package,json文件]](前端方向/前端基础/前端工程化/前端工程化[Package,json文件].md)
       - [前端工程化[script前置&后置命令](前端方向/前端基础/前端工程化/前端工程化[script前置&后置命令.md)
       - [前端工程化[为旧模块编写类型声明]](前端方向/前端基础/前端工程化/前端工程化[为旧模块编写类型声明].md)
+    - 极客时间[Web协议详解]
+      - [1.HTTP1.1的问题与优化](前端方向/前端基础/极客时间[Web协议详解]/1.HTTP1.1的问题与优化.md)
+      - [2.HTTP2相关笔记与描述](前端方向/前端基础/极客时间[Web协议详解]/2.HTTP2相关笔记与描述.md)
+      - [3.TCP&IP协议](前端方向/前端基础/极客时间[Web协议详解]/3.TCP&IP协议.md)
+      - [4.TLS协议](前端方向/前端基础/极客时间[Web协议详解]/4.TLS协议.md)
+      - [5.NAT地址转换](前端方向/前端基础/极客时间[Web协议详解]/5.NAT地址转换.md)
+      - [6.IP选路](前端方向/前端基础/极客时间[Web协议详解]/6.IP选路.md)
     - 现代JavaScript教程
       - [1.[第二部分].指针事件](前端方向/前端基础/现代JavaScript教程/1.[第二部分].指针事件.md)
       - [2.[第二部分]焦点](前端方向/前端基础/现代JavaScript教程/2.[第二部分]焦点.md)
@@ -527,7 +527,6 @@
       - [Swagger[常用注解]](后端方向/Java/Swagger/Swagger[常用注解].md)
   - Linux
     - [bash环境的ftp操作](后端方向/Linux/bash环境的ftp操作.md)
-    - img
     - [Linux[Bash基础]](后端方向/Linux/Linux[Bash基础].md)
     - [Linux[chattr隐藏属性]](后端方向/Linux/Linux[chattr隐藏属性].md)
     - [Linux[Job Control]](后端方向/Linux/Linux[Job%20Control].md)
@@ -613,7 +612,6 @@
     - [6.Docker[特权模式]](容器技术/Docker/6.Docker[特权模式].md)
     - [7.Docker[容器修改]](容器技术/Docker/7.Docker[容器修改].md)
     - [8.Docker[容器网络]](容器技术/Docker/8.Docker[容器网络].md)
-    - 栗子
 - 日本語
   - 1.初级-上
     - [1.第一课[基本句型]](日本語/1.初级-上/1.第一课[基本句型].md)
@@ -633,7 +631,6 @@
     - [Fiddler[基础使用]](测试相关/Fiddler/Fiddler[基础使用].md)
 - 生活
   - 吉他
-    - asset
     - 乐理
       - [0.十二平均律](生活/吉他/乐理/0.十二平均律.md)
       - [1.全半音](生活/吉他/乐理/1.全半音.md)
@@ -660,7 +657,6 @@
     - [Pyqt[1][基础窗口部分]](瞎看看/Pyqt/Pyqt[1][基础窗口部分].md)
     - [Pyqt[2][信号基础部分]](瞎看看/Pyqt/Pyqt[2][信号基础部分].md)
   - Python
-    - img
     - [python[10][第十章-标准库的一些模块]](瞎看看/Python/python[10][第十章-标准库的一些模块].md)
     - [python[11][第十一章-文件与素材]](瞎看看/Python/python[11][第十一章-文件与素材].md)
     - [python[12][第十二章-gui]](瞎看看/Python/python[12][第十二章-gui].md)
@@ -679,6 +675,12 @@
     - [python[7][第七章-类]](瞎看看/Python/python[7][第七章-类].md)
     - [python[8][第八章]-异常](瞎看看/Python/python[8][第八章]-异常.md)
     - [python[9][第九章]-魔术方法、属性、迭代器](瞎看看/Python/python[9][第九章]-魔术方法、属性、迭代器.md)
+  - RSA加解密
+    - [1.相关规范与概念](瞎看看/RSA加解密/1.相关规范与概念.md)
+    - [2.求取公私钥与加解密](瞎看看/RSA加解密/2.求取公私钥与加解密.md)
+  - 学习高手
+    - [1.学习高手[排斥与厌恶心理]](瞎看看/学习高手/1.学习高手[排斥与厌恶心理].md)
+    - [2.学习高手[告别伪勤奋]](瞎看看/学习高手/2.学习高手[告别伪勤奋].md)
   - 批处理
     - [1.[基础语法]](瞎看看/批处理/1.[基础语法].md)
     - [2.[变量与运行时参数]](瞎看看/批处理/2.[变量与运行时参数].md)
