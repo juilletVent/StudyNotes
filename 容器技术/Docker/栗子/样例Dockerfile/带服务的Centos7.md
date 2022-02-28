@@ -33,7 +33,7 @@ RUN echo alias ll="\"ls -l --color\"" > /.dockerenv & \
 . /.dockerenv & \
 yum clean packages & \
 yum update -y & \
-yum install wget net-tools -y
+yum install wget net-tools vim -y
 # 入口执行的命令，数组最终采用空格进行连接，生成一条命令：/usr/sbin/nginx -g deamon off;
 # ENTRYPOINT ["/usr/sbin/nginx","-g","daemon off;"]
 # 循环shell命令，保持容器不退出
@@ -41,11 +41,11 @@ ENTRYPOINT ["/bin/bash","-c","while true;do echo hello docker;sleep 1;done"]
 # 目录挂载位置
 VOLUME ["/data1"]
 # 暴露端口
-EXPOSE 80 443 3306 21 22 17761
+EXPOSE 21 22 80 443 3306 8888
 ```
 
 ## 启动容器
 
 ```shell
-docker run -itd -p 20080:80 -p 23306:3306 -p 20443:443 -p 21000-21050:21000-21050 --name ss-panel my-centos
+docker run -itd -p 20080:80 -p 23306:3306 -p 20443:443 -p 28888:8888 -p 20021:21 -p 21000-21020:21000-21020 --name proxy-manager-instance proxy-manager
 ```
