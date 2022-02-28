@@ -1,0 +1,51 @@
+## 基础 Dockerfile
+
+```dockerfile
+FROM centos:7
+ENV container docker
+RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
+systemd-tmpfiles-setup.service ] || rm -f $i; done); \
+rm -f /lib/systemd/system/multi-user.target.wants/*;\
+rm -f /etc/systemd/system/*.wants/*;\
+rm -f /lib/systemd/system/local-fs.target.wants/*; \
+rm -f /lib/systemd/system/sockets.target.wants/*udev*; \
+rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
+rm -f /lib/systemd/system/basic.target.wants/*;\
+rm -f /lib/systemd/system/anaconda.target.wants/*;
+VOLUME [ "/sys/fs/cgroup" ]
+CMD ["/usr/sbin/init"]
+```
+
+## Build
+
+```shell
+docker build -t local/c7-systemd .
+```
+
+## 应用 Dockerfile
+
+```dockerfile
+# 基础依赖Centos的镜像
+FROM local/c7-systemd
+# 作者
+MAINTAINER julyWind
+RUN echo alias ll="\"ls -l --color\"" > /.dockerenv & \
+. /.dockerenv & \
+yum clean packages & \
+yum update -y & \
+yum install wget net-tools -y
+# 入口执行的命令，数组最终采用空格进行连接，生成一条命令：/usr/sbin/nginx -g deamon off;
+# ENTRYPOINT ["/usr/sbin/nginx","-g","daemon off;"]
+# 循环shell命令，保持容器不退出
+ENTRYPOINT ["/bin/bash","-c","while true;do echo hello docker;sleep 1;done"]
+# 目录挂载位置
+VOLUME ["/data1"]
+# 暴露端口
+EXPOSE 80 443 3306 21 22 17761
+```
+
+## 启动容器
+
+```shell
+docker run -itd -p 20080:80 -p 23306:3306 -p 20443:443 -p 21000-21050:21000-21050 --name ss-panel my-centos
+```
