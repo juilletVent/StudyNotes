@@ -114,7 +114,7 @@ git config --global commit.gpgsign true
 [user]
 	name = youname
 	email = youemail
-	; 这里的key就是证书指纹，可以写全也可以只写一段，只要能索引的到就行
+	; 这里的key就是证书指纹，可以写全也可以只写一段，只要能索引的到就行:ssb 对应的，如果配置错误，会报错 gpg failed to sign the data
 	signingkey = BD9817AA
 [http]
 	proxy = socks5://127.0.0.1:8887
