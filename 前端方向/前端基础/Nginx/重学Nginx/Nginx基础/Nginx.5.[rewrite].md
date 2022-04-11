@@ -1,6 +1,7 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
 - [Rewrite](#rewrite)
 
@@ -15,7 +16,7 @@
 flag 可选值：
 
 - last – 停止处理重写模块指令，之后搜索 location 与更改后的 URI 匹配。
-- break – 完成重写指令。
+- break – 完成重写指令，并不在进行重新搜索，如果匹配重写后的资源，直接返回，如果不匹配，返回 404。
 - redirect – 返回 302 临时重定向
 - permanent – 返回 301 永久重定向
 

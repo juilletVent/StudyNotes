@@ -1,9 +1,11 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [匹配规则](#%E5%8C%B9%E9%85%8D%E8%A7%84%E5%88%99)
-- [Alias 与 Root](#alias-%E4%B8%8E-root)
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [匹配规则](#匹配规则)
+- [Alias 与 Root](#alias-与-root)
+- [反向代理中的路径重写](#反向代理中的路径重写)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -47,3 +49,26 @@ location /images/ {
 ```
 
 **重点：alias 一定要配置为目录，也就是尾巴上面一定要有/，不加斜线的异教徒配置法会导致一些莫名其妙的匹配行为，看不懂。**
+
+## 反向代理中的路径重写
+
+需求：将 `https://www.a.com/gatewayA` 反向代理到 `https://www.b.com/gatewayB`
+
+```nginx
+# 实际反向代理
+location ~ ^/gwebsite {
+    proxy_pass https://www.a.com;
+    proxy_set_header host www.a.com;
+    proxy_read_timeout 3s;
+}
+# 路径重写
+location ^~ /mygwebsite {
+    # 可以进行多次重写
+    rewrite ^/mygwebsite/(.*)$ /gwebsite1/$1;
+    # 如果需要进而二次分发，则使用last，如果不需要，则使用break
+    # 反向代理中由于需要在完成重写后进行二次分发，所以基本不可能使用到break
+    # 只有静态资源的路径重写（例如：伪静态）可能会用到break
+    rewrite ^/gwebsite1/(.*)$ /gwebsite/$1 last;
+    return 403;
+}
+```
