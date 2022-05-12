@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [text-align 在 td 中的炫技](#text-align-%E5%9C%A8-td-%E4%B8%AD%E7%9A%84%E7%82%AB%E6%8A%80)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## text-align 在 td 中的炫技
 
 单元格的 td 中，`text-align`可以设置一种特殊的对齐方式：

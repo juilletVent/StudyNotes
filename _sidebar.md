@@ -53,6 +53,7 @@
       - [CSS[伪类选择器]](前端方向/前端基础/CSS/CSS[伪类选择器].md)
       - [CSS[垂直居中]](前端方向/前端基础/CSS/CSS[垂直居中].md)
       - [CSS[子元素撑满不定高父元素]](前端方向/前端基础/CSS/CSS[子元素撑满不定高父元素].md)
+      - [CSS[属性选择器]](前端方向/前端基础/CSS/CSS[属性选择器].md)
       - [CSS[常用元素以及特点]](前端方向/前端基础/CSS/CSS[常用元素以及特点].md)
       - [CSS[常用屏幕宽高属性]](前端方向/前端基础/CSS/CSS[常用屏幕宽高属性].md)
       - [CSS[常用属性]](前端方向/前端基础/CSS/CSS[常用属性].md)
@@ -79,6 +80,15 @@
       - [4.盒尺寸四大家族](前端方向/前端基础/CSS世界研读笔记/4.盒尺寸四大家族.md)
       - [5.内联元素及排版](前端方向/前端基础/CSS世界研读笔记/5.内联元素及排版.md)
       - [6.流的破坏与保护](前端方向/前端基础/CSS世界研读笔记/6.流的破坏与保护.md)
+    - CSS新世界
+      - [CSS逻辑方向](前端方向/前端基础/CSS新世界/CSS逻辑方向.md)
+      - [常用Unicode编码值](前端方向/前端基础/CSS新世界/常用Unicode编码值.md)
+      - [我是你生命中不一样的颜色（Color）](前端方向/前端基础/CSS新世界/我是你生命中不一样的颜色（Color）.md)
+      - [换行与排版优化](前端方向/前端基础/CSS新世界/换行与排版优化.md)
+      - [特立独行的text-decoration](前端方向/前端基础/CSS新世界/特立独行的text-decoration.md)
+      - [背景的艺术（background）](前端方向/前端基础/CSS新世界/背景的艺术（background）.md)
+      - [自定义字体加载控制[font-display]](前端方向/前端基础/CSS新世界/自定义字体加载控制[font-display].md)
+      - [骚气的td文本对齐方式](前端方向/前端基础/CSS新世界/骚气的td文本对齐方式.md)
     - Easymock
       - [1.响应式数据](前端方向/前端基础/Easymock/1.响应式数据.md)
     - ES6
@@ -275,6 +285,7 @@
           - [Nginx.6.[逻辑运算]](前端方向/前端基础/Nginx/重学Nginx/Nginx基础/Nginx.6.[逻辑运算].md)
           - [Nginx.7.[反向代理]](前端方向/前端基础/Nginx/重学Nginx/Nginx基础/Nginx.7.[反向代理].md)
           - [Nginx.8.[try_files]](前端方向/前端基础/Nginx/重学Nginx/Nginx基础/Nginx.8.[try_files].md)
+          - [关于 Nginx 匹配模式的测试](前端方向/前端基础/Nginx/重学Nginx/Nginx基础/关于%20Nginx%20匹配模式的测试.md)
     - Nodejs
       - [Nodejs[Buffer]](前端方向/前端基础/Nodejs/Nodejs[Buffer].md)
       - [Nodejs[Process&Thread]](前端方向/前端基础/Nodejs/Nodejs[Process&Thread].md)
@@ -285,6 +296,8 @@
       - [Nodejs[网络]](前端方向/前端基础/Nodejs/Nodejs[网络].md)
     - NpmCli开发
       - [NpmCLI开发](前端方向/前端基础/NpmCli开发/NpmCLI开发.md)
+    - Nvm
+      - [Mac下nvm切换版本关闭后还原问题解决](前端方向/前端基础/Nvm/Mac下nvm切换版本关闭后还原问题解决.md)
     - Requirejs
       - [1.Requirejs[加载文件]](前端方向/前端基础/Requirejs/1.Requirejs[加载文件].md)
       - [2.Requirejs[模块定义]](前端方向/前端基础/Requirejs/2.Requirejs[模块定义].md)
@@ -321,6 +334,7 @@
       - [TS[类]](前端方向/前端基础/TypeScript/TS[类].md)
       - [TS[类型兼容]](前端方向/前端基础/TypeScript/TS[类型兼容].md)
       - [TS[类型推断]](前端方向/前端基础/TypeScript/TS[类型推断].md)
+      - [TS[装饰器]](前端方向/前端基础/TypeScript/TS[装饰器].md)
       - [TS[起步]](前端方向/前端基础/TypeScript/TS[起步].md)
       - [TS[高级类型]](前端方向/前端基础/TypeScript/TS[高级类型].md)
     - Webpack2
@@ -349,6 +363,8 @@
         - [4.Loader](前端方向/前端基础/Webpack5/概念/4.Loader.md)
         - [5.Target](前端方向/前端基础/Webpack5/概念/5.Target.md)
         - [6.Manifest](前端方向/前端基础/Webpack5/概念/6.Manifest.md)
+    - Yarn相关
+      - [链接本地开发库](前端方向/前端基础/Yarn相关/链接本地开发库.md)
     - 其他归类
       - [Emmet语法](前端方向/前端基础/其他归类/Emmet语法.md)
       - [HSL颜色表示法](前端方向/前端基础/其他归类/HSL颜色表示法.md)
@@ -607,6 +623,7 @@
     - [元素拖曳的通用实现](奇淫巧技/浏览器相关/元素拖曳的通用实现.md)
     - [响应文件下载](奇淫巧技/浏览器相关/响应文件下载.md)
     - [禁止浏览器自动填充密码](奇淫巧技/浏览器相关/禁止浏览器自动填充密码.md)
+  - [针对IE11的CSSHack](奇淫巧技/针对IE11的CSSHack.md)
 - 容器技术
   - Docker
     - [1.Docker[基础命令]](容器技术/Docker/1.Docker[基础命令].md)
@@ -617,6 +634,9 @@
     - [6.Docker[特权模式]](容器技术/Docker/6.Docker[特权模式].md)
     - [7.Docker[容器修改]](容器技术/Docker/7.Docker[容器修改].md)
     - [8.Docker[容器网络]](容器技术/Docker/8.Docker[容器网络].md)
+    - 栗子
+      - 样例Dockerfile
+        - [带服务的Centos7](容器技术/Docker/栗子/样例Dockerfile/带服务的Centos7.md)
   - [报错勘误](容器技术/报错勘误.md)
 - 日本語
   - 1.初级-上
@@ -722,3 +742,6 @@
     - [7.[for流程控制]](瞎看看/批处理/7.[for流程控制].md)
     - [8.[输入输出]](瞎看看/批处理/8.[输入输出].md)
     - [9.[扩充变量]](瞎看看/批处理/9.[扩充变量].md)
+    - [关于中文以及CRLF](瞎看看/批处理/关于中文以及CRLF.md)
+  - 计算机图形学
+    - [1.线性代数基础](瞎看看/计算机图形学/1.线性代数基础.md)

@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [装饰器栗子](#%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A0%97%E5%AD%90)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 装饰器栗子
 
 ```ts

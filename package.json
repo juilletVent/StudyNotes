@@ -5,9 +5,13 @@
   "license": "MIT",
   "scripts": {
     "start": "docsify s ./ -p 8000",
-    "doc": "java -jar ./docsify-sidebar-generator.jar"
+    "doc": "java -jar ./docsify-sidebar-generator.jar",
+    "predoc": "doctoc ."
   },
   "dependencies": {
     "docsify-cli": "^4.4.3"
+  },
+  "devDependencies": {
+    "doctoc": "^2.2.0"
   }
 }

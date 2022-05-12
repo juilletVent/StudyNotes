@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [属性选择器的基础四用法](#%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E5%9F%BA%E7%A1%80%E5%9B%9B%E7%94%A8%E6%B3%95)
+- [属性选择器的正则匹配用法](#%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E6%AD%A3%E5%88%99%E5%8C%B9%E9%85%8D%E7%94%A8%E6%B3%95)
+- [高级用法](#%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 属性选择器的基础四用法
 
 - \[attr\]: 基础用法，只要属性出现，即匹配

@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [对于自定义字体加载的控制 【font-display】](#%E5%AF%B9%E4%BA%8E%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93%E5%8A%A0%E8%BD%BD%E7%9A%84%E6%8E%A7%E5%88%B6-font-display)
+- [关于 Canvas 中字体的使用](#%E5%85%B3%E4%BA%8E-canvas-%E4%B8%AD%E5%AD%97%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 对于自定义字体加载的控制 【font-display】
 
 - auto：字体显示策略由浏览器决定，大多数浏览器的字体显示策略类似 block。

@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Nginx 跨域控制](#nginx-%E8%B7%A8%E5%9F%9F%E6%8E%A7%E5%88%B6)
+  - [相关控制头](#%E7%9B%B8%E5%85%B3%E6%8E%A7%E5%88%B6%E5%A4%B4)
+- [关于简单请求与复杂请求](#%E5%85%B3%E4%BA%8E%E7%AE%80%E5%8D%95%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%A4%8D%E6%9D%82%E8%AF%B7%E6%B1%82)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Nginx 跨域控制
 
 ### 相关控制头
