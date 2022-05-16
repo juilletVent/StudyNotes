@@ -17,7 +17,6 @@
     - [ng-disabled/ng-readonly](#ng-disabledng-readonly)
     - [常用事件指令](#%E5%B8%B8%E7%94%A8%E4%BA%8B%E4%BB%B6%E6%8C%87%E4%BB%A4)
   - [自定义指令](#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4)
-  - [指令的Ctrl 与 Link 的区别](#%E6%8C%87%E4%BB%A4%E7%9A%84ctrl-%E4%B8%8E-link-%E7%9A%84%E5%8C%BA%E5%88%AB)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
