@@ -1,6 +1,7 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
 - [可用性](#%E5%8F%AF%E7%94%A8%E6%80%A7)
 - [顺序](#%E9%A1%BA%E5%BA%8F)
@@ -37,3 +38,36 @@ transform 不为 none 的元素会创建新的 CSS 上下文，与 opacity 不�
 
 - 设置了 transform 变换的的父级元素，会导致其内的绝对定位子元素响应上层的 overflow 裁剪行为
 - **设置了 transform 变换的的父级元素现在也作为绝对定位的包含块**
+
+## 变换的本质
+
+变幻的本质是坐标的转换，底层实现是坐标与变换矩阵的运算，CSS 中对变换矩阵的定义如下：
+
+```
+CSS2D 变换矩阵函数：matrix(a, b, c, d, e, f)
+[
+  [ a c e ]
+  [ b d f ]
+  [ 0 0 1 ]
+]
+```
+
+假设坐标值为(x,y)，则参与运算时将其转换为 3 微坐标(x,y,0),然后与矩阵做乘法运算得到变换后的坐标：
+
+```
+[
+  ax + cy + e,
+  bx + dy + f,
+  0  +  0 + 1
+]
+```
+
+可以看出，当 a,d 或 b,c 同时为零时，b,c 或 a,d 分别为 x,y 的一次系数，因此可以通过控制系数的方式实现缩放，e,f 为常数，在计算结果中直接累加到结果中，因此可以用于平移变换，同时使用 a,b,c,d 可以完成剪切、缩放、旋转、翻转等操作
+
+## 变换原点（transform-origin）
+
+指定变换的坐标系原点，对于旋转、缩放操作有显著效果；
+
+假设我们把 transform-origin 设定为:`left top`，那么整个变换的坐标系原点就切换到了元素的左上方顶点位置，而不是默认的元素中心点，然后将整个坐标系逆时针旋转 45 度，就完成了变换；此时再去理解逆时针旋转 45 度的效果相比直接理解元素绕着左上角旋转 45 度就自然的多了。
+
+**Tips：所有的变换都是对坐标系的变换而不是对目标元素的变换，从几何的角度去理解要自然的多**
