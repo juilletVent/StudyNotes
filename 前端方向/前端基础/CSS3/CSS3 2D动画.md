@@ -2,18 +2,18 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [CSS3变换](#css3%E5%8F%98%E6%8D%A2)
-  - [CSS3变形--旋转 rotate()](#css3%E5%8F%98%E5%BD%A2--%E6%97%8B%E8%BD%AC-rotate)
-  - [CSS3中的变形--扭曲 skew()](#css3%E4%B8%AD%E7%9A%84%E5%8F%98%E5%BD%A2--%E6%89%AD%E6%9B%B2-skew)
-  - [CSS3中的变形--缩放 scale()](#css3%E4%B8%AD%E7%9A%84%E5%8F%98%E5%BD%A2--%E7%BC%A9%E6%94%BE-scale)
-  - [CSS3中的变形--位移 translate()](#css3%E4%B8%AD%E7%9A%84%E5%8F%98%E5%BD%A2--%E4%BD%8D%E7%A7%BB-translate)
-  - [CSS3中的2D变形--矩阵 matrix()[最终实现方法]](#css3%E4%B8%AD%E7%9A%842d%E5%8F%98%E5%BD%A2--%E7%9F%A9%E9%98%B5-matrix%E6%9C%80%E7%BB%88%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95)
-  - [CSS3中的变形--原点 transform-origin](#css3%E4%B8%AD%E7%9A%84%E5%8F%98%E5%BD%A2--%E5%8E%9F%E7%82%B9-transform-origin)
-  - [CSS3中的动画--过渡属性 transition](#css3%E4%B8%AD%E7%9A%84%E5%8A%A8%E7%94%BB--%E8%BF%87%E6%B8%A1%E5%B1%9E%E6%80%A7-transition)
-  - [CSS3 Keyframes介绍](#css3-keyframes%E4%BB%8B%E7%BB%8D)
-  - [CSS3中调用动画](#css3%E4%B8%AD%E8%B0%83%E7%94%A8%E5%8A%A8%E7%94%BB)
-  - [轮播图实现原理](#%E8%BD%AE%E6%92%AD%E5%9B%BE%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86)
-  - [手风琴样式实现原理](#%E6%89%8B%E9%A3%8E%E7%90%B4%E6%A0%B7%E5%BC%8F%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86)
+- [CSS3变换](#css3变换)
+  - [CSS3变形--旋转 rotate()](#css3变形--旋转-rotate)
+  - [CSS3中的变形--扭曲 skew()](#css3中的变形--扭曲-skew)
+  - [CSS3中的变形--缩放 scale()](#css3中的变形--缩放-scale)
+  - [CSS3中的变形--位移 translate()](#css3中的变形--位移-translate)
+  - [CSS3中的2D变形--矩阵 matrix()[最终实现方法]](#css3中的2d变形--矩阵-matrix最终实现方法)
+  - [CSS3中的变形--原点 transform-origin](#css3中的变形--原点-transform-origin)
+  - [CSS3中的动画--过渡属性 transition](#css3中的动画--过渡属性-transition)
+  - [CSS3 Keyframes介绍](#css3-keyframes介绍)
+  - [CSS3中调用动画](#css3中调用动画)
+  - [轮播图实现原理](#轮播图实现原理)
+  - [手风琴样式实现原理](#手风琴样式实现原理)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
