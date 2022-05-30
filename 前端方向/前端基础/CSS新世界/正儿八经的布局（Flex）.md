@@ -101,4 +101,7 @@ align-items 属性和 align-self 属性的一个区别是 alignself 属性是设
 - flex-grow 如果只有一个子元素，当 grow 大于等于 1 时，元素独占所有剩余空间，否则按照设置的小数占据多余的空间
 - flex-grow 如果有多个子元素，grow 总和小于 1，则表示所占据的剩余空间百分比；如果大于一，则表示占据的剩余空间权重比例
 
-# Grid 布局
+## Flex 布局技巧
+
+- justify-conetnt:space-between 时，最后一行左对齐（最后一个元素设置 margin-left:auto 即可，前提是 item 元素没有设置 flex-grow）
+- 第一项的布局技巧可以使用 after 伪元素，然后设置 flex:auto 同样可以实现（前提条件一样）
