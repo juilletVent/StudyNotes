@@ -92,3 +92,27 @@ fr 值的可自动分配尺寸是容器尺寸减去设置 auto 关键字的列�
 语法：`repeat( [ <positive-integer> | auto-fill | auto-fit ] , <tracklist> )`
 
 auto-fill 和 auto-fit 相当于一个变量，表示一个不确定的重复次数，究竟重复多少次，是由 grid 容器和每一个 grid 子项的尺寸计算得到的
+
+### repeat()函数可以与长度值和百分比值一起使用
+
+应用场景比较少，样例代码：
+
+```css
+.container {
+  /* 有效：倒数第二列100px宽、倒数第一列宽度为20% */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) 100px 20%;
+}
+```
+
+### auto-fil 与 auto-full 的区别
+
+- auto-fit：所有的子元素以及间距将会占据全部剩余空间（符合常规布局表现、元素效果优先）
+- auto-full：子元素不会占据全部的剩余空间，相反，Grid 网格将会尽可能的将剩余空间与现有元素综合起来尽可能的将网格空间容纳尽可能多的格子，然后将子元素容纳进去，剩余空间则放置空盒子
+
+### 兼容性
+
+在 Firefox 浏览器中，grid-template-rows 属性对 repeat()函数仅仅是部分支持，**不支持的是 auto-fill 和 auto-fit 这两个关键字参数**，grid-template-columns 属性对 repeat()函数则是完全支持的。
+
+## 隐式网格声明
+
+grid-auto-columns 属性和 grid-auto-rows 属性就是用来控制“隐式网格”的尺寸的，语法与 grid-template-rows、grid-template-columns 基本一致

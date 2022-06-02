@@ -59,7 +59,7 @@ align-items 属性和 align-self 属性的一个区别是 alignself 属性是设
 
 **Tips2：min-width 与 width 基本一样，都是作用于元素的最小宽度，但是 min-wdith 不影响元素的基础尺寸，width 则会影响元素的基础尺寸**
 
-**Tips3 min--width:0 可以让元素的最小宽度变为 0，对于场景下（文字超长打点）非常好用**
+**Tips3 min-width:0 可以让元素的最小宽度变为 0，对于场景下（文字超长打点）非常好用**
 
 ### 要点总结
 
