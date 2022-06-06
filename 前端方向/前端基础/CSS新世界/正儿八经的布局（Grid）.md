@@ -116,3 +116,49 @@ auto-fill 和 auto-fit 相当于一个变量，表示一个不确定的重复次
 ## 隐式网格声明
 
 grid-auto-columns 属性和 grid-auto-rows 属性就是用来控制“隐式网格”的尺寸的，语法与 grid-template-rows、grid-template-columns 基本一致
+
+## Grid 缩写
+
+如果没有多余的隐式网格，则没多大必要使用 grid 缩写，启用缩写主要是使用 auto 相关的布局属性值
+
+```css
+grid: 100px 300px / 3fr 1fr;
+/* 等同于 */
+grid-template-rows: 100px 300px;
+grid-template-columns: 3fr 1fr;
+```
+
+```css
+grid: auto-flow dense 100px / 1fr 2fr;
+/* 等同于 */
+grid-auto-flow: row dense;
+grid-auto-rows: 100px;
+grid-template-columns: 1fr 2fr;
+
+grid: 100px 300px / auto-flow 200px;
+/* 等同于 */
+grid-template-rows: 100px 300px;
+grid-auto-flow: column;
+grid-auto-columns: 200px;
+```
+
+## 网格间距 Gap
+
+```css
+.container {
+  gap: 10px;
+  /* 或者 */
+  gap: 10px 12px;
+}
+```
+
+## 非常重要的各种对齐属性
+
+- justify-items：水平对齐控制（stretch|start|end|enter）
+- align-items：垂直对其控制（stretch|start|end|enter）
+
+### 缩写
+
+```css
+place-items: <align-items> <justify-items>;
+```

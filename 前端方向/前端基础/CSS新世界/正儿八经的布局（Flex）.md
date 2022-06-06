@@ -19,6 +19,15 @@ flex-flow: column;
 flex-flow: wrap;
 ```
 
+## 使用 place-items 简写 justify-content 与 align-item
+
+```css
+place-items: center flex-end;
+/* 等价于 */
+justify-content: flex-start;
+align-items: center;
+```
+
 ## justify-content 注意点
 
 - 如果 flex 容器设置了 overflow 滚动，同时应用 justify-content:flex-end，滚动效果会失效
