@@ -154,8 +154,12 @@ grid-auto-columns: 200px;
 
 ## 非常重要的各种对齐属性
 
-- justify-items：水平对齐控制（stretch|start|end|enter）
-- align-items：垂直对其控制（stretch|start|end|enter）
+- justify-items：网格元素相对于网格的水平对齐控制（stretch|start|end|enter）
+- align-items：网格元素相对于网格的垂直对齐控制（stretch|start|end|enter）
+- justify-content:网格单元相对于网格整体的横向对齐控制（stretch|start|end|center|space-between|space-around|space-evenly）
+- align-content:网格单元相对于网格整体的纵向对齐控制（stretch|start|end|center|space-between|space-around|space-evenly）
+
+_Tips:与 flex 一样，可以使用 place-item、place-content 进行属性简写_
 
 ### 缩写
 

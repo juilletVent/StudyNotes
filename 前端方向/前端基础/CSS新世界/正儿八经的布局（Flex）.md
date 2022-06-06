@@ -19,13 +19,16 @@ flex-flow: column;
 flex-flow: wrap;
 ```
 
-## 使用 place-items 简写 justify-content 与 align-item
+## 使用 place-items 简写（同样适用于 Grid 布局）
 
 ```css
 place-items: center flex-end;
+place-content: center flex-end;
 /* 等价于 */
-justify-content: flex-start;
 align-items: center;
+justify-items: flex-end;
+align-content: center;
+justify-content: flex-end;
 ```
 
 ## justify-content 注意点
