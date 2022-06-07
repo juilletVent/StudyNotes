@@ -142,6 +142,18 @@ grid-auto-flow: column;
 grid-auto-columns: 200px;
 ```
 
+## 网格线命名
+
+_Tips:一个网格线可以有多个名称_
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: [c1] 100px [c2 cc2 ccc2] 100px [c3] auto [c4];
+  grid-template-rows: [r1] 100px [r2] 100px [r3] auto [r4];
+}
+```
+
 ## 网格间距 Gap
 
 ```css
@@ -165,4 +177,54 @@ _Tips:与 flex 一样，可以使用 place-item、place-content 进行属性简�
 
 ```css
 place-items: <align-items> <justify-items>;
+```
+
+## 网格项目属性
+
+- grid-column-start 属性：左边框所在的垂直网格线，默认使用数字命名
+- grid-column-end 属性：右边框所在的垂直网格线，默认使用数字命名
+- grid-row-start 属性：上边框所在的水平网格线，默认使用数字命名
+- grid-row-end 属性：下边框所在的水平网格线，默认使用数字命名
+
+使用简写（grid-area）：
+
+`grid-area: <area-name> | <row-start> / <column-start> / <row-end> / <column-end>`
+
+例子，该例子定义了一个 三行四列的 Grid，item，占据的格子为第一行第二列为左上角，第二行第三列为右下角的区域：
+
+```css
+.container {
+  grid: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+}
+.item {
+  grid-area: 1 / 2 / 3 / 4;
+  /* 等价于 */
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+```
+
+## 网格合并 span 语法
+
+- `span <number>`中的`<number>`不能是负值，也不能是 0，也不能是小数
+- 不建议 grid-column-start 和 grid-column-end 同时使用 `span <number>`语法，因为完全没有必要，且 grid-column-end 设置的 `span <number>`值不会产生任何效果
+
+```css
+grid-column-start: span 6;
+grid-column-end: span 2;
+/* 等价于 */
+grid-column-start: span 6;
+```
+
+但可以将两者分开设置，例如：
+
+```css
+/* 横跨两列，结束于第四根边线 */
+grid-column-start: span 2;
+grid-column-end: 4;
+/* 同理：横跨4列，开始于第二条边线 */
+grid-column-start: 2;
+grid-column-end: span 4;
 ```
