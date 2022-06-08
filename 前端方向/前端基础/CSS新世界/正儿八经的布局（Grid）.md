@@ -166,6 +166,8 @@ _Tips:一个网格线可以有多个名称_
 
 ## 非常重要的各种对齐属性
 
+### 容器对齐控制
+
 - justify-items：网格元素相对于网格的水平对齐控制（stretch|start|end|enter）
 - align-items：网格元素相对于网格的垂直对齐控制（stretch|start|end|enter）
 - justify-content:网格单元相对于网格整体的横向对齐控制（stretch|start|end|center|space-between|space-around|space-evenly）
@@ -173,10 +175,16 @@ _Tips:一个网格线可以有多个名称_
 
 _Tips:与 flex 一样，可以使用 place-item、place-content 进行属性简写_
 
+### 项目对齐控制
+
+- justify-self: auto | normal | stretch | start | end | center | baseline;
+- align-self: auto | normal | stretch | start | end | center | baseline;
+
 ### 缩写
 
 ```css
 place-items: <align-items> <justify-items>;
+place-self: <align-self> <justify-self>?;
 ```
 
 ## 网格项目属性
@@ -185,6 +193,8 @@ place-items: <align-items> <justify-items>;
 - grid-column-end 属性：右边框所在的垂直网格线，默认使用数字命名
 - grid-row-start 属性：上边框所在的水平网格线，默认使用数字命名
 - grid-row-end 属性：下边框所在的水平网格线，默认使用数字命名
+
+### 简写（grid-area）
 
 使用简写（grid-area）：
 
@@ -203,6 +213,32 @@ place-items: <align-items> <justify-items>;
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 4;
+}
+
+/* 如果使用自定义网格边线命名，一种好用的简写 */
+grid-area: A / B;
+/* 等价于 */
+grid-area: A / B / A / B;
+
+/* 默认命名 */
+grid-area: 1 / 2;
+/* 等价于 */
+grid-area: 1 / 2 / auto / auto;
+```
+
+### 简写（grid-column 与 grid-row）
+
+```css
+.item-b {
+  grid-column: 2 / span 纵线3;
+  grid-row: 第一行开始 / span 3;
+}
+/* 等价于 */
+.item-b {
+  grid-column-start: 2;
+  grid-column-end: span 纵线3;
+  grid-row-start: 第一行开始;
+  grid-row-end: span 3;
 }
 ```
 
