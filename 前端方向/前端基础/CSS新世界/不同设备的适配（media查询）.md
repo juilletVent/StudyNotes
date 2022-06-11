@@ -200,3 +200,165 @@ padding-left: env(safe-area-inset-left, 1.4rem);
 ```html
 <meta name="viewport" content="viewport-fit=cover" />
 ```
+
+## 移动端布局适配（vw 与 rem 搭配）最佳实践
+
+原理：将 html 的 font-size 基于屏幕宽度 100vw 进行动态计算调整，然后页面布局使用 rem 完成，最终得到的呈现效果如果换到其他分辨率的设备也能沟将布局与字体大小等比例缩放，整个布局是弹性的，在不同设备上呈现的效果就与设计稿一致了
+
+简单样例：
+
+```css
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 375px) {
+  html {
+    /* 375px宽度使用16px基准尺寸，414px宽度时根字号大小正好是18px */
+    font-size: calc(16px + 2 * (100vw - 375px) / 39);
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 18px;
+  }
+}
+```
+
+> 最佳实践
+
+```css
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 375px) {
+  html {
+    /* 375px作为16px基准，414px宽度时正好对应18px的根字号大小 */
+    font-size: calc(16px + 2 * (100vw - 375px) / 39);
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    /* 屏幕宽度从414px到1000px，根字号大小累积增加4px（18px-22px）*/
+    font-size: calc(18px + 4 * (100vw - 414px) / 586);
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    /* 屏幕宽度从1000px往后每增加100px，根字号大小就增加0.5px */
+    font-size: calc(22px + 5 * (100vw - 1000px) / 1000);
+  }
+}
+```
+
+精简一点的，但是没有那么精细化的控制（不支持 IE）：
+
+```css
+html {
+  font-size: 16px;
+  font-size: clamp(16px, calc(16px + 2 * (100vw - 375px) / 39), 22px);
+}
+```
+
+### rem 所带来的问题
+
+> 当 SVG 图标尺寸不是整数的时候，边缘可能会出现奇怪的间隙；又如，需要精确知道若干个列表的高度之和的时候，如果列表的高度不是整数，则最终的高度值和实际的渲染高度值会有误差。在这些场景下，可以将对应元素的 rem 单位改成 px 单位进行表示
+
+## 移动端事件控制
+
+### 取消移动端点击事件 300ms 的延迟
+
+移动端为了避免点击事件和双击事件发生冲突，设计了点击事件延迟 300ms 触发，如果我们禁止元素触发双击事件，则这个问题就解决了：
+
+```css
+/* 只允许进行滚动和持续缩放操作 */
+touch-action: manipulation;
+```
+
+### touch-action:none 解决 treated as passive 错误
+
+取值：
+
+- touch-action: auto;
+- touch-action: manipulation; 表示浏览器只允许进行滚动和持续缩放操作
+- touch-action: none;不进行任何手势相关的行为
+- touch-action: pan-x;表示支持手指头水平移来移去的操作。
+- touch-action: pan-y;表示支持手指头垂直移来移去的操作。
+- touch-action: pan-left;
+- touch-action: pan-right;
+- touch-action: pan-up;
+- touch-action: pan-down;
+- touch-action: pinch-zoom;表示支持手指头缩放页面的操作
+
+_Tips:上述部分属性值可以组合使用，pan-x、pan-left 和 panright 一组，pan-y、pan-up 和 pan-down 一组，pan-zoom 单独一组。这 3 组属性值可以任意组合_
+
+```css
+touch-action: pan-left pan-up pan-zoom;
+```
+
+### 解决报错
+
+```css
+touch-action: none;
+```
+
+```js
+// js 正常执行，不会报错了
+document.addEventListener("touchmove", function (event) {
+  event.preventDefault();
+});
+```
+
+上述方法 CSS 改变了了元素默认行为，如果是一般场景，需要通过 js 动态控制，则最好使用下面的方法：
+
+```js
+document.addEventListener(
+  "touchmove",
+  function (event) {
+    event.preventDefault();
+  },
+  {
+    // 告知引擎，此事件有可能被阻止，默认值是TRUE，因此回调事件中默认是无法调用preventDefault的
+    passive: false,
+  }
+);
+```
+
+[参考说明 1](https://www.cnblogs.com/L-xmin/p/12495065.html)&nbsp;|&nbsp;
+[参考说明 2](https://www.jianshu.com/p/04bf173826aa)
+
+## 关于多倍图的加载
+
+```css
+.image-set {
+  width: 128px;
+  height: 96px;
+  background: url(fallback.jpg);
+  background: image-set(
+    url(w128px.jpg) 1x,
+    url(w256px.jpg) 2x,
+    url(w512px.jpg) 3x
+  );
+  background-size: cover;
+}
+```
+
+HTML 中有一个名为 srcset 的属性，这个属性与 image-set() 函数无论是名称还是语法都有相似之处，例如：
+
+```html
+<img src="1.jpg" srcset="1-2x.png 2x" />
+```
+
+使用 media 完成：
+
+```css
+@media (resolution: 2dppx) {
+  .example {
+    background: url(1-2x.jpg);
+  }
+}
+@media (min-resolution: 3dppx) {
+  .example {
+    background: url(1-3x.jpg);
+  }
+}
+```
