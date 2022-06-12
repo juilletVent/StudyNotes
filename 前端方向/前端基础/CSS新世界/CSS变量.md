@@ -86,3 +86,46 @@ CSS 变量始终作用于定义的元素位置及其子元素中，一个非常�
 - 可以应用在 calc 函数中
 - 不允许自引用
 - 不支持用在媒体查询中
+
+## CSS 自定义属性的设置与获取
+
+直接在标签的 style 属性上设置即可：
+
+```html
+<div style="--color: deepskyblue;">
+  <img src="1.jpg" style="border: 10px solid var(--color);" />
+</div>
+```
+
+### 在 JavaScript 中设置和获取 CSS 自定义属性
+
+```js
+// 设置
+domItem.style.setProperty("--ngColor", "deepskyblue");
+// 获取
+getComputedStyle(domItem).getPropertyValue("--ngColor");
+```
+
+## 小技巧：使用 content 属性显示 CSS 自定义属性值的技巧
+
+虽然 content 属性本身不支持 CSS 自定义属性值，但是 counter-reset 属性后面的计数器初始值是支持的，于是我们可以来一招“移花接木”，从而让 CSS 自定义属性值作为字符在页面中显示，这种实现可以将表现与内容均使用同一个 CSS 变量完成，可维护性很好：
+
+```css
+/* 无效 */
+.bar::before {
+  content: var(--percent);
+}
+/* 有效 */
+.bar::before {
+  counter-reset: progress var(--percent);
+  content: counter(progress);
+}
+```
+
+## 模拟自定义 CSS 方法
+
+样例一：[（实现纯自定义 CSS 方法）](./example-src/keyword-color.js)
+
+样例二：[（与 HTML 属性配合的自定义 CSS 方法）](./example-src/css-attr.js)
+
+_Tips:样例一无法响应自定义 CSS 函数中引用的 CSS 变量的二次变化，需要改写，思路是将原始表达式暂存在元素的 data-set 上，依赖的 css 变量变换时再从 data-set 上取回原始表达式重新计算值_
