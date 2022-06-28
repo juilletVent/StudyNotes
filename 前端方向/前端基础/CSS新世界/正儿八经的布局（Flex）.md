@@ -113,7 +113,50 @@ align-items 属性和 align-self 属性的一个区别是 alignself 属性是设
 - flex-grow 如果只有一个子元素，当 grow 大于等于 1 时，元素独占所有剩余空间，否则按照设置的小数占据多余的空间
 - flex-grow 如果有多个子元素，grow 总和小于 1，则表示所占据的剩余空间百分比；如果大于一，则表示占据的剩余空间权重比例
 
-## Flex 布局技巧
+## Flex justify-conetnt:space-between 最后一行左对齐布局技巧
 
-- justify-conetnt:space-between 时，最后一行左对齐（最后一个元素设置 margin-left:auto 即可，前提是 item 元素没有设置 flex-grow）
-- 第一项的布局技巧可以使用 after 伪元素，然后设置 flex:auto 同样可以实现（前提条件一样）
+这是在不想使用或者不能使用 grid 布局的情况下的办法，如果可以使用 grid 布局，则使用 grid 去实现即可，grid 完全没有这个问题
+
+### 1、模拟 space-between 和间隙
+
+```css
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list {
+  width: 24%;
+  height: 100px;
+  background-color: skyblue;
+  margin-top: 15px;
+}
+.list:not(:nth-child(4n)) {
+  margin-right: calc(4% / 3);
+}
+```
+
+### 2、根据个数最后一个元素动态 margin
+
+```css
+.container {
+  display: flex;
+  /* 两端对齐 */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.list {
+  width: 24%;
+  height: 100px;
+  background-color: skyblue;
+  margin-top: 15px;
+}
+/* 如果最后一行是3个元素 */
+.list:last-child:nth-child(4n - 1) {
+  margin-right: calc(24% + 4% / 3);
+}
+/* 如果最后一行是2个元素 */
+.list:last-child:nth-child(4n - 2) {
+  margin-right: calc(48% + 8% / 3);
+}
+/* 如果还有其他情况，则继续添加即可 */
+```
