@@ -19,10 +19,22 @@
 
 **Tips：`document.querySelectorAll` 返回的是一个特殊的静态的 NodeList，虽然大部分情况下 NodeList 是动态的，但是此方法返回的是静态的**
 
-## 属性相关操作
+## 核心 Element 对象
+
+### 属性操作
 
 当涉及到的属性与 dataset 相关时，Attribute API 与 dataset API 操作的东西其实都是 Attribute，只是不同的封装 API 而已
 
 - Element.getAttribute
 - Element.setAttribute
 - Element.removeAttribute
+
+### Element 对象查找
+
+- getElementById
+- getElementsByClassName
+- getElementsByName
+- getElementsByTagName
+- getElementsByTagNameNS
+- querySelector
+- querySelectorAll
