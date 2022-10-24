@@ -207,6 +207,16 @@ if ("registerProperty" in window.CSS) {
 }
 ```
 
+**重点说明：使用此技巧制作渐变动画时，transition 必须指定到变量名，不能采用 all 或者 all 的简写形式，下面是栗子：**
+
+```css
+/* 正确，动画生效 */
+transition: --start-color 0.5s, --end-color 0.5s;
+/* 错误，动画不起作用 */
+transition: all 1s;
+transition: 1s;
+```
+
 ## CSS Parser API （了解即可，API 尚处于早起雏形阶段，并不稳定，实用价值不高）
 
 CSS Parser API 是一个公开的、可以直接解析 CSS 或类似 CSS 语言的 API，开发者能够自己创造 CSS 语法，通过 CSS Parser API 进行解析和应用，从而满足各类需求
