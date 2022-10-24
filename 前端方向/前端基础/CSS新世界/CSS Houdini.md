@@ -179,6 +179,7 @@ css 中使用@property 进行注册，JS 中使用 window.CSS.registerProperty �
     var(--start-color-register),
     var(-- end-color-register)
   );
+  /* 重点：必须按照自定义属性名，分别设置渐变过渡属性，不能使用all，以及all简写，否则动画不生效 */
   transition: --start-color-register 0.5s, --end-color-register 0.5s;
 }
 .registered:hover,
@@ -192,6 +193,7 @@ css 中使用@property 进行注册，JS 中使用 window.CSS.registerProperty �
 
 ```js
 if ("registerProperty" in window.CSS) {
+  // 不可重复注册，否则会异常
   CSS.registerProperty({
     name: "--start-color-register",
     syntax: "<color>",
