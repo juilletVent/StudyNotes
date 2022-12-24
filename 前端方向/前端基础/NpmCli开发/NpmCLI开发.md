@@ -133,3 +133,5 @@ program
 3. 指令参数选项 option 有一个坑：不能使用以字母 a 开头的 option 名称，不知道是为什么，姿势有问题？
 
 *Tips：package.json中peerDependencies标明的为当前项目所引用的外部库，打包时打包程序将认为这一部分为外部引用，不会再目标代码中引入，但是dependencies中不能讲这一部分删除，构建代码将使用dependencies创建项目引用，peerDependencies只是作为一个额外项，确定依赖的库要不要进入目标代码*
+
+**交互性补充：需要用户交互时，可以使用inquirer这个库进行询问操作**
