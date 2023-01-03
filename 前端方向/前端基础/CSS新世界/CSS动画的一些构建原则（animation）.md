@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [一些需要注意的点](#%E4%B8%80%E4%BA%9B%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E7%82%B9)
+- [animation-direction 动画播放方向](#animation-direction-%E5%8A%A8%E7%94%BB%E6%92%AD%E6%94%BE%E6%96%B9%E5%90%91)
+- [animation-iteration-count 动画播放次数](#animation-iteration-count-%E5%8A%A8%E7%94%BB%E6%92%AD%E6%94%BE%E6%AC%A1%E6%95%B0)
+- [深入理解插值函数（steps）](#%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%8F%92%E5%80%BC%E5%87%BD%E6%95%B0steps)
+- [复合动画、Transform 占用得到处理方法](#%E5%A4%8D%E5%90%88%E5%8A%A8%E7%94%BBtransform-%E5%8D%A0%E7%94%A8%E5%BE%97%E5%88%B0%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 一些需要注意的点
 
 - 复合动画拆分定义，便于复用(与函数式编程思路一样，定义原子操作，然后进行组合)

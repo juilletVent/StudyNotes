@@ -1,10 +1,9 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
-- [package.json 中定义命令的前置与后置命令](#packagejson-中定义命令的前置与后置命令)
-- [npm 其他生命周期钩子命令](#npm-其他生命周期钩子命令)
+- [package.json 中定义命令的前置与后置命令](#packagejson-%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%91%BD%E4%BB%A4%E7%9A%84%E5%89%8D%E7%BD%AE%E4%B8%8E%E5%90%8E%E7%BD%AE%E5%91%BD%E4%BB%A4)
+- [npm 其他生命周期钩子命令](#npm-%E5%85%B6%E4%BB%96%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90%E5%91%BD%E4%BB%A4)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

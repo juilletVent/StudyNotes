@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [关于 calc 函数](#%E5%85%B3%E4%BA%8E-calc-%E5%87%BD%E6%95%B0)
+- [了解 max、min、clamp 函数](#%E4%BA%86%E8%A7%A3-maxminclamp-%E5%87%BD%E6%95%B0)
+  - [写法改进样例](#%E5%86%99%E6%B3%95%E6%94%B9%E8%BF%9B%E6%A0%B7%E4%BE%8B)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 关于 calc 函数
 
 几个需要注意的特点：

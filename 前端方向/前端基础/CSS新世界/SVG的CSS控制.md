@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [使用 CSS 属性控制 SVG 绘制](#%E4%BD%BF%E7%94%A8-css-%E5%B1%9E%E6%80%A7%E6%8E%A7%E5%88%B6-svg-%E7%BB%98%E5%88%B6)
+- [需要注意的 SVG CSS 属性](#%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84-svg-css-%E5%B1%9E%E6%80%A7)
+  - [一个环形进度条实现](#%E4%B8%80%E4%B8%AA%E7%8E%AF%E5%BD%A2%E8%BF%9B%E5%BA%A6%E6%9D%A1%E5%AE%9E%E7%8E%B0)
+  - [路径端点、转折点设置标记](#%E8%B7%AF%E5%BE%84%E7%AB%AF%E7%82%B9%E8%BD%AC%E6%8A%98%E7%82%B9%E8%AE%BE%E7%BD%AE%E6%A0%87%E8%AE%B0)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 使用 CSS 属性控制 SVG 绘制
 
 ```html

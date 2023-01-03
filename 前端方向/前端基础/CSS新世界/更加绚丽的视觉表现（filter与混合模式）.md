@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [filter 滤镜](#filter-%E6%BB%A4%E9%95%9C)
+  - [blur 高斯模糊](#blur-%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A)
+  - [brightness 亮度](#brightness-%E4%BA%AE%E5%BA%A6)
+  - [drop-shadow 自然投影](#drop-shadow-%E8%87%AA%E7%84%B6%E6%8A%95%E5%BD%B1)
+  - [grayscale 灰度滤镜](#grayscale-%E7%81%B0%E5%BA%A6%E6%BB%A4%E9%95%9C)
+  - [hue-rotate 色相滤镜 与 invert 反相滤镜](#hue-rotate-%E8%89%B2%E7%9B%B8%E6%BB%A4%E9%95%9C-%E4%B8%8E-invert-%E5%8F%8D%E7%9B%B8%E6%BB%A4%E9%95%9C)
+  - [sepia 褐色](#sepia-%E8%A4%90%E8%89%B2)
+- [backdrop-filter 背景虚化（毛玻璃）](#backdrop-filter-%E8%83%8C%E6%99%AF%E8%99%9A%E5%8C%96%E6%AF%9B%E7%8E%BB%E7%92%83)
+- [CSS 混合模式](#css-%E6%B7%B7%E5%90%88%E6%A8%A1%E5%BC%8F)
+  - [background-blend-mode](#background-blend-mode)
+  - [mix-blend-mode](#mix-blend-mode)
+  - [isolation](#isolation)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## filter 滤镜
 
 | 滤镜                                 | 释义     |

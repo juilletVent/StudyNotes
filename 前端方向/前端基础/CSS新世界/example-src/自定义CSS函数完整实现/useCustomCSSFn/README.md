@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [自定义 CSS 函数支持](#%E8%87%AA%E5%AE%9A%E4%B9%89-css-%E5%87%BD%E6%95%B0%E6%94%AF%E6%8C%81)
+  - [适用场景与特点](#%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF%E4%B8%8E%E7%89%B9%E7%82%B9)
+  - [样例](#%E6%A0%B7%E4%BE%8B)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 自定义 CSS 函数支持
 
 鉴于后续主题样式、CSS 变量相关能力逐步铺开，在实际接入主题的过程中发现一下几个痛点：

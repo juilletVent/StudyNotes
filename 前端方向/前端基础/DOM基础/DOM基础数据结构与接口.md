@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [基础接口继承关系](#%E5%9F%BA%E7%A1%80%E6%8E%A5%E5%8F%A3%E7%BB%A7%E6%89%BF%E5%85%B3%E7%B3%BB)
+- [NodeList 与 HTMLCollection](#nodelist-%E4%B8%8E-htmlcollection)
+- [核心 Element 对象](#%E6%A0%B8%E5%BF%83-element-%E5%AF%B9%E8%B1%A1)
+  - [属性操作](#%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C)
+  - [Element 对象查找](#element-%E5%AF%B9%E8%B1%A1%E6%9F%A5%E6%89%BE)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 基础接口继承关系
 
 <img src="../../../img/DOM接口继承关系.png">

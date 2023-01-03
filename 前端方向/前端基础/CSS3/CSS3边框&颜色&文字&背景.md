@@ -1,23 +1,22 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
-- [CSS3 边框 颜色 文字 背景](#css3-边框-颜色-文字-背景)
-	- [CSS3 边框 圆角效果 border-radius](#css3-边框-圆角效果-border-radius)
-	- [CSS3 边框 阴影 box-shadow（一）](#css3-边框-阴影-box-shadow一)
-	- [CSS3 边框 阴影 box-shadow（二）](#css3-边框-阴影-box-shadow二)
-	- [CSS3 边框 为边框应用图片 border-image](#css3-边框-为边框应用图片-border-image)
-		- [border-image-slice 边框裁剪线](#border-image-slice-边框裁剪线)
-	- [CSS3 颜色 颜色之 RGBA](#css3-颜色-颜色之-rgba)
-	- [CSS3 颜色 渐变色彩](#css3-颜色-渐变色彩)
-	- [CSS3 文字与字体 嵌入字体@font-face](#css3-文字与字体-嵌入字体font-face)
-	- [CSS3 文字与字体 文本阴影 text-shadow](#css3-文字与字体-文本阴影-text-shadow)
-	- [CSS3 背景 background-origin](#css3-背景-background-origin)
-	- [CSS3 背景 background-clip](#css3-背景-background-clip)
-	- [CSS3 背景 background-size](#css3-背景-background-size)
-	- [CSS3 背景 multiple backgrounds [多重背景]](#css3-背景-multiple-backgrounds-多重背景)
-	- [使用渐变作为背景](#使用渐变作为背景)
+- [CSS3 边框 颜色 文字 背景](#css3-%E8%BE%B9%E6%A1%86-%E9%A2%9C%E8%89%B2-%E6%96%87%E5%AD%97-%E8%83%8C%E6%99%AF)
+  - [CSS3 边框 圆角效果 border-radius](#css3-%E8%BE%B9%E6%A1%86-%E5%9C%86%E8%A7%92%E6%95%88%E6%9E%9C-border-radius)
+  - [CSS3 边框 阴影 box-shadow（一）](#css3-%E8%BE%B9%E6%A1%86-%E9%98%B4%E5%BD%B1-box-shadow%E4%B8%80)
+  - [CSS3 边框 阴影 box-shadow（二）](#css3-%E8%BE%B9%E6%A1%86-%E9%98%B4%E5%BD%B1-box-shadow%E4%BA%8C)
+  - [CSS3 边框 为边框应用图片 border-image](#css3-%E8%BE%B9%E6%A1%86-%E4%B8%BA%E8%BE%B9%E6%A1%86%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87-border-image)
+    - [border-image-slice 边框裁剪线](#border-image-slice-%E8%BE%B9%E6%A1%86%E8%A3%81%E5%89%AA%E7%BA%BF)
+  - [CSS3 颜色 颜色之 RGBA](#css3-%E9%A2%9C%E8%89%B2-%E9%A2%9C%E8%89%B2%E4%B9%8B-rgba)
+  - [CSS3 颜色 渐变色彩](#css3-%E9%A2%9C%E8%89%B2-%E6%B8%90%E5%8F%98%E8%89%B2%E5%BD%A9)
+  - [CSS3 文字与字体 嵌入字体@font-face](#css3-%E6%96%87%E5%AD%97%E4%B8%8E%E5%AD%97%E4%BD%93-%E5%B5%8C%E5%85%A5%E5%AD%97%E4%BD%93font-face)
+  - [CSS3 文字与字体 文本阴影 text-shadow](#css3-%E6%96%87%E5%AD%97%E4%B8%8E%E5%AD%97%E4%BD%93-%E6%96%87%E6%9C%AC%E9%98%B4%E5%BD%B1-text-shadow)
+  - [CSS3 背景 background-origin](#css3-%E8%83%8C%E6%99%AF-background-origin)
+  - [CSS3 背景 background-clip](#css3-%E8%83%8C%E6%99%AF-background-clip)
+  - [CSS3 背景 background-size](#css3-%E8%83%8C%E6%99%AF-background-size)
+  - [CSS3 背景 multiple backgrounds [多重背景]](#css3-%E8%83%8C%E6%99%AF-multiple-backgrounds-%E5%A4%9A%E9%87%8D%E8%83%8C%E6%99%AF)
+  - [使用渐变作为背景](#%E4%BD%BF%E7%94%A8%E6%B8%90%E5%8F%98%E4%BD%9C%E4%B8%BA%E8%83%8C%E6%99%AF)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

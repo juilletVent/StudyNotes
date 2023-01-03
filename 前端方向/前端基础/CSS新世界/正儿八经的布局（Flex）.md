@@ -1,3 +1,27 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Flex 布局](#flex-%E5%B8%83%E5%B1%80)
+  - [容器设置了 display:flex 后子元素发生的变化](#%E5%AE%B9%E5%99%A8%E8%AE%BE%E7%BD%AE%E4%BA%86-displayflex-%E5%90%8E%E5%AD%90%E5%85%83%E7%B4%A0%E5%8F%91%E7%94%9F%E7%9A%84%E5%8F%98%E5%8C%96)
+  - [使用 flex-flow 简写（flex-direction、flex-wrap）](#%E4%BD%BF%E7%94%A8-flex-flow-%E7%AE%80%E5%86%99flex-directionflex-wrap)
+  - [使用 place-items 简写（同样适用于 Grid 布局）](#%E4%BD%BF%E7%94%A8-place-items-%E7%AE%80%E5%86%99%E5%90%8C%E6%A0%B7%E9%80%82%E7%94%A8%E4%BA%8E-grid-%E5%B8%83%E5%B1%80)
+  - [justify-content 注意点](#justify-content-%E6%B3%A8%E6%84%8F%E7%82%B9)
+  - [align-item 与 align-self](#align-item-%E4%B8%8E-align-self)
+  - [align-content](#align-content)
+  - [order 控制子项的排列顺序](#order-%E6%8E%A7%E5%88%B6%E5%AD%90%E9%A1%B9%E7%9A%84%E6%8E%92%E5%88%97%E9%A1%BA%E5%BA%8F)
+  - [flex-basis 属性与最大内容宽度、最小内容宽度（重点章节）](#flex-basis-%E5%B1%9E%E6%80%A7%E4%B8%8E%E6%9C%80%E5%A4%A7%E5%86%85%E5%AE%B9%E5%AE%BD%E5%BA%A6%E6%9C%80%E5%B0%8F%E5%86%85%E5%AE%B9%E5%AE%BD%E5%BA%A6%E9%87%8D%E7%82%B9%E7%AB%A0%E8%8A%82)
+    - [要点总结](#%E8%A6%81%E7%82%B9%E6%80%BB%E7%BB%93)
+    - [最小宽度的解释](#%E6%9C%80%E5%B0%8F%E5%AE%BD%E5%BA%A6%E7%9A%84%E8%A7%A3%E9%87%8A)
+  - [智能化的缩写（非常实用）](#%E6%99%BA%E8%83%BD%E5%8C%96%E7%9A%84%E7%BC%A9%E5%86%99%E9%9D%9E%E5%B8%B8%E5%AE%9E%E7%94%A8)
+    - [有用的单值缩写](#%E6%9C%89%E7%94%A8%E7%9A%84%E5%8D%95%E5%80%BC%E7%BC%A9%E5%86%99)
+  - [flex-grow 与 flex-shrink](#flex-grow-%E4%B8%8E-flex-shrink)
+  - [Flex justify-conetnt:space-between 最后一行左对齐布局技巧](#flex-justify-conetntspace-between-%E6%9C%80%E5%90%8E%E4%B8%80%E8%A1%8C%E5%B7%A6%E5%AF%B9%E9%BD%90%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7)
+    - [1、模拟 space-between 和间隙](#1%E6%A8%A1%E6%8B%9F-space-between-%E5%92%8C%E9%97%B4%E9%9A%99)
+    - [2、根据个数最后一个元素动态 margin](#2%E6%A0%B9%E6%8D%AE%E4%B8%AA%E6%95%B0%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E5%8A%A8%E6%80%81-margin)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Flex 布局
 
 ## 容器设置了 display:flex 后子元素发生的变化

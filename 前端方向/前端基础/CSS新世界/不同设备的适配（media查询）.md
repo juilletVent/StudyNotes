@@ -1,3 +1,28 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [基本用法](#%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95)
+  - [媒体查询修饰符](#%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2%E4%BF%AE%E9%A5%B0%E7%AC%A6)
+  - [媒体类型](#%E5%AA%92%E4%BD%93%E7%B1%BB%E5%9E%8B)
+  - [媒体条件](#%E5%AA%92%E4%BD%93%E6%9D%A1%E4%BB%B6)
+  - [媒体特性](#%E5%AA%92%E4%BD%93%E7%89%B9%E6%80%A7)
+- [系统主题（明暗）](#%E7%B3%BB%E7%BB%9F%E4%B8%BB%E9%A2%98%E6%98%8E%E6%9A%97)
+  - [利用滤镜实现简单的神色模式](#%E5%88%A9%E7%94%A8%E6%BB%A4%E9%95%9C%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E7%A5%9E%E8%89%B2%E6%A8%A1%E5%BC%8F)
+- [系统关闭额外的动画效果（prefers-reduced-motion）](#%E7%B3%BB%E7%BB%9F%E5%85%B3%E9%97%AD%E9%A2%9D%E5%A4%96%E7%9A%84%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9Cprefers-reduced-motion)
+- [检测是否是移动端（是否支持鼠标 hover、any-hover）](#%E6%A3%80%E6%B5%8B%E6%98%AF%E5%90%A6%E6%98%AF%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E9%BC%A0%E6%A0%87-hoverany-hover)
+- [检测是否有设备支持精确点击（pointer、any-pointer）](#%E6%A3%80%E6%B5%8B%E6%98%AF%E5%90%A6%E6%9C%89%E8%AE%BE%E5%A4%87%E6%94%AF%E6%8C%81%E7%B2%BE%E7%A1%AE%E7%82%B9%E5%87%BBpointerany-pointer)
+- [env 函数](#env-%E5%87%BD%E6%95%B0)
+- [移动端布局适配（vw 与 rem 搭配）最佳实践](#%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%B8%83%E5%B1%80%E9%80%82%E9%85%8Dvw-%E4%B8%8E-rem-%E6%90%AD%E9%85%8D%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
+  - [rem 所带来的问题](#rem-%E6%89%80%E5%B8%A6%E6%9D%A5%E7%9A%84%E9%97%AE%E9%A2%98)
+- [移动端事件控制](#%E7%A7%BB%E5%8A%A8%E7%AB%AF%E4%BA%8B%E4%BB%B6%E6%8E%A7%E5%88%B6)
+  - [取消移动端点击事件 300ms 的延迟](#%E5%8F%96%E6%B6%88%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6-300ms-%E7%9A%84%E5%BB%B6%E8%BF%9F)
+  - [touch-action:none 解决 treated as passive 错误](#touch-actionnone-%E8%A7%A3%E5%86%B3-treated-as-passive-%E9%94%99%E8%AF%AF)
+  - [解决报错](#%E8%A7%A3%E5%86%B3%E6%8A%A5%E9%94%99)
+- [关于多倍图的加载](#%E5%85%B3%E4%BA%8E%E5%A4%9A%E5%80%8D%E5%9B%BE%E7%9A%84%E5%8A%A0%E8%BD%BD)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 基本用法
 
 ```css

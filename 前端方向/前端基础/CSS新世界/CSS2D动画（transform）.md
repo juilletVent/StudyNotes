@@ -1,7 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
 - [可用性](#%E5%8F%AF%E7%94%A8%E6%80%A7)
 - [顺序](#%E9%A1%BA%E5%BA%8F)
@@ -9,6 +8,10 @@
 - [层级](#%E5%B1%82%E7%BA%A7)
 - [固定定位失效问题](#%E5%9B%BA%E5%AE%9A%E5%AE%9A%E4%BD%8D%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98)
 - [裁剪](#%E8%A3%81%E5%89%AA)
+- [变换的本质](#%E5%8F%98%E6%8D%A2%E7%9A%84%E6%9C%AC%E8%B4%A8)
+- [变换原点（transform-origin）](#%E5%8F%98%E6%8D%A2%E5%8E%9F%E7%82%B9transform-origin)
+- [scalc 与 zoom 的区别](#scalc-%E4%B8%8E-zoom-%E7%9A%84%E5%8C%BA%E5%88%AB)
+- [关于旋转时的坐标轴方向，与手性](#%E5%85%B3%E4%BA%8E%E6%97%8B%E8%BD%AC%E6%97%B6%E7%9A%84%E5%9D%90%E6%A0%87%E8%BD%B4%E6%96%B9%E5%90%91%E4%B8%8E%E6%89%8B%E6%80%A7)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

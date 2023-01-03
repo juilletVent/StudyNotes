@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CSS Paint API](#css-paint-api)
+- [CSS Properties & Values API](#css-properties--values-api)
+- [CSS Parser API （了解即可，API 尚处于早起雏形阶段，并不稳定，实用价值不高）](#css-parser-api-%E4%BA%86%E8%A7%A3%E5%8D%B3%E5%8F%AFapi-%E5%B0%9A%E5%A4%84%E4%BA%8E%E6%97%A9%E8%B5%B7%E9%9B%8F%E5%BD%A2%E9%98%B6%E6%AE%B5%E5%B9%B6%E4%B8%8D%E7%A8%B3%E5%AE%9A%E5%AE%9E%E7%94%A8%E4%BB%B7%E5%80%BC%E4%B8%8D%E9%AB%98)
+- [CSS Layout API](#css-layout-api)
+- [CSS Typed OM （兼容性堪忧，Firefox、Safari 不支持）](#css-typed-om-%E5%85%BC%E5%AE%B9%E6%80%A7%E5%A0%AA%E5%BF%A7firefoxsafari-%E4%B8%8D%E6%94%AF%E6%8C%81)
+- [Animation Worklet；](#animation-worklet)
+- [Font Metrics API](#font-metrics-api)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## CSS Paint API
 
 注册 CSS Paint 固定套路：

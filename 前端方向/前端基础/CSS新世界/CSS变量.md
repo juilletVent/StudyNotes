@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CSS 变量基本使用与规则](#css-%E5%8F%98%E9%87%8F%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E8%A7%84%E5%88%99)
+- [变量使用](#%E5%8F%98%E9%87%8F%E4%BD%BF%E7%94%A8)
+- [关于 var 函数参数非法的很有用的表现](#%E5%85%B3%E4%BA%8E-var-%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E9%9D%9E%E6%B3%95%E7%9A%84%E5%BE%88%E6%9C%89%E7%94%A8%E7%9A%84%E8%A1%A8%E7%8E%B0)
+- [var 的空格尾随特性](#var-%E7%9A%84%E7%A9%BA%E6%A0%BC%E5%B0%BE%E9%9A%8F%E7%89%B9%E6%80%A7)
+- [CSS 变量的作用域与继承性](#css-%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E7%BB%A7%E6%89%BF%E6%80%A7)
+- [实现细节与特点](#%E5%AE%9E%E7%8E%B0%E7%BB%86%E8%8A%82%E4%B8%8E%E7%89%B9%E7%82%B9)
+- [CSS 自定义属性的设置与获取](#css-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E7%9A%84%E8%AE%BE%E7%BD%AE%E4%B8%8E%E8%8E%B7%E5%8F%96)
+  - [在 JavaScript 中设置和获取 CSS 自定义属性](#%E5%9C%A8-javascript-%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%92%8C%E8%8E%B7%E5%8F%96-css-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7)
+- [小技巧：使用 content 属性显示 CSS 自定义属性值的技巧](#%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%BD%BF%E7%94%A8-content-%E5%B1%9E%E6%80%A7%E6%98%BE%E7%A4%BA-css-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E5%80%BC%E7%9A%84%E6%8A%80%E5%B7%A7)
+- [模拟自定义 CSS 方法](#%E6%A8%A1%E6%8B%9F%E8%87%AA%E5%AE%9A%E4%B9%89-css-%E6%96%B9%E6%B3%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## CSS 变量基本使用与规则
 
 变量命名规则支持使用数字、横线与空格以及 CJK 文本，不需要转义，特殊符号需要转义
