@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [方法论](#%E6%96%B9%E6%B3%95%E8%AE%BA)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <img src="./img/luna.png" class="head-img" style="border-radius:50px 70px / 100px 120px">
 
 <!-- <p class="head-msg">露娜様：好好学习，天天向上</p> -->
