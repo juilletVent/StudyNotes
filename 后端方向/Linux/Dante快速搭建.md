@@ -32,3 +32,15 @@ pass {
 ```
 
 然后做好相关端口的转发与开放即可
+
+## Docker 启动
+
+~~~
+# sockd.passwd is a `htpasswd` file contains socks5 auth user/password. 
+docker run -d \
+    --name sockd \
+    --publish 47006:2020 \
+    --publish 49928:49928 \
+    --volume /root/socks5/sockd.passwd:/home/danted/conf/sockd.passwd \
+    lozyme/sockd
+~~~
