@@ -25,3 +25,31 @@ vim /etc/fstab
 ```
 
 _Tips:如果是想要扩容 swap，就先创建一个临时的 swap 挂载上去，然后卸载掉之前的 swap，为之前的 swap 分区扩容，然后挂载，最后卸载掉临时 swap 即可_
+
+## 虚拟内存使用积极程度
+
+系统应始终积极使用物理内存来获得更高的性能，内核有个参数进行调整这个行为，这个参数叫做 swappiness，它的值可以在 0 到 100 之间，0 表示内核不会主动使用 swap，100 表示内核会尽可能的使用 swap，这个值的默认值是 60，可以通过下面的命令查看：
+
+```shell
+cat /proc/sys/vm/swappiness
+```
+
+如果要临时调整该参数，可以通过下面的命令：
+
+```shell
+# 调整为10
+sysctl vm.swappiness=10
+```
+
+如果要永久调整该参数，可以通过下面的命令：
+
+```shell
+# 编辑配置文件
+vim /etc/sysctl.conf
+# 在文件底部新增
+vm.swappiness=10
+# 使配置生效
+sysctl -p
+```
+
+以上命令均需要 root 权限
