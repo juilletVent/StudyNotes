@@ -16,10 +16,12 @@
 #### 添加规则
 
     firewall-cmd --zone=public --add-port=80/tcp --permanent
+    firewall-cmd --zone=public --add-port=20000-30000/tcp --permanent
 
 #### 删除规则
 
     firewall-cmd --zone=public --remove-port=80/tcp --permanent
+    firewall-cmd --zone=public --remove-port=20000-30000/tcp --permanent
 
 #### 重启生效
 
