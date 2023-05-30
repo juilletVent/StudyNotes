@@ -231,3 +231,18 @@ while true; do
     echo # 打印一个空行进行分隔
 done
 ```
+
+## 流量/速率信息获取
+
+> 针对网卡的实时速率监控
+
+```shell
+ifstat -i eth0 1
+```
+
+> 针对端口的实时速率监控
+
+```shell
+iftop -t -L 20 -n -N -B -P -f "port 61026" -i eth0
+``
+```
