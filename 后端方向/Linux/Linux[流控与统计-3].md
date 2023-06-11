@@ -33,9 +33,9 @@ hex_to_decimal() {
 # 获取当前机器默认路由对应的网卡名称
 function get_default_route_interface() {
     # 获取默认路由对应的网卡名称
-    # interface=$(ip route | grep default | awk '{print $5}')
-    # echo $interface
-    echo "eth0"
+    interface=$(ip route | grep default | awk '{print $5}')
+    echo $interface
+    # echo "eth0"
 }
 
 # 检查根出站队列是否添加
