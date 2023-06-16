@@ -246,4 +246,9 @@ done
 
 # 默认匹配filter（匹配所有未命中的流量，注意prio优先级）
 # tc filter add dev eth0 parent 1: protocol all prio 999 u32 match ip protocol 0 0x00 flowid 1:1
+
+# 通过ClassID 找到 FilterID
+# tc filter list dev ens18 | grep 'flowid 1:457' |awk '{print $12}'
+# 通过FilterID 删除对应的Filter，考虑prio要不要删除，还不清楚
+# tc filter delete dev ens18 parent 1: protocol ip prio 1 handle ${handleId} u32
 ```
