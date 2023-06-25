@@ -98,13 +98,16 @@ function add_limit_strategy() {
     if [ $? -eq 0 ]; then
         # 输入 Y/N 选择是否覆盖
         read -p "当前端口已经存在限速策略，是否覆盖？[Y/N]: " choice
-        if [ "$choice" != "Y" ]; then
+        if [ "$choice" != "Y" ] && [ "$choice" != "y" ]; then
             echo -e "\nError：已经存在限速策略，不覆盖，退出!\n"
             return
         fi
+
         # 删除filter
-        tc filter del dev $interface parent 1: protocol ip prio $port u32
-        tc filter del dev $IFB_NAME parent 1: protocol ip prio $port u32
+        local filter_id=$(tc filter list dev $interface | grep "flowid 1:${hex_port}" | awk '{print $12}')
+        tc filter delete dev $interface parent 1: protocol ip prio 1 handle $filter_id u32
+        filter_id=$(tc filter list dev $IFB_NAME | grep "flowid 1:${hex_port}" | awk '{print $12}')
+        tc filter delete dev $IFB_NAME parent 1: protocol ip prio 1 handle $filter_id u32
     fi
 
     # 添加限速策略
@@ -135,9 +138,9 @@ function add_limit_strategy() {
 
     # 为入站与出站添加对应的filter
     # 出站过滤器
-    tc filter replace dev $interface parent 1: protocol ip prio $port u32 match ip sport "$port" 0xffff flowid 1:$hex_port
+    tc filter replace dev $interface parent 1: protocol ip prio 1 u32 match ip sport "$port" 0xffff flowid 1:$hex_port
     # 入站过滤器
-    tc filter replace dev $IFB_NAME parent 1: protocol ip prio $port u32 match ip dport "$port" 0xffff flowid 1:$hex_port
+    tc filter replace dev $IFB_NAME parent 1: protocol ip prio 1 u32 match ip dport "$port" 0xffff flowid 1:$hex_port
 
     echo -e '\nSuccess：添加限速策略成功!\n'
 }
@@ -158,12 +161,25 @@ function delete_limit_strategy() {
     local hex_port=$(decimal_to_hex $port)
 
     # 删除出站限速策略
-    tc filter del dev $interface parent 1: protocol ip prio $port u32
+
+    # 使用filter_id进行匹配的删除方式
+    local filter_id=$(tc filter list dev $interface | grep "flowid 1:${hex_port}" | awk '{print $12}')
+    tc filter delete dev $interface parent 1: protocol ip prio 1 handle $filter_id u32
+
+    # 使用优先级进行匹配的删除方式
+    # tc filter del dev $interface parent 1: protocol ip prio $port u32
+
     # 删除出站class
     tc class del dev $interface parent 1:1 classid 1:$hex_port
 
     # 删除入站限速策略
-    tc filter del dev $IFB_NAME parent 1: protocol ip prio $port u32
+    # 使用filter_id进行匹配的删除方式
+    filter_id=$(tc filter list dev $IFB_NAME | grep "flowid 1:${hex_port}" | awk '{print $12}')
+    tc filter delete dev $IFB_NAME parent 1: protocol ip prio 1 handle $filter_id u32
+
+    # 使用优先级进行匹配的删除方式
+    # tc filter del dev $IFB_NAME parent 1: protocol ip prio $port u32
+
     # 删除入站class
     tc class del dev $IFB_NAME parent 1:1 classid 1:$hex_port
 
@@ -244,11 +260,13 @@ while true; do
     echo # 打印一个空行进行分隔
 done
 
+
 # 默认匹配filter（匹配所有未命中的流量，注意prio优先级）
 # tc filter add dev eth0 parent 1: protocol all prio 999 u32 match ip protocol 0 0x00 flowid 1:1
 
 # 通过ClassID 找到 FilterID
 # tc filter list dev ens18 | grep 'flowid 1:457' |awk '{print $12}'
-# 通过FilterID 删除对应的Filter，考虑prio要不要删除，还不清楚
-# tc filter delete dev ens18 parent 1: protocol ip prio 1 handle ${handleId} u32
+
+# 通过FilterID 删除对应的Filter，prio 不能删除，必须指定优先级，对应添加时的优先级，默认1就好
+# tc filter delete dev ens18 parent 1: protocol ip prio 1 handle 800::801 u32
 ```

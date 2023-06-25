@@ -22,7 +22,7 @@ tc qdisc add dev ens18 root handle 1: htb default 1 &&
 
 为什么需要标记 filter 呢？因为我们需要对 filter 进行管理，如果不标记，那么我们无法对 filter 进行删除，filter 不像 Class，可以借助删除跟队列进行连带删除，filter 只能通过 ID 进行删除，或者其他标记手段进行匹配删除，因此我们需要标记 filter，以便于后续管理，如果直接使用添加命令修改，将 add 修改为 del，并且你没有设置合适的 handle-id，那么你将无法删除 filter，或者一次性删除所有 filter。
 
-因为，不提供 handle-id 的情况下，如果无法通过其他手段确定到要删除的 filter 的话，删除动作将删除所有的 filter，导致该parent下的所有流控策略全部失效。（一波送走）
+因为，不提供 handle-id 的情况下，如果无法通过其他手段确定到要删除的 filter 的话，删除动作将删除所有的 filter，导致该 parent 下的所有流控策略全部失效。（一波送走）
 
 首先我们采用 handle-id 来标记 filter 进行添加，观察到 id 参数为：`handle 0x800::1`，0x800 为 HTB 队列 filter 的固定命名空间，::1 为 filter 的 ID，我们可以将其简化为：`handle 800::1`，同理，我们可以将其简化为：`handle 800::2`，这样我们就可以通过 ID 来删除 filter 了，这种方式的缺点是，ID 的取值范围受限，只有 0x000-0xfff，总计 4096 个 ID，如果你要使用 ID 对 filter 进行管理，最好不要超过 0xfff。
 
@@ -58,6 +58,7 @@ tc filter replace dev ens18 parent 1: protocol all prio 65535 u32 match ip proto
 因为前面我们使用了两种方式来标记 filter，因此我们也需要两种方式来删除 filter，我们可以通过 ID 来删除 filter，也可以通过 prio 来删除 filter，首先，我们通过 ID 来删除 filter，样例如下：
 
 ```shell
+# prio 1 虽然是用于标识优先级的，并且我们也提供了handleId，但是在删除时，仍然需要提供prio，否则会报错
 tc filter del dev ens18 parent 1: protocol ip prio 1 handle 800::1 u32
 tc filter del dev ens18 parent 1: protocol ip prio 1 handle 800::2 u32
 ```
