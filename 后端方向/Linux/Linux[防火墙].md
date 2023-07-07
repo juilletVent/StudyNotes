@@ -8,6 +8,7 @@
     - [查询](#查询)
 - [配置 ssh 端口](#配置-ssh-端口)
 - [IP 封禁](#ip-封禁)
+- [服务器禁止 ping](#服务器禁止-ping)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -109,3 +110,9 @@
     取消拒绝状态： firewall-cmd --panic-off
 
     查看是否拒绝： firewall-cmd --query-panic
+
+## 服务器禁止 ping
+
+```
+iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
+```
