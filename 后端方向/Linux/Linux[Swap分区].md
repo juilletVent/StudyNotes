@@ -53,3 +53,22 @@ sysctl -p
 ```
 
 以上命令均需要 root 权限
+
+## 一个 swap 挂载脚本
+
+```shell
+#!/bin/bash
+
+# 创建虚拟内存文件
+dd if=/dev/zero of=/swap bs=1024 count=512000
+
+# 格式化分区文件
+mkswap -f /swap
+
+# 挂载Swap分区文件
+swapon /swap
+
+# 设置开机自动挂载
+echo "/swap swap swap default 0 0" >>/etc/fstab
+
+```
