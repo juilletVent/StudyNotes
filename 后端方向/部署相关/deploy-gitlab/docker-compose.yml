@@ -1,0 +1,18 @@
+version: "3"
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:16.0.4-ce.0
+    container_name: gitlab
+    hostname: localhost
+    volumes:
+      - ./gitlab-data/config:/etc/gitlab
+      - ./gitlab-data/logs:/var/log/gitlab
+      - ./gitlab-data/data:/var/opt/gitlab
+    ports:
+      - "10980:80"
+      - "10443:443"
+      - "10022:22"
+    restart: always
+    environment:
+      # 服务启动配置
+      - TZ=Asia/Shanghai
