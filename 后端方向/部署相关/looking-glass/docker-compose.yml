@@ -1,0 +1,11 @@
+version: '3'
+services:
+  looking-glass:
+    image: wikihostinc/looking-glass-server
+    container_name: looking-glass
+    restart: always
+    network_mode: host
+    environment:
+      - HTTP_PORT=11111
+      - SPEEDTEST_FILE_LIST="100MB 200MB 500MB 1GB"
+      - SPONSOR_MESSAGE="Speedypage SG"
