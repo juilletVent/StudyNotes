@@ -1,0 +1,39 @@
+## 样例
+
+~~~sh
+#!/bin/bash
+
+# 清除之前的规则和设置
+iptables -F
+ip route flush table 100
+
+# 设置默认策略
+iptables -P FORWARD ACCEPT
+
+# 允许本地回环
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A OUTPUT -o lo -j ACCEPT
+
+# 转发从A-IP到目标流量的PREROUTING规则
+iptables -t nat -A PREROUTING -p tcp -i ens19 --dport 8006 -j DNAT --to-destination 192.168.6.177:8006
+# 转发从A-IP到目标流量的POSTROUTING规则
+iptables -t nat -A POSTROUTING -o ens18 -j MASQUERADE
+
+# 添加反向链路的规则
+# 根据来源IP地址，设置反向路由
+# ip rule add from 192.168.6.177 table 100
+# 根据网卡来源设置反向路由：来自ens18的数据包，使用100路由表，从ens19发出，ens18为默认网关
+ip rule add iif ens18 table 100
+# 设置100路由表默认使用的出口网卡，使用192.168.6.110像客户端回包
+ip route add default via 192.168.6.110 table 100
+
+# 启用IP转发
+echo 1 >/proc/sys/net/ipv4/ip_forward
+
+# 显示配置
+iptables -t nat -L PREROUTING -nv
+iptables -t nat -L POSTROUTING -nv
+ip rule show
+ip route show table 100
+
+~~~
