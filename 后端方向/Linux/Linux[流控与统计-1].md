@@ -4,14 +4,14 @@
 
 ```shell
 # 创建针对端口1111的入站与出站TCP流量统计规则
-iptables -I INPUT -p tcp --dport 1111 -j ACCEPT -m comment --comment "1111端口的入站TCP流量统计规则"
-iptables -I OUTPUT -p tcp --sport 1111 -j ACCEPT -m comment --comment "1111端口的出站TCP流量统计规则"
+iptables -I INPUT -p tcp --dport 1111 -m comment --comment "1111端口的入站TCP流量统计规则"
+iptables -I OUTPUT -p tcp --sport 1111 -m comment --comment "1111端口的出站TCP流量统计规则"
 # 创建针对端口1111的入站与出站UDP流量统计规则
-iptables -I INPUT -p udp --dport 1111 -j ACCEPT -m comment --comment "1111端口的入站TCP流量统计规则"
-iptables -I OUTPUT -p udp --sport 1111 -j ACCEPT -m comment --comment "1111端口的出站TCP流量统计规则"
+iptables -I INPUT -p udp --dport 1111 -m comment --comment "1111端口的入站TCP流量统计规则"
+iptables -I OUTPUT -p udp --sport 1111 -m comment --comment "1111端口的出站TCP流量统计规则"
 
 # 删除对应的规则只需要镜 -I 改为 -D 即可，删除后重新添加即可完成流量统计的重置
-iptables -D INPUT -p tcp --dport 1111 -j ACCEPT -m comment --comment "1111端口的入站TCP流量统计规则"
+iptables -D INPUT -p tcp --dport 1111 -m comment --comment "1111端口的入站TCP流量统计规则"
 # 删除所有的默认Chain规则，此命令谨慎调用，Docker可能为自己创建了一些规则，此命令会将所有规则删除，执行前请确认是否有其他规则
 iptables -F
 # 删除所有自定义的链

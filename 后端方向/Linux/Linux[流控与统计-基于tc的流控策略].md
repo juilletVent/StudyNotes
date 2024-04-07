@@ -10,12 +10,12 @@
 ```shell
 # 创建根
 tc qdisc add dev ens18 root handle 1: htb default 1 &&
-  # 创建根队列的根Class，限速100Mbit
-  tc class add dev ens18 parent 1: classid 1:1 htb rate 100Mbit ceil 100Mbit &&
-  # 添加子Class，限速10Mbit,ID为ee26
-  tc class replace dev ens18 parent 1:1 classid 1:ee26 htb rate 30Mbit ceil 100Mbit &&
-  # 添加子Class，限速20Mbit,ID为ee27
-  tc class replace dev ens18 parent 1:1 classid 1:ee27 htb rate 60Mbit ceil 100Mbit
+# 创建根队列的根Class，限速100Mbit
+tc class add dev ens18 parent 1: classid 1:1 htb rate 100Mbit ceil 100Mbit &&
+# 添加子Class，限速10Mbit,ID为ee26
+tc class replace dev ens18 parent 1:1 classid 1:ee26 htb rate 30Mbit ceil 100Mbit &&
+# 添加子Class，限速20Mbit,ID为ee27
+tc class replace dev ens18 parent 1:1 classid 1:ee27 htb rate 60Mbit ceil 100Mbit
 ```
 
 然后为子分类添加过滤器，用于匹配流量，将流量归类到对应的子分类中，样例将端口 1111 的流量归类到 ee26，端口 1112 的流量归类到 ee27，filter 标记方式我们使用两种方式来实现。
