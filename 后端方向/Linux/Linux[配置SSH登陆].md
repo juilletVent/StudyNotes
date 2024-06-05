@@ -2,11 +2,11 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Linux SSH 登陆](#linux-ssh-%E7%99%BB%E9%99%86)
-    - [生成秘钥对](#%E7%94%9F%E6%88%90%E7%A7%98%E9%92%A5%E5%AF%B9)
-    - [配置用户SSH](#%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7ssh)
-    - [修改ssh服务配置](#%E4%BF%AE%E6%94%B9ssh%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE)
-    - [客户端](#%E5%AE%A2%E6%88%B7%E7%AB%AF)
+- [Linux SSH 登陆](#linux-ssh-登陆)
+		- [生成秘钥对](#生成秘钥对)
+		- [配置用户SSH](#配置用户ssh)
+		- [修改ssh服务配置，关闭密码登录](#修改ssh服务配置关闭密码登录)
+		- [客户端](#客户端)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -14,7 +14,7 @@
 
 #### 生成秘钥对
 
-	ssh-keygen -t rsa
+	ssh-keygen -t rsa -C "your.email@example.com" -b 4096 -f ~/.ssh/id_rsa
 
 生成的秘钥对存储在用户目录下的`.ssh`目录下`id_rsa`为私钥文件，`id_rsa.pub`为公钥文件
 
@@ -29,13 +29,13 @@
 	# 删除秘钥对
 	rm -f id_rsa* 
 
-#### 修改ssh服务配置
+#### 修改ssh服务配置，关闭密码登录
 
 启用ssh登陆
 
 	vim /etc/ssh/sshd_config
-	# 是否开启登录验证ssh验证，取消注释，配置为yes
-	PasswordAuthentication no|yes
+	# 是否开启登录验证ssh验证，取消注释，配置为no
+	PasswordAuthentication no
 
 #### 客户端
 
