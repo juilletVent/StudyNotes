@@ -1,0 +1,21 @@
+concurrent = 1
+check_interval = 0
+shutdown_timeout = 0
+
+[session_server]
+  session_timeout = 1800
+
+[[runners]]
+  name = "shell"
+  url = "http://192.168.6.225"
+  id = 8
+  token = "glrt-QwTKgsQG_YvGmyxvu971"
+  token_obtained_at = 2024-09-04T08:53:55Z
+  token_expires_at = 0001-01-01T00:00:00Z
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    MaxUploadedArchiveSize = 0
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
