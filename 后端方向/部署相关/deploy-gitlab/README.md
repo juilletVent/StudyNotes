@@ -44,3 +44,20 @@ gitlab-rake gitlab:backup:restore BACKUP=1530156812_2018_06_28_10.8.4
 ```
 
 ## 升级
+
+使用 Docker 部署的 gitlab 升级过程：
+
+1. 查询升级路径：`https://gitlab-com.gitlab.io/support/toolbox/upgrade-path/`，得到必要的升级节点版本
+2. 将升级需要的版本节点资源使用脚本批量拉取到本地，加快速度：
+   ```shell
+   #!/bin/bash
+   docker pull gitlab/gitlab-ce:x.x.x-ce.0
+   docker pull gitlab/gitlab-ce:x.x.x-ce.0
+   # 将所有必要的版本全部拉取到本地
+   ```
+3. 停止 gitlab 容器：`docker down gitlab`
+4. 修改 docker-compose.yml 文件，将 gitlab 版本修改为需要升级第一个必要节点的版本，然后重新启动 gitlab 容器：`docker up -d`
+5. 等待 gitlab 容器启动完成，然后进入 gitlab 中，查看`监控` > `后台迁移` 等待所有的后台迁移任务全部完成
+6. 重复步骤 3 至 5，直到升级到最新版本
+
+**重点：一定要等待后台迁移任务完成，否则会造成升级失败**
