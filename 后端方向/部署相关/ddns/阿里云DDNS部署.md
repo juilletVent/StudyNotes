@@ -16,7 +16,7 @@ services:
       - AKSCT=[AccessKey Secret]
       - DOMAIN=[your domain]
       - REDO=30
-      - TTL=60
+      - TTL=600
       - TIMEZONE=8.0
       - TYPE=A
       - CNIPV4=true
