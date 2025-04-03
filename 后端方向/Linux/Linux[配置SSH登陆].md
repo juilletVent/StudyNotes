@@ -14,7 +14,12 @@
 
 #### 生成秘钥对
 
-	ssh-keygen -t rsa -C "your.email@example.com" -b 4096 -f ~/.ssh/id_rsa
+```sh
+# RSA
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ""
+# ECDSA
+ssh-keygen -t ed25519 -f id_ed25519 -N ""
+```
 
 生成的秘钥对存储在用户目录下的`.ssh`目录下`id_rsa`为私钥文件，`id_rsa.pub`为公钥文件
 
