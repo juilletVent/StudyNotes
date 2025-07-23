@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [部署 gitlab](#%E9%83%A8%E7%BD%B2-gitlab)
+- [数据备份与恢复](#%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D)
+  - [备份](#%E5%A4%87%E4%BB%BD)
+  - [恢复](#%E6%81%A2%E5%A4%8D)
+- [升级](#%E5%8D%87%E7%BA%A7)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 部署 gitlab
 
 直接执行命令：`start-gitlab.sh` 即可

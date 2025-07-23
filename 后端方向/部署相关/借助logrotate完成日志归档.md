@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [借助 logrotate 完成日志归档](#%E5%80%9F%E5%8A%A9-logrotate-%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97%E5%BD%92%E6%A1%A3)
+  - [1、配置 logrotate](#1%E9%85%8D%E7%BD%AE-logrotate)
+  - [2、测试 logrotate](#2%E6%B5%8B%E8%AF%95-logrotate)
+  - [3、配置 crontab](#3%E9%85%8D%E7%BD%AE-crontab)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 借助 logrotate 完成日志归档
 
 ## 1、配置 logrotate

@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [本地部署 Ollama](#%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2-ollama)
+    - [部署 Ollama](#%E9%83%A8%E7%BD%B2-ollama)
+    - [启动 WEB UI](#%E5%90%AF%E5%8A%A8-web-ui)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 本地部署 Ollama
 
 ### 部署 Ollama

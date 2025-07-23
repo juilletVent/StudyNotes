@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Ubuntu 下重设 Root 密码](#ubuntu-%E4%B8%8B%E9%87%8D%E8%AE%BE-root-%E5%AF%86%E7%A0%81)
+  - [进入 GRUB 引导，修改配置进入单人模式](#%E8%BF%9B%E5%85%A5-grub-%E5%BC%95%E5%AF%BC%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E8%BF%9B%E5%85%A5%E5%8D%95%E4%BA%BA%E6%A8%A1%E5%BC%8F)
+    - [问题](#%E9%97%AE%E9%A2%98)
+  - [使用 Live CD-ROM 重置密码](#%E4%BD%BF%E7%94%A8-live-cd-rom-%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Ubuntu 下重设 Root 密码
 
 记录一下 Ubuntu 下的重置 root 密码的方法，其他 Linux 类似。

@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [获取 Token](#%E8%8E%B7%E5%8F%96-token)
+- [配置 Token 信息](#%E9%85%8D%E7%BD%AE-token-%E4%BF%A1%E6%81%AF)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 获取 Token
 
 使用账号密码借助 npm api 接口获取 Token

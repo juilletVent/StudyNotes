@@ -1,14 +1,15 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+
 - [Firewall](#firewall)
-    - [添加规则](#添加规则)
-    - [删除规则](#删除规则)
-    - [重启生效](#重启生效)
-    - [查询](#查询)
-- [配置 ssh 端口](#配置-ssh-端口)
-- [IP 封禁](#ip-封禁)
-- [服务器禁止 ping](#服务器禁止-ping)
+    - [添加规则](#%E6%B7%BB%E5%8A%A0%E8%A7%84%E5%88%99)
+    - [删除规则](#%E5%88%A0%E9%99%A4%E8%A7%84%E5%88%99)
+    - [重启生效](#%E9%87%8D%E5%90%AF%E7%94%9F%E6%95%88)
+    - [查询](#%E6%9F%A5%E8%AF%A2)
+- [配置 ssh 端口](#%E9%85%8D%E7%BD%AE-ssh-%E7%AB%AF%E5%8F%A3)
+- [IP 封禁](#ip-%E5%B0%81%E7%A6%81)
+- [服务器禁止 ping](#%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%A6%81%E6%AD%A2-ping)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

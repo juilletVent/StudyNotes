@@ -1,11 +1,10 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
-- [at 单次任务](#at-单次任务)
-- [crontab 周期任务](#crontab-周期任务)
-- [anacron 补救性任务](#anacron-补救性任务)
+- [at 单次任务](#at-%E5%8D%95%E6%AC%A1%E4%BB%BB%E5%8A%A1)
+- [crontab 周期任务](#crontab-%E5%91%A8%E6%9C%9F%E4%BB%BB%E5%8A%A1)
+- [anacron 补救性任务](#anacron-%E8%A1%A5%E6%95%91%E6%80%A7%E4%BB%BB%E5%8A%A1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [TC 流控策略测试](#tc-%E6%B5%81%E6%8E%A7%E7%AD%96%E7%95%A5%E6%B5%8B%E8%AF%95)
+  - [添加流控策略](#%E6%B7%BB%E5%8A%A0%E6%B5%81%E6%8E%A7%E7%AD%96%E7%95%A5)
+  - [删除流控策略](#%E5%88%A0%E9%99%A4%E6%B5%81%E6%8E%A7%E7%AD%96%E7%95%A5)
+  - [查看命令](#%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## TC 流控策略测试
 
 ### 添加流控策略

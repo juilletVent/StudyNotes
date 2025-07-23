@@ -1,6 +1,9 @@
+- AI大模型
+  - [Linux本地部署 Ollama+ChatbotUI](AI大模型/Linux本地部署%20Ollama+ChatbotUI.md)
 - GitCLI
   - [Git](GitCLI/Git.md)
   - [Git[CRLF问题]](GitCLI/Git[CRLF问题].md)
+  - [Git[linux下启用长期凭据]](GitCLI/Git[linux下启用长期凭据].md)
   - [Git[Service Config]](GitCLI/Git[Service%20Config].md)
   - [Git[使用GPG签名提交]](GitCLI/Git[使用GPG签名提交].md)
   - [Git[使用Tag]](GitCLI/Git[使用Tag].md)
@@ -30,6 +33,8 @@
     - [1.NAS安装配置说明](其他归类/NAS备忘/1.NAS安装配置说明.md)
     - [2.黑群晖自启动](其他归类/NAS备忘/2.黑群晖自启动.md)
     - [3.套件中心相关问题](其他归类/NAS备忘/3.套件中心相关问题.md)
+    - [4.硬盘RAID重建失败硬盘被标记为损坏的处理](其他归类/NAS备忘/4.硬盘RAID重建失败硬盘被标记为损坏的处理.md)
+    - [5.群晖Raid1阵列掉盘处理](其他归类/NAS备忘/5.群晖Raid1阵列掉盘处理.md)
   - openwrt
     - [1.进入root模式](其他归类/openwrt/1.进入root模式.md)
     - [2.配置opkg包管理环境](其他归类/openwrt/2.配置opkg包管理环境.md)
@@ -324,6 +329,7 @@
           - [Nginx.6.[逻辑运算]](前端方向/前端基础/Nginx/重学Nginx/Nginx基础/Nginx.6.[逻辑运算].md)
           - [Nginx.7.[反向代理]](前端方向/前端基础/Nginx/重学Nginx/Nginx基础/Nginx.7.[反向代理].md)
           - [Nginx.8.[try_files]](前端方向/前端基础/Nginx/重学Nginx/Nginx基础/Nginx.8.[try_files].md)
+          - [Nginx.9.[非标端口TLS重定向]](前端方向/前端基础/Nginx/重学Nginx/Nginx基础/Nginx.9.[非标端口TLS重定向].md)
           - [关于 Nginx 匹配模式的测试](前端方向/前端基础/Nginx/重学Nginx/Nginx基础/关于%20Nginx%20匹配模式的测试.md)
     - Nodejs
       - [Nodejs[Buffer]](前端方向/前端基础/Nodejs/Nodejs[Buffer].md)
@@ -335,6 +341,12 @@
       - [Nodejs[网络]](前端方向/前端基础/Nodejs/Nodejs[网络].md)
     - NpmCli开发
       - [NpmCLI开发](前端方向/前端基础/NpmCli开发/NpmCLI开发.md)
+    - Npm前端包管理
+      - [NPM[使用CLI添加身份认证信息]](前端方向/前端基础/Npm前端包管理/NPM[使用CLI添加身份认证信息].md)
+      - [NPM[全局安装失效解决办法]](前端方向/前端基础/Npm前端包管理/NPM[全局安装失效解决办法].md)
+      - [NPM[安装&换源]](前端方向/前端基础/Npm前端包管理/NPM[安装&换源].md)
+      - [Yarn[全局路径&缓存路径]](前端方向/前端基础/Npm前端包管理/Yarn[全局路径&缓存路径].md)
+      - [Yarn[开启pnp]](前端方向/前端基础/Npm前端包管理/Yarn[开启pnp].md)
     - Nvm
       - [Mac下nvm切换版本关闭后还原问题解决](前端方向/前端基础/Nvm/Mac下nvm切换版本关闭后还原问题解决.md)
     - Requirejs
@@ -411,12 +423,8 @@
       - [JSONP跨域](前端方向/前端基础/其他归类/JSONP跨域.md)
       - [MVVM实现思路对比](前端方向/前端基础/其他归类/MVVM实现思路对比.md)
       - [分页实现思路](前端方向/前端基础/其他归类/分页实现思路.md)
-    - 前端包管理
-      - [NPM[全局安装失效解决办法]](前端方向/前端基础/前端包管理/NPM[全局安装失效解决办法].md)
-      - [NPM[安装&换源]](前端方向/前端基础/前端包管理/NPM[安装&换源].md)
-      - [Yarn[全局路径&缓存路径]](前端方向/前端基础/前端包管理/Yarn[全局路径&缓存路径].md)
-      - [Yarn[开启pnp]](前端方向/前端基础/前端包管理/Yarn[开启pnp].md)
     - 前端工程化
+      - [前端工程化[Mono项目+pnpm搭建备忘]](前端方向/前端基础/前端工程化/前端工程化[Mono项目+pnpm搭建备忘].md)
       - [前端工程化[Package,json文件]](前端方向/前端基础/前端工程化/前端工程化[Package,json文件].md)
       - [前端工程化[script前置&后置命令](前端方向/前端基础/前端工程化/前端工程化[script前置&后置命令.md)
       - [前端工程化[为npm与yarn指定工作路径]](前端方向/前端基础/前端工程化/前端工程化[为npm与yarn指定工作路径].md)
@@ -449,6 +457,8 @@
       - [Angular[路由]](前端方向/前端框架/AngularJS/Angular[路由].md)
       - [Angular[过滤]](前端方向/前端框架/AngularJS/Angular[过滤].md)
       - [Angular[项目架构]](前端方向/前端框架/AngularJS/Angular[项目架构].md)
+    - Nx
+      - [01.Nx基础使用](前端方向/前端框架/Nx/01.Nx基础使用.md)
     - React
       - 1.快速开始
         - [React[JSX]](前端方向/前端框架/React/1.快速开始/React[JSX].md)
@@ -519,6 +529,15 @@
     - [HTML](前端方向/前端规范/HTML.md)
     - [meta标签使用](前端方向/前端规范/meta标签使用.md)
 - 后端方向
+  - Go
+    - [01.导入本地模块](后端方向/Go/01.导入本地模块.md)
+    - [02.优化编译减小体积](后端方向/Go/02.优化编译减小体积.md)
+    - [03.网络编程样例](后端方向/Go/03.网络编程样例.md)
+    - [04.实现TCP&UDP转发](后端方向/Go/04.实现TCP&UDP转发.md)
+    - [05.TLS通讯样例](后端方向/Go/05.TLS通讯样例.md)
+    - RabbitMQ样例
+      - MQ基础使用样例
+        - [说明](后端方向/Go/RabbitMQ样例/MQ基础使用样例/说明.md)
   - Java
     - JavaReflect
       - [Reflect[成员变量]](后端方向/Java/JavaReflect/Reflect[成员变量].md)
@@ -589,6 +608,12 @@
       - [Swagger[常用注解]](后端方向/Java/Swagger/Swagger[常用注解].md)
   - Linux
     - [bash环境的ftp操作](后端方向/Linux/bash环境的ftp操作.md)
+    - [Dante快速搭建](后端方向/Linux/Dante快速搭建.md)
+    - Debian
+      - [1.Debian11增加开机自启动脚本](后端方向/Linux/Debian/1.Debian11增加开机自启动脚本.md)
+      - [2.换源](后端方向/Linux/Debian/2.换源.md)
+    - iptables
+      - [iptables配置转发规则](后端方向/Linux/iptables/iptables配置转发规则.md)
     - [Linux[Bash基础]](后端方向/Linux/Linux[Bash基础].md)
     - [Linux[chattr隐藏属性]](后端方向/Linux/Linux[chattr隐藏属性].md)
     - [Linux[Job Control]](后端方向/Linux/Linux[Job%20Control].md)
@@ -603,24 +628,35 @@
     - [Linux[Shell][基础语法]](后端方向/Linux/Linux[Shell][基础语法].md)
     - [Linux[Shell][数组&循环]](后端方向/Linux/Linux[Shell][数组&循环].md)
     - [Linux[Shell][流程控制语句]](后端方向/Linux/Linux[Shell][流程控制语句].md)
+    - [Linux[shell优雅退出]](后端方向/Linux/Linux[shell优雅退出].md)
     - [Linux[srpm]](后端方向/Linux/Linux[srpm].md)
+    - [Linux[SSH相关]](后端方向/Linux/Linux[SSH相关].md)
     - [Linux[sudoer配置]](后端方向/Linux/Linux[sudoer配置].md)
+    - [Linux[Swap分区]](后端方向/Linux/Linux[Swap分区].md)
     - [Linux[tar命令]](后端方向/Linux/Linux[tar命令].md)
     - [Linux[test判断指令]](后端方向/Linux/Linux[test判断指令].md)
+    - [Linux[Vim鼠标操作禁用]](后端方向/Linux/Linux[Vim鼠标操作禁用].md)
     - [Linux[yum]](后端方向/Linux/Linux[yum].md)
     - [Linux[个性化定制]](后端方向/Linux/Linux[个性化定制].md)
+    - [Linux[内核网络参数调优]](后端方向/Linux/Linux[内核网络参数调优].md)
     - [Linux[压缩]](后端方向/Linux/Linux[压缩].md)
     - [Linux[定时任务]](后端方向/Linux/Linux[定时任务].md)
     - [Linux[常用命令]](后端方向/Linux/Linux[常用命令].md)
     - [Linux[开机脚本]](后端方向/Linux/Linux[开机脚本].md)
     - [Linux[时间同步]](后端方向/Linux/Linux[时间同步].md)
     - [Linux[权限&文件]](后端方向/Linux/Linux[权限&文件].md)
+    - [Linux[流控与统计-1]](后端方向/Linux/Linux[流控与统计-1].md)
+    - [Linux[流控与统计-tc流控样例脚本]](后端方向/Linux/Linux[流控与统计-tc流控样例脚本].md)
+    - [Linux[流控与统计-基于hashlimit限速]](后端方向/Linux/Linux[流控与统计-基于hashlimit限速].md)
+    - [Linux[流控与统计-基于tc的流控策略]](后端方向/Linux/Linux[流控与统计-基于tc的流控策略].md)
     - [Linux[流量中转]](后端方向/Linux/Linux[流量中转].md)
     - [Linux[添加服务&开机启动]](后端方向/Linux/Linux[添加服务&开机启动].md)
+    - [Linux[禁用鼠标滚动历史命令回溯]](后端方向/Linux/Linux[禁用鼠标滚动历史命令回溯].md)
     - [Linux[网络质量测试]](后端方向/Linux/Linux[网络质量测试].md)
     - [Linux[输出流]](后端方向/Linux/Linux[输出流].md)
     - [Linux[配置SSH登陆]](后端方向/Linux/Linux[配置SSH登陆].md)
     - [Linux[配置静态IP]](后端方向/Linux/Linux[配置静态IP].md)
+    - [Linux[重设ROOT密码]](后端方向/Linux/Linux[重设ROOT密码].md)
     - [Linux[防火墙]](后端方向/Linux/Linux[防火墙].md)
     - Vim
       - [1.Vim[借助tee写出文件]](后端方向/Linux/Vim/1.Vim[借助tee写出文件].md)
@@ -639,11 +675,67 @@
     - [Mysql[数据操作]](后端方向/Mysql/Mysql[数据操作].md)
     - [Mysql[连接查询]](后端方向/Mysql/Mysql[连接查询].md)
     - [mysql允许远程连接](后端方向/Mysql/mysql允许远程连接.md)
+  - Rust
+    - [00.配置Vscode调试](后端方向/Rust/00.配置Vscode调试.md)
+    - [01.Cargo基础使用](后端方向/Rust/01.Cargo基础使用.md)
+    - [02.基础语法](后端方向/Rust/02.基础语法.md)
+    - [03.print使用](后端方向/Rust/03.print使用.md)
+    - [04.变常量-函数-控制流](后端方向/Rust/04.变常量-函数-控制流.md)
+    - [05.所有权-引用-切片](后端方向/Rust/05.所有权-引用-切片.md)
+    - [06.结构体](后端方向/Rust/06.结构体.md)
+    - [07.枚举与模式匹配](后端方向/Rust/07.枚举与模式匹配.md)
+    - [08.包与模块](后端方向/Rust/08.包与模块.md)
+    - [09.通用集合类型](后端方向/Rust/09.通用集合类型.md)
+    - [10.字符串](后端方向/Rust/10.字符串.md)
+    - [11.HashMap](后端方向/Rust/11.HashMap.md)
+    - [12.错误处理](后端方向/Rust/12.错误处理.md)
+    - [13.泛型](后端方向/Rust/13.泛型.md)
+    - [14.Trait(接口)](后端方向/Rust/14.Trait(接口).md)
+    - [15.生命周期](后端方向/Rust/15.生命周期.md)
+    - [16.编写测试](后端方向/Rust/16.编写测试.md)
+    - [17.集成测试](后端方向/Rust/17.集成测试.md)
+    - [18.闭包](后端方向/Rust/18.闭包.md)
+    - [19.迭代器](后端方向/Rust/19.迭代器.md)
+    - [20.编译与发布](后端方向/Rust/20.编译与发布.md)
+    - [21.文档注释与重导出](后端方向/Rust/21.文档注释与重导出.md)
+    - [22.多项目工作空间](后端方向/Rust/22.多项目工作空间.md)
+    - [23.智能指针](后端方向/Rust/23.智能指针.md)
   - ThinkPHP
     - [ThinkPHP[文件删除]](后端方向/ThinkPHP/ThinkPHP[文件删除].md)
     - [ThinkPHP[驼峰控制器访问方式]](后端方向/ThinkPHP/ThinkPHP[驼峰控制器访问方式].md)
   - 部署相关
+    - ddns
+      - [阿里云DDNS部署](后端方向/部署相关/ddns/阿里云DDNS部署.md)
+    - deploy-easymock
+      - [README](后端方向/部署相关/deploy-easymock/README.md)
+    - deploy-gitlab
+      - [README](后端方向/部署相关/deploy-gitlab/README.md)
+    - deploy-gitlab-cicd
+      - [1.典型流水线](后端方向/部署相关/deploy-gitlab-cicd/1.典型流水线.md)
+      - [2.Runner部署](后端方向/部署相关/deploy-gitlab-cicd/2.Runner部署.md)
+      - [3.错误处理](后端方向/部署相关/deploy-gitlab-cicd/3.错误处理.md)
+      - gitlab-runner-config
+        - [配置样例说明](后端方向/部署相关/deploy-gitlab-cicd/gitlab-runner-config/配置样例说明.md)
+    - deploy-nexus
+      - [部署Nexus](后端方向/部署相关/deploy-nexus/部署Nexus.md)
+    - [gitlub部署](后端方向/部署相关/gitlub部署.md)
+    - Mysql配置备忘
+      - [1.自定义用户权限不足问题处理](后端方向/部署相关/Mysql配置备忘/1.自定义用户权限不足问题处理.md)
     - [Openssl自签证书](后端方向/部署相关/Openssl自签证书.md)
+    - [xshell文件上传下载注意](后端方向/部署相关/xshell文件上传下载注意.md)
+    - [借助logrotate完成日志归档](后端方向/部署相关/借助logrotate完成日志归档.md)
+    - [内部环境SSL证书部署](后端方向/部署相关/内部环境SSL证书部署.md)
+    - 站点保护
+      - [1.防止源站IP泄漏](后端方向/部署相关/站点保护/1.防止源站IP泄漏.md)
+      - [2.屏蔽海外访问](后端方向/部署相关/站点保护/2.屏蔽海外访问.md)
+      - [3.前置机过白配置](后端方向/部署相关/站点保护/3.前置机过白配置.md)
+      - [4.双IP转发配置](后端方向/部署相关/站点保护/4.双IP转发配置.md)
+      - [5.Ipset过滤大规模的网络地址](后端方向/部署相关/站点保护/5.Ipset过滤大规模的网络地址.md)
+      - [6.防御端口扫描与并发](后端方向/部署相关/站点保护/6.防御端口扫描与并发.md)
+    - 组网技术
+      - [1.WireGuard组网](后端方向/部署相关/组网技术/1.WireGuard组网.md)
+      - [2.WireGuard-P2P](后端方向/部署相关/组网技术/2.WireGuard-P2P.md)
+      - [3.Wireguard使用UDP加密隧道](后端方向/部署相关/组网技术/3.Wireguard使用UDP加密隧道.md)
 - 奇淫巧技
   - CSS布局
     - [Flex内容超出问题](奇淫巧技/CSS布局/Flex内容超出问题.md)
@@ -671,6 +763,7 @@
 - 容器技术
   - Docker
     - [1.Docker[基础命令]](容器技术/Docker/1.Docker[基础命令].md)
+    - [10.Docker[设置镜像加速]](容器技术/Docker/10.Docker[设置镜像加速].md)
     - [2.Docker[镜像制作]](容器技术/Docker/2.Docker[镜像制作].md)
     - [3.Docker[文件操作]](容器技术/Docker/3.Docker[文件操作].md)
     - [4.Docker[端口映射]](容器技术/Docker/4.Docker[端口映射].md)
@@ -678,26 +771,42 @@
     - [6.Docker[特权模式]](容器技术/Docker/6.Docker[特权模式].md)
     - [7.Docker[容器修改]](容器技术/Docker/7.Docker[容器修改].md)
     - [8.Docker[容器网络]](容器技术/Docker/8.Docker[容器网络].md)
+    - [9.Docker[设置代理]](容器技术/Docker/9.Docker[设置代理].md)
     - 栗子
       - 样例Dockerfile
         - [带服务的Centos7](容器技术/Docker/栗子/样例Dockerfile/带服务的Centos7.md)
+  - PVE虚拟化
+    - [PVE安装OpenwrtIMG镜像](容器技术/PVE虚拟化/PVE安装OpenwrtIMG镜像.md)
+    - [PVE虚拟化系统使用备忘](容器技术/PVE虚拟化/PVE虚拟化系统使用备忘.md)
   - [报错勘误](容器技术/报错勘误.md)
 - 数学
   - LaTex符号语法
     - [1.LaTex基础语法](数学/LaTex符号语法/1.LaTex基础语法.md)
+  - 参数方程
+    - [1.直线的参数方程](数学/参数方程/1.直线的参数方程.md)
   - 对数运算
     - [1.对数运算法则](数学/对数运算/1.对数运算法则.md)
   - 高等数学
-    - [1.三角函数与反三角函数](数学/高等数学/1.三角函数与反三角函数.md)
-    - [10.隐函数求导](数学/高等数学/10.隐函数求导.md)
-    - [2.向量乘法](数学/高等数学/2.向量乘法.md)
-    - [3.反函数](数学/高等数学/3.反函数.md)
-    - [4.初等函数](数学/高等数学/4.初等函数.md)
-    - [5.极限运算法则与两个重要极限](数学/高等数学/5.极限运算法则与两个重要极限.md)
-    - [6.导数定义](数学/高等数学/6.导数定义.md)
-    - [7.常用求导法则](数学/高等数学/7.常用求导法则.md)
-    - [8.反函数求导](数学/高等数学/8.反函数求导.md)
-    - [9.高阶导数](数学/高等数学/9.高阶导数.md)
+    - [001.三角函数与反三角函数](数学/高等数学/001.三角函数与反三角函数.md)
+    - [002.向量乘法](数学/高等数学/002.向量乘法.md)
+    - [003.反函数](数学/高等数学/003.反函数.md)
+    - [004.初等函数](数学/高等数学/004.初等函数.md)
+    - [005.极限运算法则与两个重要极限](数学/高等数学/005.极限运算法则与两个重要极限.md)
+    - [006.导数定义](数学/高等数学/006.导数定义.md)
+    - [007.常用求导法则](数学/高等数学/007.常用求导法则.md)
+    - [008.反函数求导](数学/高等数学/008.反函数求导.md)
+    - [009.高阶导数](数学/高等数学/009.高阶导数.md)
+    - [010.隐函数求导](数学/高等数学/010.隐函数求导.md)
+    - [011.微分定义](数学/高等数学/011.微分定义.md)
+    - [012.微分中值定理](数学/高等数学/012.微分中值定理.md)
+    - [013.洛必达法则](数学/高等数学/013.洛必达法则.md)
+    - [014.泰勒公式](数学/高等数学/014.泰勒公式.md)
+    - [015.函数凹凸性与拐点](数学/高等数学/015.函数凹凸性与拐点.md)
+    - [016.不定积分](数学/高等数学/016.不定积分.md)
+    - [017.换元积分法](数学/高等数学/017.换元积分法.md)
+    - [018.分部积分法](数学/高等数学/018.分部积分法.md)
+    - [019.定积分性质](数学/高等数学/019.定积分性质.md)
+    - [020.微积分基本公式](数学/高等数学/020.微积分基本公式.md)
 - 日本語
   - 1.初级-上
     - [1.第一课[基本句型]](日本語/1.初级-上/1.第一课[基本句型].md)

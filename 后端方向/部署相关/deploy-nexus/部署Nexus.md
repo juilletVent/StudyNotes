@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Nexus 私服搭建流程](#nexus-%E7%A7%81%E6%9C%8D%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B)
+  - [喜闻乐见的 Docker 一键部署](#%E5%96%9C%E9%97%BB%E4%B9%90%E8%A7%81%E7%9A%84-docker-%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2)
+  - [配置 NPM 私服](#%E9%85%8D%E7%BD%AE-npm-%E7%A7%81%E6%9C%8D)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Nexus 私服搭建流程
 
 ### 喜闻乐见的 Docker 一键部署

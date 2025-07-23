@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [使用 Docker 部署 gitlab](#%E4%BD%BF%E7%94%A8-docker-%E9%83%A8%E7%BD%B2-gitlab)
+- [流程如下](#%E6%B5%81%E7%A8%8B%E5%A6%82%E4%B8%8B)
+- [查看 root 用户的默认密码](#%E6%9F%A5%E7%9C%8B-root-%E7%94%A8%E6%88%B7%E7%9A%84%E9%BB%98%E8%AE%A4%E5%AF%86%E7%A0%81)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 使用 Docker 部署 gitlab
 
 推荐配置：4G 内存以上，2C 机器

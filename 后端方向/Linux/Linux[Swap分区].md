@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [创建于挂载 SWAP 分区](#%E5%88%9B%E5%BB%BA%E4%BA%8E%E6%8C%82%E8%BD%BD-swap-%E5%88%86%E5%8C%BA)
+- [开机自动挂载](#%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E6%8C%82%E8%BD%BD)
+- [虚拟内存使用积极程度](#%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E7%A7%AF%E6%9E%81%E7%A8%8B%E5%BA%A6)
+- [一个 swap 挂载脚本](#%E4%B8%80%E4%B8%AA-swap-%E6%8C%82%E8%BD%BD%E8%84%9A%E6%9C%AC)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 创建于挂载 SWAP 分区
 
 ```shell

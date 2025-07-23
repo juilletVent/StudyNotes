@@ -4,6 +4,7 @@
 
 - [CSS3[canvas事件处理]](#css3canvas%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86)
   - [canvas绑定鼠标事件：](#canvas%E7%BB%91%E5%AE%9A%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6)
+  - [获取鼠标事件的canvas绘图区域相对坐标](#%E8%8E%B7%E5%8F%96%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6%E7%9A%84canvas%E7%BB%98%E5%9B%BE%E5%8C%BA%E5%9F%9F%E7%9B%B8%E5%AF%B9%E5%9D%90%E6%A0%87)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

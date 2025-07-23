@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [安装步骤如下](#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4%E5%A6%82%E4%B8%8B)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 安装步骤如下
 
 1. 上传 img 镜像文件到 PVE 镜像管理中，并记录上传后的路径位置，通常为：`/var/lib/vz/template/iso/xxxx.img`，记下来，后续会用到

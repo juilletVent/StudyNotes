@@ -1,9 +1,8 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
-- [数学函数](#数学函数)
+- [数学函数](#%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

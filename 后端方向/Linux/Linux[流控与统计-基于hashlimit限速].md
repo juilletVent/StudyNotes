@@ -1,3 +1,11 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [基于 hashlimit 的流控策略](#%E5%9F%BA%E4%BA%8E-hashlimit-%E7%9A%84%E6%B5%81%E6%8E%A7%E7%AD%96%E7%95%A5)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 基于 hashlimit 的流控策略
 
 样例：
