@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  my-nginx:
+    image: nginx-run:latest
+    container_name: nginx
+    ports:
+      # 注意避开浏览器的 Block Port （https://www-archive.mozilla.org/projects/netlib/portbanning#portlist）、Chrome还包含一个额外的 10080端口，不能使用
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/opt/websrc:/var/opt/websrc
+      - /var/opt/nginx_conf/hosts:/etc/nginx/conf.d
+      - /var/opt/nginx_conf/cert:/etc/nginx/cert
+    environment:
+      - TZ=Asia/Shanghai
+    restart: on-failure
