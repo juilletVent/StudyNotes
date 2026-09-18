@@ -38,7 +38,25 @@ max=`cat /proc/cpuinfo | grep "cpu MHz" | awk -F ":" '{print $2}' | sed 's/[^0-9
 minC=`lscpu | grep 'CPU min MHz' | awk '{print $4}'`
 
 # 获取温度信息
-r=`sensors 2>/dev/null | grep -E 'Tctl|edge|Core|Package' | grep '^[a-zA-Z0-9].[[:print:]]*:.*[0-9].*°C' -o | sed 's/:\ */:/g' | sed 's/:/":"/g' | sed 's/^/"/g' | sed 's/$/",/g' | sed 's/\ °C\ /°C/g' | sed 's/\ //g' | awk 'BEGIN{ORS=""}{print $0}' | sed 's/\,$//g' | sed 's/°C/\&degC/g'`
+# 直读 hwmon sysfs,不经 sensors:
+#   sensors 会先把所有芯片(含 DDR5 内存条的 SPD5118)全部读一遍再输出,
+#   在 AMD 平台上会触发 SMBus 事务超时,把 i2c 错误刷进 kernel log;管道后的 grep/sed 无法避免这些读取。
+r=""
+for h in /sys/class/hwmon/hwmon*; do
+    for f in "$h"/temp*_label; do
+        [ -f "$f" ] || continue
+        lbl=`cat "$f" 2>/dev/null | tr -cd '[:alnum:]'`
+        case "$lbl" in
+            *Tctl*|*edge*|*Core*|*Package*) ;;
+            *) continue ;;
+        esac
+        v=`cat "${f%_label}_input" 2>/dev/null`
+        [ -z "$v" ] && continue
+        t=`awk -v x="$v" 'BEGIN{printf "%+.1f", x/1000}'`
+        r="$r\"$lbl\":\"${t}&degC\","
+    done
+done
+r=`echo "$r" | sed 's/,$//'`
 
 # 设置默认最大频率
 if [ -n "$max" ]; then
